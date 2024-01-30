@@ -1,0 +1,72 @@
+@use "colors" as c;
+@use "sass:color";
+
+.navbar {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: c.$layer2;
+  padding: var(--size-3);
+
+  .controlsLeft {
+    display: flex;
+    gap: var(--size-1);
+
+    button {
+      cursor: pointer;
+      padding: 6px 10px;
+      border-radius: var(--radius-sm);
+      background-color: c.$layer3;
+
+      &:hover:not(:disabled) {
+        background-color: color.adjust(c.$layer3, $lightness: 10);
+      }
+
+      &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        color: c.$layer2;
+      }
+    }
+
+    .search {
+      width: 280px;
+      background-color: transparent;
+      border-radius: var(--radius-sm);
+      border: 1px solid c.$layer3;
+      display: flex;
+      align-items: center;
+      padding-left: 6px;
+
+      input {
+        flex-grow: 1;
+        background-color: transparent;
+        padding-inline: 6px;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .controlsUser {
+    display: flex;
+    align-items: center;
+    gap: var(--size-6);
+    margin-right: var(--size-1);
+
+    .user {
+      display: flex;
+      align-items: center;
+      gap: var(--size-3);
+
+      .avatar {
+        width: var(--size-8);
+        height: var(--size-8);
+        border-radius: var(--radius-full);
+      }
+    }
+  }
+}

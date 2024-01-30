@@ -1,0 +1,65 @@
+@use "@/styles/colors" as c;
+@use "@/styles/util";
+
+.table {
+  .tableHead {
+    position: sticky;
+    top: 0;
+
+    &.sticked .tableRow {
+      z-index: 10;
+      background-color: c.$bg;
+    }
+
+    .tableRow {
+      border-bottom: 1px solid c.$layer1;
+
+      .tableHeader {
+        display: flex;
+        font-size: var(--scale-00);
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .tableRow {
+    display: grid;
+    gap: var(--size-5);
+    align-items: center;
+    padding: 2px;
+    height: 44px;
+    grid-template-columns: var(--grid-columns);
+    border-top: 1px solid c.$layer1;
+
+    &.spaced {
+      margin-inline: calc(var(--content-spacing) * -1);
+      padding-inline: var(--content-spacing);
+    }
+
+    &:not(.spaced) {
+      > :last-child {
+        margin-right: 8px;
+      }
+    }
+
+    &:not([aria-rowindex="1"]):hover {
+      background-color: c.$layer1;
+    }
+
+    .tableData {
+      display: flex;
+      align-items: center;
+      font-size: var(--scale-00);
+      @include util.truncate;
+    }
+
+    > :last-child {
+      justify-content: flex-end;
+    }
+  }
+
+  [aria-rowindex="1"],
+  [aria-rowindex="2"] .tableRow {
+    border-top: 0;
+  }
+}

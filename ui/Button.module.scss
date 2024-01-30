@@ -1,0 +1,42 @@
+@use "@/styles/colors" as c;
+@use "sass:color";
+
+.button {
+  cursor: pointer;
+  display: flex;
+  gap: var(--size-2);
+  align-items: center;
+  color: c.$title;
+  font-size: var(--scale-00);
+  font-weight: 500;
+  padding: var(--size-2) var(--size-6);
+  border-radius: var(--radius-full);
+
+  &.small {
+    font-size: var(--scale-00);
+  }
+
+  &[color="brand"] {
+    background-color: c.$brand2;
+
+    &:hover {
+      background-color: c.$brand;
+    }
+  }
+
+  &[color="surface"] {
+    background-color: c.$layer2;
+
+    &:hover {
+      background-color: c.$layer3;
+    }
+  }
+
+  &[color="soft"] {
+    background-color: color.adjust(c.$title, $alpha: -0.75);
+
+    &:hover {
+      background-color: color.adjust(c.$title, $alpha: -0.65);
+    }
+  }
+}

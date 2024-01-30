@@ -1,0 +1,94 @@
+@use "@/styles/colors" as c;
+@use "sass:color";
+
+.tabView {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-10);
+
+  .greeting {
+    display: flex;
+    flex-direction: column;
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .controls {
+        display: flex;
+        gap: var(--size-1);
+
+        button {
+          cursor: pointer;
+          padding: var(--size-2);
+          border-radius: var(--radius-full);
+          background-color: c.$layer2;
+
+          &:hover:not(:disabled) {
+            background-color: color.adjust(c.$layer2, $lightness: 10);
+          }
+
+          &:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+          }
+        }
+      }
+    }
+
+    .gridTopNew {
+      display: grid;
+      gap: var(--size-6);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: radial-gradient(circle, #41362f, #43403c, #5b5653);
+
+        .cardHeader {
+          padding: var(--size-12);
+
+          .title {
+            color: c.$title;
+            font-size: var(--scale-1);
+            font-weight: 500;
+            text-align: center;
+            text-transform: uppercase;
+          }
+
+          .description {
+            margin-top: var(--size-4);
+          }
+        }
+
+        .covers {
+          display: flex;
+          align-items: flex-end;
+
+          img {
+            width: 192px;
+            height: 160px;
+            object-fit: cover;
+            object-position: top;
+            box-shadow: var(--shadow-xl);
+
+            &:first-child,
+            &:last-child {
+              width: 160px;
+              height: 128px;
+              opacity: 0.75;
+              margin-inline: -48px;
+            }
+
+            &:nth-child(2) {
+              z-index: 10;
+            }
+          }
+        }
+      }
+    }
+  }
+}

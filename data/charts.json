@@ -1,0 +1,1895 @@
+{
+  "data": {
+    "browse": {
+      "__typename": "BrowseSectionContainer",
+      "header": {
+        "backgroundImage": null,
+        "color": {
+          "hex": "#4b917d"
+        },
+        "title": {
+          "transformedLabel": "Charts"
+        },
+        "subtitle": null
+      },
+      "uri": "spotify:page:0JQ5DAudkNjCgYMM0TZXDw",
+      "sections": {
+        "totalCount": 5,
+        "pagingInfo": {
+          "nextOffset": null
+        },
+        "items": [
+          {
+            "__typename": "BrowseSection",
+            "uri": "spotify:section:0JQ5DAzQHECxDlYNI6xD1g",
+            "data": {
+              "__typename": "BrowseGenericSectionData",
+              "title": {
+                "transformedLabel": "Featured Charts"
+              },
+              "subtitle": null
+            },
+            "sectionItems": {
+              "totalCount": 6,
+              "items": [
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbNG2KDcFcKOF",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbNG2KDcFcKOF",
+                      "name": "Top Songs - Global",
+                      "description": "Your weekly update of the most played tracks right now - Global.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-26T16:09:07Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "plays"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "4"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbJARRcHjHcAr",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbJARRcHjHcAr",
+                      "name": "Top Songs - Turkey",
+                      "description": "Your weekly update of the most played tracks right now - Turkey.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_tr_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-26T16:09:07Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "plays"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "4"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbMDoHDwVN2tF",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbMDoHDwVN2tF",
+                      "name": "Top 50 - Global",
+                      "description": "Your daily update of the most played tracks right now - Global.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-29T10:07:48Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "plays"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "2"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbIVYVBNw9D5K",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbIVYVBNw9D5K",
+                      "name": "Top 50 - Turkey",
+                      "description": "Your daily update of the most played tracks right now - Turkey.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/regional/daily/region_tr_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-29T10:07:46Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "plays"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "3"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbLiRSasKsNU9",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbLiRSasKsNU9",
+                      "name": "Viral 50 - Global",
+                      "description": "Your daily update of the most viral tracks right now - Global.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-29T14:58:25Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "virality"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "1"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbMIJZxwqzod6",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbMIJZxwqzod6",
+                      "name": "Viral 50 - Turkey",
+                      "description": "Your daily update of the most viral tracks right now - Turkey.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/viral/daily/region_tr_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-29T14:58:24Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "virality"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "1"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "targetLocation": ""
+          },
+          {
+            "__typename": "BrowseSection",
+            "uri": "spotify:section:0JQ5DAzQHECxDlYNI6xD1h",
+            "data": {
+              "__typename": "BrowseGenericSectionData",
+              "title": {
+                "transformedLabel": "Weekly Song Charts"
+              },
+              "subtitle": null
+            },
+            "sectionItems": {
+              "totalCount": 58,
+              "items": [
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbNG2KDcFcKOF",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbNG2KDcFcKOF",
+                      "name": "Top Songs - Global",
+                      "description": "Your weekly update of the most played tracks right now - Global.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-26T16:09:07Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "plays"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "4"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbKPTKrnFPD0G",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbKPTKrnFPD0G",
+                      "name": "Top Songs - Argentina",
+                      "description": "Your weekly update of the most played tracks right now - Argentina.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_ar_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-26T16:09:03Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "plays"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "3"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbK4fwx2r07XW",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbK4fwx2r07XW",
+                      "name": "Top Songs - Australia",
+                      "description": "Your weekly update of the most played tracks right now - Australia.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_au_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-26T16:09:09Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "plays"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "4"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbM1EaZ0igDlz",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbM1EaZ0igDlz",
+                      "name": "Top Songs - Austria",
+                      "description": "Your weekly update of the most played tracks right now - Austria.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_at_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-26T16:09:05Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "plays"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "9"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbLRLeF2cVSaP",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbLRLeF2cVSaP",
+                      "name": "Top Songs - Belarus",
+                      "description": "Your weekly update of the most played tracks right now - Belarus.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_by_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-26T16:09:05Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "plays"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "3"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbND4ZYa46PaA",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbND4ZYa46PaA",
+                      "name": "Top Songs - Belgium",
+                      "description": "Your weekly update of the most played tracks right now - Belgium.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_be_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-26T16:09:02Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "plays"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "3"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbKzoK95AbRy9",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbKzoK95AbRy9",
+                      "name": "Top Songs - Brazil",
+                      "description": "Your weekly update of the most played tracks right now - Brazil.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_br_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-26T16:09:05Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "plays"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "6"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbMda2apknTqH",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbMda2apknTqH",
+                      "name": "Top Songs - Canada",
+                      "description": "Your weekly update of the most played tracks right now - Canada.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_ca_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-26T16:09:05Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "plays"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "7"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbLJ0paT1JkgZ",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbLJ0paT1JkgZ",
+                      "name": "Top Songs - Chile",
+                      "description": "Your weekly update of the most played tracks right now - Chile.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_cl_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-26T16:09:03Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "plays"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "4"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbL1Fl8vdBUba",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbL1Fl8vdBUba",
+                      "name": "Top Songs - Colombia",
+                      "description": "Your weekly update of the most played tracks right now - Colombia.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_co_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-26T16:09:02Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "plays"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "3"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "targetLocation": "spotify:genre:0JQ5DAudkNjCgYMM0TZXDt"
+          },
+          {
+            "__typename": "BrowseSection",
+            "uri": "spotify:section:0JQ5DAzQHECxDlYNI6xD1i",
+            "data": {
+              "__typename": "BrowseGenericSectionData",
+              "title": {
+                "transformedLabel": "Daily Song Charts"
+              },
+              "subtitle": null
+            },
+            "sectionItems": {
+              "totalCount": 73,
+              "items": [
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbMDoHDwVN2tF",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbMDoHDwVN2tF",
+                      "name": "Top 50 - Global",
+                      "description": "Your daily update of the most played tracks right now - Global.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-29T10:07:48Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "plays"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "2"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbMMy2roB9myp",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbMMy2roB9myp",
+                      "name": "Top 50 - Argentina",
+                      "description": "Your daily update of the most played tracks right now - Argentina.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/regional/daily/region_ar_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-29T10:07:53Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "plays"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "2"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbJPcfkRz0wJ0",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbJPcfkRz0wJ0",
+                      "name": "Top 50 - Australia",
+                      "description": "Your daily update of the most played tracks right now - Australia.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/regional/daily/region_au_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-29T10:07:50Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "plays"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "2"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbKNHh6NIXu36",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbKNHh6NIXu36",
+                      "name": "Top 50 - Austria",
+                      "description": "Your daily update of the most played tracks right now - Austria.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/regional/daily/region_at_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-29T10:07:53Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "plays"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "3"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbIYfjSLbWr4V",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbIYfjSLbWr4V",
+                      "name": "Top 50 - Belarus",
+                      "description": "Your daily update of the most played tracks right now - Belarus.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/regional/daily/region_by_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-29T10:07:52Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "plays"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "2"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbJNSeeHswcKB",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbJNSeeHswcKB",
+                      "name": "Top 50 - Belgium",
+                      "description": "Your daily update of the most played tracks right now - Belgium.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/regional/daily/region_be_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-29T10:07:49Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "plays"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "3"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbJqfMFK4d691",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbJqfMFK4d691",
+                      "name": "Top 50 - Bolivia",
+                      "description": "Your daily update of the most played tracks right now - Bolivia.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/regional/daily/region_bo_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-29T10:07:52Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "plays"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "1"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbMXbN3EUUhlg",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbMXbN3EUUhlg",
+                      "name": "Top 50 - Brazil",
+                      "description": "Your daily update of the most played tracks right now - Brazil.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/regional/daily/region_br_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-29T10:07:48Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "plays"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "1"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbNfM2w2mq1B8",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbNfM2w2mq1B8",
+                      "name": "Top 50 - Bulgaria",
+                      "description": "Your daily update of the most played tracks right now - Bulgaria.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/regional/daily/region_bg_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-29T10:07:49Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "plays"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "3"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbKj23U1GF4IR",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbKj23U1GF4IR",
+                      "name": "Top 50 - Canada",
+                      "description": "Your daily update of the most played tracks right now - Canada.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/regional/daily/region_ca_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-29T10:07:48Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "plays"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "1"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "targetLocation": "spotify:genre:0JQ5DAudkNjCgYMM0TZXDs"
+          },
+          {
+            "__typename": "BrowseSection",
+            "uri": "spotify:section:0JQ5DAzQHECxDlYNI6xD1j",
+            "data": {
+              "__typename": "BrowseGenericSectionData",
+              "title": {
+                "transformedLabel": "Daily Viral Charts"
+              },
+              "subtitle": null
+            },
+            "sectionItems": {
+              "totalCount": 75,
+              "items": [
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbLiRSasKsNU9",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbLiRSasKsNU9",
+                      "name": "Viral 50 - Global",
+                      "description": "Your daily update of the most viral tracks right now - Global.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-29T14:58:25Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "virality"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "1"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbMxjQJh4Um8T",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbMxjQJh4Um8T",
+                      "name": "Viral 50 - Andorra",
+                      "description": "Your daily update of the most viral tracks right now - Andorra.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/viral/daily/region_ad_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-29T14:58:31Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "virality"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "6"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbJajpaXyaKll",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbJajpaXyaKll",
+                      "name": "Viral 50 - Argentina",
+                      "description": "Your daily update of the most viral tracks right now - Argentina.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/viral/daily/region_ar_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-29T14:58:29Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "virality"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "3"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbO5MSE9RdfN2",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbO5MSE9RdfN2",
+                      "name": "Viral 50 - Australia",
+                      "description": "Your daily update of the most viral tracks right now - Australia.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/viral/daily/region_au_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-29T14:58:20Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "virality"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "1"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbKxYYIUIgn7V",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbKxYYIUIgn7V",
+                      "name": "Viral 50 - Austria",
+                      "description": "Your daily update of the most viral tracks right now - Austria.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/viral/daily/region_at_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-29T14:58:22Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "virality"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "2"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbK2SUzp56yYx",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbK2SUzp56yYx",
+                      "name": "Viral 50 - Belarus",
+                      "description": "Your daily update of the most viral tracks right now - Belarus.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/viral/daily/region_by_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-29T14:58:27Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "virality"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "5"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbJx9hUtTN0Sj",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbJx9hUtTN0Sj",
+                      "name": "Viral 50 - Belgium",
+                      "description": "Your daily update of the most viral tracks right now - Belgium.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/viral/daily/region_be_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-29T14:58:21Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "virality"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "1"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbMTKZuy8ORFV",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbMTKZuy8ORFV",
+                      "name": "Viral 50 - Bolivia",
+                      "description": "Your daily update of the most viral tracks right now - Bolivia.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/viral/daily/region_bo_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-29T14:58:22Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "virality"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "5"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbMOkSwG072hV",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbMOkSwG072hV",
+                      "name": "Viral 50 - Brazil",
+                      "description": "Your daily update of the most viral tracks right now - Brazil.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/viral/daily/region_br_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-29T14:58:25Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "virality"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "2"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbJcpVBLdFV7m",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbJcpVBLdFV7m",
+                      "name": "Viral 50 - Bulgaria",
+                      "description": "Your daily update of the most viral tracks right now - Bulgaria.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://charts-images.scdn.co/assets/locale_en/viral/daily/region_bg_default.jpg",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "chart",
+                      "attributes": [
+                        {
+                          "key": "last_updated",
+                          "value": "2024-01-29T14:58:29Z"
+                        },
+                        {
+                          "key": "rank_type",
+                          "value": "virality"
+                        },
+                        {
+                          "key": "new_entries_count",
+                          "value": "2"
+                        },
+                        {
+                          "key": "chart_entity_type",
+                          "value": "track"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "targetLocation": "spotify:genre:0JQ5DAudkNjCgYMM0TZXDu"
+          }
+        ]
+      }
+    }
+  },
+  "extensions": {}
+}

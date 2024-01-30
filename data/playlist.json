@@ -1,0 +1,4635 @@
+{
+  "data": {
+    "playlistV2": {
+      "__typename": "Playlist",
+      "revisionId": "AbID9gAAAADeSlgf1Migv72xUTIzfw6O",
+      "uri": "spotify:playlist:37i9dQZF1DZ06evO0AjSPR",
+      "name": "This Is Fazıl Say",
+      "description": "This is Fazıl Say. The essential tracks, all in one playlist.",
+      "ownerV2": {
+        "data": {
+          "__typename": "User",
+          "uri": "spotify:user:spotify",
+          "username": "spotify",
+          "name": "Spotify",
+          "avatar": {
+            "sources": [
+              {
+                "url": "https://i.scdn.co/image/ab67757000003b8255c25988a6ac314394d3fbf5",
+                "width": 64,
+                "height": 64
+              },
+              {
+                "url": "https://i.scdn.co/image/ab6775700000ee8555c25988a6ac314394d3fbf5",
+                "width": 300,
+                "height": 300
+              }
+            ]
+          }
+        }
+      },
+      "images": {
+        "items": [
+          {
+            "extractedColors": {
+              "colorRaw": {
+                "hex": "#535353",
+                "isFallback": true
+              }
+            },
+            "sources": [
+              {
+                "url": "https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO0AjSPR-default.jpg",
+                "width": null,
+                "height": null
+              }
+            ]
+          }
+        ]
+      },
+      "basePermission": "VIEWER",
+      "followers": 13143,
+      "format": "artistsets",
+      "attributes": [
+        {
+          "key": "artistGid",
+          "value": "23eed7272b424126bfa69c5245f5cf0d"
+        },
+        {
+          "key": "translatedArtistName",
+          "value": "Fazıl Say"
+        }
+      ],
+      "sharingInfo": {
+        "shareUrl": "https://open.spotify.com/playlist/37i9dQZF1DZ06evO0AjSPR?si=TgynL_e9S76DSlsjpe4IGw"
+      },
+      "content": {
+        "__typename": "PlaylistItemsPage",
+        "totalCount": 52,
+        "pagingInfo": {
+          "offset": 0,
+          "limit": 52
+        },
+        "items": [
+          {
+            "uid": "a24e9e3a2a04082c",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:2rPzDEGOVWTbdOZFgf2sCV",
+                "name": "Aşkın Elinden (Kumru Ballad)",
+                "trackDuration": {
+                  "totalMilliseconds": 233556
+                },
+                "playcount": "2282740",
+                "albumOfTrack": {
+                  "uri": "spotify:album:5RsRdX2mayQ24nrRFR0FBj",
+                  "name": "Şu Dünyanın Sırrı",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:6zebrRNZzpUnIQH4irGy82",
+                        "profile": {
+                          "name": "Serenad Bağcan"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e0203538513c8bd92d40cb10745",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000485103538513c8bd92d40cb10745",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b27303538513c8bd92d40cb10745",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:6zebrRNZzpUnIQH4irGy82",
+                      "profile": {
+                        "name": "Serenad Bağcan"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 8,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "81fbf816bfbd126b",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:67trH3Unzyz2lG5tHJ7lZ5",
+                "name": "Say: Art of Piano, Op. 66: III. Winter Morning in Istanbul",
+                "trackDuration": {
+                  "totalMilliseconds": 229104
+                },
+                "playcount": "55061",
+                "albumOfTrack": {
+                  "uri": "spotify:album:0W8KSck9ZXiDwPZhDsiwYu",
+                  "name": "Morning Piano - Say: Winter Morning in Istanbul",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e0208c587d67d554d5409f9aac4",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000485108c587d67d554d5409f9aac4",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b27308c587d67d554d5409f9aac4",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 1,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "f36afdf679b79231",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:3Pf6XFUvPAJwI51zj864mG",
+                "name": "Schumann: Kinderszenen, Op. 15: No. 7, Träumerei",
+                "trackDuration": {
+                  "totalMilliseconds": 180804
+                },
+                "playcount": "486313",
+                "albumOfTrack": {
+                  "uri": "spotify:album:0NmH5U2LbFl4pqDDEo2Pv6",
+                  "name": "Evening Piano - Schumann: Träumerei",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:2UqjDAXnDxejEyE0CzfUrZ",
+                        "profile": {
+                          "name": "Robert Schumann"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e02ddd6030dc39dd8ef87dd2ff3",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00004851ddd6030dc39dd8ef87dd2ff3",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b273ddd6030dc39dd8ef87dd2ff3",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:2UqjDAXnDxejEyE0CzfUrZ",
+                      "profile": {
+                        "name": "Robert Schumann"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 1,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "5abf279c8b585c5c",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:234LwPuKv0RLwbiWYUEeJT",
+                "name": "Scarlatti, D: Keyboard Sonata in F Minor, Kk. 466",
+                "trackDuration": {
+                  "totalMilliseconds": 444973
+                },
+                "playcount": "1906115",
+                "albumOfTrack": {
+                  "uri": "spotify:album:2GCs7UuM83toYpS5mAhuwG",
+                  "name": "Morning Piano - Scarlatti: Keyboard Sonata K. 466",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:0mFblCBw0GcoY7zY1P8tzE",
+                        "profile": {
+                          "name": "Domenico Scarlatti"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e028793e92eff7d5afaa07906ad",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d000048518793e92eff7d5afaa07906ad",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b2738793e92eff7d5afaa07906ad",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:0mFblCBw0GcoY7zY1P8tzE",
+                      "profile": {
+                        "name": "Domenico Scarlatti"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 1,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "3172dceba89e330c",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:4l5zWNPyET6PqBhxQEyKgt",
+                "name": "Beethoven: Piano Sonata No. 8 in C Minor, Op. 13 \"Pathétique\": II. Adagio cantabile",
+                "trackDuration": {
+                  "totalMilliseconds": 324960
+                },
+                "playcount": "8852642",
+                "albumOfTrack": {
+                  "uri": "spotify:album:5AuBjTnxyHHKNNKiGt8V0c",
+                  "name": "Beethoven: Piano Sonatas Nos 8, \"Pathétique\", 9 & 10",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:2wOqMjp9TyABvtHdOSOTUS",
+                        "profile": {
+                          "name": "Ludwig van Beethoven"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e02ace7c11700bc007aa90335ce",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00004851ace7c11700bc007aa90335ce",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b273ace7c11700bc007aa90335ce",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:2wOqMjp9TyABvtHdOSOTUS",
+                      "profile": {
+                        "name": "Ludwig van Beethoven"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 2,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "aa34949646e74766",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:0F5UTucJCmRm6bHXX0XwyP",
+                "name": "Chopin: 24 Preludes, Op. 28: No. 6 in B Minor",
+                "trackDuration": {
+                  "totalMilliseconds": 101616
+                },
+                "playcount": "132856",
+                "albumOfTrack": {
+                  "uri": "spotify:album:2k2sYzO0pcjKW92ZIjB3mz",
+                  "name": "Evening Piano - Chopin: Prelude No. 6",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:7y97mc3bZRFXzT2szRM4L4",
+                        "profile": {
+                          "name": "Frédéric Chopin"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e021c3da9967938414319e5c9ff",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d000048511c3da9967938414319e5c9ff",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b2731c3da9967938414319e5c9ff",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:7y97mc3bZRFXzT2szRM4L4",
+                      "profile": {
+                        "name": "Frédéric Chopin"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 1,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "c34d762996b2737f",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:3OWjxNn7H79JBU0vV1InYH",
+                "name": "Debussy: Preludes, Book 1, L. 117: VIII. La fille aux cheveux de lin",
+                "trackDuration": {
+                  "totalMilliseconds": 170533
+                },
+                "playcount": "2446229",
+                "albumOfTrack": {
+                  "uri": "spotify:album:1llL7D4K2EuSUHJ5CXj17r",
+                  "name": "Debussy: Préludes, Book 1 - Satie: 3 Gymnopédies & 6 Gnossiennes",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e02d770c98d8c0c36d2583f084c",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00004851d770c98d8c0c36d2583f084c",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b273d770c98d8c0c36d2583f084c",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:1Uff91EOsvd99rtAupatMP",
+                      "profile": {
+                        "name": "Claude Debussy"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 8,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "b8eb03b65615f32c",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:3nRI0y8qHCaS8Vn8wshbKG",
+                "name": "Satie: 6 Gnossiennes: No. 1, Lent",
+                "trackDuration": {
+                  "totalMilliseconds": 196060
+                },
+                "playcount": "2817818",
+                "albumOfTrack": {
+                  "uri": "spotify:album:6Chpy30qHn9fkEMrJZpeoX",
+                  "name": "Evening Piano - Satie: Gnossienne No. 1",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:459INk8vcC0ebEef82WjIK",
+                        "profile": {
+                          "name": "Erik Satie"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e024736bcd658e6dbb5f6616449",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d000048514736bcd658e6dbb5f6616449",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b2734736bcd658e6dbb5f6616449",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:459INk8vcC0ebEef82WjIK",
+                      "profile": {
+                        "name": "Erik Satie"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 1,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "888a44c63005889e",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:2bq1J6Pa65dCDPoLvolaAk",
+                "name": "İnsan İnsan",
+                "trackDuration": {
+                  "totalMilliseconds": 391180
+                },
+                "playcount": "28697135",
+                "albumOfTrack": {
+                  "uri": "spotify:album:7apRIODCAwfYPNlBxR725x",
+                  "name": "İlk Şarkılar",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:6zebrRNZzpUnIQH4irGy82",
+                        "profile": {
+                          "name": "Serenad Bağcan"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e029d9bcf4059ff9069967ae624",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d000048519d9bcf4059ff9069967ae624",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b2739d9bcf4059ff9069967ae624",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:6zebrRNZzpUnIQH4irGy82",
+                      "profile": {
+                        "name": "Serenad Bağcan"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 10,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "c8e7d1cd7c084140",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:4Q37ztBKLNpNTM60J1hHgL",
+                "name": "Chopin: Nocturne No. 4 in F Major, Op. 15 No. 1",
+                "trackDuration": {
+                  "totalMilliseconds": 274346
+                },
+                "playcount": "2193431",
+                "albumOfTrack": {
+                  "uri": "spotify:album:7y3AsSZqsPwODemRGCpnLZ",
+                  "name": "Chopin: Nocturnes",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:7y97mc3bZRFXzT2szRM4L4",
+                        "profile": {
+                          "name": "Frédéric Chopin"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e022e872345b6b433596a6d4345",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d000048512e872345b6b433596a6d4345",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b2732e872345b6b433596a6d4345",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:7y97mc3bZRFXzT2szRM4L4",
+                      "profile": {
+                        "name": "Frédéric Chopin"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 4,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "aa68c4205c305991",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:4tHjDWRTJCNcsZyN3qohXS",
+                "name": "Debussy: Preludes, Book 1, L. 117: II. Voiles",
+                "trackDuration": {
+                  "totalMilliseconds": 246453
+                },
+                "playcount": "1408133",
+                "albumOfTrack": {
+                  "uri": "spotify:album:1llL7D4K2EuSUHJ5CXj17r",
+                  "name": "Debussy: Préludes, Book 1 - Satie: 3 Gymnopédies & 6 Gnossiennes",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e02d770c98d8c0c36d2583f084c",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00004851d770c98d8c0c36d2583f084c",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b273d770c98d8c0c36d2583f084c",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:1Uff91EOsvd99rtAupatMP",
+                      "profile": {
+                        "name": "Claude Debussy"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 2,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "daaf0330b2e599bf",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:76sygsTWCyA5ympUNb7vdr",
+                "name": "Debussy: Arabesque No. 1, CD 74, L. 66",
+                "trackDuration": {
+                  "totalMilliseconds": 293381
+                },
+                "playcount": "105204",
+                "albumOfTrack": {
+                  "uri": "spotify:album:0adEp5xlFx8ZbOyNn8nkPf",
+                  "name": "Morning Piano - Debussy: Arabesque No. 1",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:1Uff91EOsvd99rtAupatMP",
+                        "profile": {
+                          "name": "Claude Debussy"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e0204d32508d21c2df0f9d9547b",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000485104d32508d21c2df0f9d9547b",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b27304d32508d21c2df0f9d9547b",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:1Uff91EOsvd99rtAupatMP",
+                      "profile": {
+                        "name": "Claude Debussy"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 1,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "d63cac2251b15b8d",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:4hdKqrctjCvXDSi5ZKDtoC",
+                "name": "Tchaikovsky: The Seasons, Op. 37a: No. 6, June. Barcarolle",
+                "trackDuration": {
+                  "totalMilliseconds": 258656
+                },
+                "playcount": "449106",
+                "albumOfTrack": {
+                  "uri": "spotify:album:691vnadLWLRLCjltix7nxn",
+                  "name": "Morning Piano - Tchaikovsky: Barcarolle (June)",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:3MKCzCnpzw3TjUYs2v7vDA",
+                        "profile": {
+                          "name": "Pyotr Ilyich Tchaikovsky"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e02629ca6fd04040df21426d736",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00004851629ca6fd04040df21426d736",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b273629ca6fd04040df21426d736",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:3MKCzCnpzw3TjUYs2v7vDA",
+                      "profile": {
+                        "name": "Pyotr Ilyich Tchaikovsky"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 1,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "8f0d1503d28d8752",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:75sKdwz69Hx5iDmBN3PEsL",
+                "name": "Chopin: Nocturne No. 1 in B-Flat Minor, Op. 9 No. 1",
+                "trackDuration": {
+                  "totalMilliseconds": 279800
+                },
+                "playcount": "4017402",
+                "albumOfTrack": {
+                  "uri": "spotify:album:7y3AsSZqsPwODemRGCpnLZ",
+                  "name": "Chopin: Nocturnes",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:7y97mc3bZRFXzT2szRM4L4",
+                        "profile": {
+                          "name": "Frédéric Chopin"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e022e872345b6b433596a6d4345",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d000048512e872345b6b433596a6d4345",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b2732e872345b6b433596a6d4345",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:7y97mc3bZRFXzT2szRM4L4",
+                      "profile": {
+                        "name": "Frédéric Chopin"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 1,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "5d37c5c3731cf99a",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:34XBZwnC0oLTESudvGsQsS",
+                "name": "3 Ballades for Piano, Op. 12: II. Kumru",
+                "trackDuration": {
+                  "totalMilliseconds": 163106
+                },
+                "playcount": "5159044",
+                "albumOfTrack": {
+                  "uri": "spotify:album:6BberPxNiD9fnwq1VcP7Bq",
+                  "name": "Say Plays Say",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e02f253fa3a19353e05aa157ff1",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00004851f253fa3a19353e05aa157ff1",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b273f253fa3a19353e05aa157ff1",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 2,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "198c31cd1adec8ae",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:5o93kuVM1A6yuLkgI6rvh5",
+                "name": "Dört Mevsim",
+                "trackDuration": {
+                  "totalMilliseconds": 152784
+                },
+                "playcount": "9930942",
+                "albumOfTrack": {
+                  "uri": "spotify:album:7apRIODCAwfYPNlBxR725x",
+                  "name": "İlk Şarkılar",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:6zebrRNZzpUnIQH4irGy82",
+                        "profile": {
+                          "name": "Serenad Bağcan"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e029d9bcf4059ff9069967ae624",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d000048519d9bcf4059ff9069967ae624",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b2739d9bcf4059ff9069967ae624",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:6zebrRNZzpUnIQH4irGy82",
+                      "profile": {
+                        "name": "Serenad Bağcan"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 3,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "44c8c978b3d59730",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:0FfF8SUuG48h8jzJJeglAA",
+                "name": "Liszt: 12 Lieder von Schubert, S. 558: No. 9, Ständchen (After Schubert’s D. 889)",
+                "trackDuration": {
+                  "totalMilliseconds": 194823
+                },
+                "playcount": "274425",
+                "albumOfTrack": {
+                  "uri": "spotify:album:7tc1vK8YndfHh87G8Q7IuQ",
+                  "name": "Evening Piano - Schubert/Liszt: Ständchen",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:1385hLNbrnbCJGokfH2ac2",
+                        "profile": {
+                          "name": "Franz Liszt"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e029916c7c69312304e088699c3",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d000048519916c7c69312304e088699c3",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b2739916c7c69312304e088699c3",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:1385hLNbrnbCJGokfH2ac2",
+                      "profile": {
+                        "name": "Franz Liszt"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 1,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "3b2c3edf9ae598e7",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:6iexPTHYPt6FdOgVXDXndY",
+                "name": "Chopin: Nocturne No. 20 in C-Sharp Minor, Op. Posth.",
+                "trackDuration": {
+                  "totalMilliseconds": 200172
+                },
+                "playcount": "252843",
+                "albumOfTrack": {
+                  "uri": "spotify:album:1RrHgrFQuDdfITBfPewkNe",
+                  "name": "Evening Piano - Chopin: Nocturne No. 20",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:7y97mc3bZRFXzT2szRM4L4",
+                        "profile": {
+                          "name": "Frédéric Chopin"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e0285de14ced2bb851a6fa4c2ca",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000485185de14ced2bb851a6fa4c2ca",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b27385de14ced2bb851a6fa4c2ca",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:7y97mc3bZRFXzT2szRM4L4",
+                      "profile": {
+                        "name": "Frédéric Chopin"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 1,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "ea53b9366e8ffccd",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:2WaFKAzo6YiS1Y5miHPMVt",
+                "name": "Chopin: Nocturne No. 21 in C Minor, Op. posth.",
+                "trackDuration": {
+                  "totalMilliseconds": 227786
+                },
+                "playcount": "988752",
+                "albumOfTrack": {
+                  "uri": "spotify:album:7y3AsSZqsPwODemRGCpnLZ",
+                  "name": "Chopin: Nocturnes",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:7y97mc3bZRFXzT2szRM4L4",
+                        "profile": {
+                          "name": "Frédéric Chopin"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e022e872345b6b433596a6d4345",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d000048512e872345b6b433596a6d4345",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b2732e872345b6b433596a6d4345",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:7y97mc3bZRFXzT2szRM4L4",
+                      "profile": {
+                        "name": "Frédéric Chopin"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 15,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "caaca78d00efad04",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:3a0grmA0SrbcsJON8okdHv",
+                "name": "Satie: 6 Gnossiennes: I. Lent",
+                "trackDuration": {
+                  "totalMilliseconds": 218973
+                },
+                "playcount": "1131297",
+                "albumOfTrack": {
+                  "uri": "spotify:album:1llL7D4K2EuSUHJ5CXj17r",
+                  "name": "Debussy: Préludes, Book 1 - Satie: 3 Gymnopédies & 6 Gnossiennes",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e02d770c98d8c0c36d2583f084c",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00004851d770c98d8c0c36d2583f084c",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b273d770c98d8c0c36d2583f084c",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:459INk8vcC0ebEef82WjIK",
+                      "profile": {
+                        "name": "Erik Satie"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 13,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "f39d4ceb6a6cc27d",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:1oF5BGBWAOvYFtr9jSbZhr",
+                "name": "ショパン:ノクターン第2番 変ホ長調 作品9の2",
+                "trackDuration": {
+                  "totalMilliseconds": 284893
+                },
+                "playcount": "259929",
+                "albumOfTrack": {
+                  "uri": "spotify:album:0s5fPzczhXo4vAfepWEnwi",
+                  "name": "ショパン:ノクターン集",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:7y97mc3bZRFXzT2szRM4L4",
+                        "profile": {
+                          "name": "Frédéric Chopin"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e02d6d7f9e82311f8e4110ff05c",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00004851d6d7f9e82311f8e4110ff05c",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b273d6d7f9e82311f8e4110ff05c",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:7y97mc3bZRFXzT2szRM4L4",
+                      "profile": {
+                        "name": "Frédéric Chopin"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 2,
+                "playability": {
+                  "playable": false,
+                  "reason": "COUNTRY_RESTRICTED"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "16e01da339c22a39",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:3CQ6wISmY54HrJmmJEmyN0",
+                "name": "Bach, CPE: Solfeggietto in C Minor, Wq. 117/2",
+                "trackDuration": {
+                  "totalMilliseconds": 65589
+                },
+                "playcount": "274268",
+                "albumOfTrack": {
+                  "uri": "spotify:album:2BxOyDvKxyIQ0pqRhtC6YZ",
+                  "name": "Morning Piano - CPE Bach: Solfeggietto, Wq. 117/2",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:3meioy7GWDwpwmjv2LPyAb",
+                        "profile": {
+                          "name": "Carl Philipp Emanuel Bach"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e02514c9c5fefcd82978af138a1",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00004851514c9c5fefcd82978af138a1",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b273514c9c5fefcd82978af138a1",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:3meioy7GWDwpwmjv2LPyAb",
+                      "profile": {
+                        "name": "Carl Philipp Emanuel Bach"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 1,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "a9de8b92bab55a28",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:4JYjoJFrmsm9Xi6yYd85oZ",
+                "name": "Say: The Moving Mansion (Yürüyen Köşk), Op. 72a: I. Enlightenment",
+                "trackDuration": {
+                  "totalMilliseconds": 158226
+                },
+                "playcount": "305378",
+                "albumOfTrack": {
+                  "uri": "spotify:album:1klvBh6CVQKV7laBnraXCh",
+                  "name": "Troy Sonata - Fazil Say Plays Say",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e02ea621d8dac8c1f401362f36a",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00004851ea621d8dac8c1f401362f36a",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b273ea621d8dac8c1f401362f36a",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 11,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "596ecd1a39dfd639",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:28C6h6WPrrHn4hDabPa10f",
+                "name": "Beethoven: Piano Sonata No. 2 in A Major, Op. 2 No. 2: III. Scherzo (Allegretto)",
+                "trackDuration": {
+                  "totalMilliseconds": 214240
+                },
+                "playcount": "924354",
+                "albumOfTrack": {
+                  "uri": "spotify:album:3H6ecMXLalw0lH1Wcn5YYa",
+                  "name": "Beethoven: Complete Piano Sonatas",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:2wOqMjp9TyABvtHdOSOTUS",
+                        "profile": {
+                          "name": "Ludwig van Beethoven"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e02f9b3aea09f35ac65f6cfa175",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00004851f9b3aea09f35ac65f6cfa175",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b273f9b3aea09f35ac65f6cfa175",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:2wOqMjp9TyABvtHdOSOTUS",
+                      "profile": {
+                        "name": "Ludwig van Beethoven"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 7,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "e5a5a347ac6743c9",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:1d57aOm1UyuOuEy7HZr71o",
+                "name": "Alla Turca Jazz - Fantasia from Wolfgang Amadeus Mozart's Piano Sonata No. 11 in A Major, K. 331",
+                "trackDuration": {
+                  "totalMilliseconds": 115186
+                },
+                "playcount": "209985",
+                "albumOfTrack": {
+                  "uri": "spotify:album:4SDFMX2soFA1ZyO7Rr1VAt",
+                  "name": "1001 Nights in the Harem",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:14Lewm6NkTHl5PGUzbFudC",
+                        "profile": {
+                          "name": "Patricia Kopatchinskaja"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e02e1c31298ba455fc46ef73f06",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00004851e1c31298ba455fc46ef73f06",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b273e1c31298ba455fc46ef73f06",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 7,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "917dc4b8872511e1",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:4sumTWCJZMdnD8MkfobGNW",
+                "name": "Satie: 6 Gnossiennes: V. No. 5",
+                "trackDuration": {
+                  "totalMilliseconds": 184373
+                },
+                "playcount": "663829",
+                "albumOfTrack": {
+                  "uri": "spotify:album:1llL7D4K2EuSUHJ5CXj17r",
+                  "name": "Debussy: Préludes, Book 1 - Satie: 3 Gymnopédies & 6 Gnossiennes",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e02d770c98d8c0c36d2583f084c",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00004851d770c98d8c0c36d2583f084c",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b273d770c98d8c0c36d2583f084c",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:459INk8vcC0ebEef82WjIK",
+                      "profile": {
+                        "name": "Erik Satie"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 17,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "f055a3f17fd99947",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:09nVTEEuMvcRhW39fpeiR9",
+                "name": "Janáček: On an Overgrown Path, Book 1: No. 7, Good Night!",
+                "trackDuration": {
+                  "totalMilliseconds": 250940
+                },
+                "playcount": "232243",
+                "albumOfTrack": {
+                  "uri": "spotify:album:1sHLliazXlYMCMpyN5EJbP",
+                  "name": "Evening Piano - Janáček: Good Night!",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:46xXzoOdtD7SL2PTRq5irp",
+                        "profile": {
+                          "name": "Leoš Janáček"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e029440068c4681caa7cd60267f",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d000048519440068c4681caa7cd60267f",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b2739440068c4681caa7cd60267f",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:46xXzoOdtD7SL2PTRq5irp",
+                      "profile": {
+                        "name": "Leoš Janáček"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 1,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "16af62b56be52f84",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:1TotlADicwzE11AsUjUUsh",
+                "name": "Albéniz: Suite Española No. 1, Op. 47: V. Asturias \"Leyenda\"",
+                "trackDuration": {
+                  "totalMilliseconds": 308381
+                },
+                "playcount": "233806",
+                "albumOfTrack": {
+                  "uri": "spotify:album:2gXpeABGMcy9VzSyKDLCW5",
+                  "name": "Morning Piano - Albéniz: Asturias",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:4sbcjbyksdT4dJ5Lh0SvZp",
+                        "profile": {
+                          "name": "Isaac Albéniz"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e0279d800695ecaaf67bb542377",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000485179d800695ecaaf67bb542377",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b27379d800695ecaaf67bb542377",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:4sbcjbyksdT4dJ5Lh0SvZp",
+                      "profile": {
+                        "name": "Isaac Albéniz"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 1,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "2749903db9d8ae81",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:3vlBnhzTLmwHjZnos9jJg7",
+                "name": "Bach, JS: The Well-Tempered Clavier, Book 1, Prelude and Fugue No. 1 in C Major, BWV 846: I. Prelude",
+                "trackDuration": {
+                  "totalMilliseconds": 136706
+                },
+                "playcount": "491502",
+                "albumOfTrack": {
+                  "uri": "spotify:album:3qh3a4Tjb3VAh3ssVtxXuA",
+                  "name": "Bach: Piano Works",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:5aIqB5nVVvmFsvSdExz408",
+                        "profile": {
+                          "name": "Johann Sebastian Bach"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e020f4e4f44a366498f25d296f1",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d000048510f4e4f44a366498f25d296f1",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b2730f4e4f44a366498f25d296f1",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:5aIqB5nVVvmFsvSdExz408",
+                      "profile": {
+                        "name": "Johann Sebastian Bach"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 15,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "c99b9a009bfe3547",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:7ISFBj9LVFaTqArU2Yyejq",
+                "name": "Bach, JS: Goldberg Variations, BWV 988: Variation XII. Canone alla quarta",
+                "trackDuration": {
+                  "totalMilliseconds": 166621
+                },
+                "playcount": "81175",
+                "albumOfTrack": {
+                  "uri": "spotify:album:30KhwzXKLIh3iolvmPBxU5",
+                  "name": "J. S. Bach: Goldberg Variations, BWV 988",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:5aIqB5nVVvmFsvSdExz408",
+                        "profile": {
+                          "name": "Johann Sebastian Bach"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e02d3031a11e24b6465c76e0ddc",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00004851d3031a11e24b6465c76e0ddc",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b273d3031a11e24b6465c76e0ddc",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:5aIqB5nVVvmFsvSdExz408",
+                      "profile": {
+                        "name": "Johann Sebastian Bach"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 13,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "acc1d11a5c6dbe2c",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:2xOc7vWIczUi5WyVETrJoo",
+                "name": "Satie: Gnossienne No. 7",
+                "trackDuration": {
+                  "totalMilliseconds": 228107
+                },
+                "playcount": "309907",
+                "albumOfTrack": {
+                  "uri": "spotify:album:49e24pCN4SDEHmmxWe8AMS",
+                  "name": "Evening Piano - Satie: Gnossienne No. 7",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:459INk8vcC0ebEef82WjIK",
+                        "profile": {
+                          "name": "Erik Satie"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e02d0c27d5911bd9f3d7a5cf889",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00004851d0c27d5911bd9f3d7a5cf889",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b273d0c27d5911bd9f3d7a5cf889",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:459INk8vcC0ebEef82WjIK",
+                      "profile": {
+                        "name": "Erik Satie"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 1,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "a633b07ce6201956",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:1HlTP2iNsGvFh3sP58XiFt",
+                "name": "Akılla Bir Konuşmam Oldu",
+                "trackDuration": {
+                  "totalMilliseconds": 301563
+                },
+                "playcount": "5016175",
+                "albumOfTrack": {
+                  "uri": "spotify:album:7apRIODCAwfYPNlBxR725x",
+                  "name": "İlk Şarkılar",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:6zebrRNZzpUnIQH4irGy82",
+                        "profile": {
+                          "name": "Serenad Bağcan"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e029d9bcf4059ff9069967ae624",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d000048519d9bcf4059ff9069967ae624",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b2739d9bcf4059ff9069967ae624",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:6zebrRNZzpUnIQH4irGy82",
+                      "profile": {
+                        "name": "Serenad Bağcan"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 2,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "0af307c4446baf6e",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:2G59rcsiNmNBIBnlXQtnTp",
+                "name": "Chopin: Nocturne No. 2 in E-Flat Major, Op. 9 No. 2",
+                "trackDuration": {
+                  "totalMilliseconds": 284893
+                },
+                "playcount": "1370567",
+                "albumOfTrack": {
+                  "uri": "spotify:album:7y3AsSZqsPwODemRGCpnLZ",
+                  "name": "Chopin: Nocturnes",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:7y97mc3bZRFXzT2szRM4L4",
+                        "profile": {
+                          "name": "Frédéric Chopin"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e022e872345b6b433596a6d4345",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d000048512e872345b6b433596a6d4345",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b2732e872345b6b433596a6d4345",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:7y97mc3bZRFXzT2szRM4L4",
+                      "profile": {
+                        "name": "Frédéric Chopin"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 2,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "bdb1462e0424f8fd",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:1eLVq2sG0HoL3a3SKYrQ2h",
+                "name": "Mozart: Fantasia in D Minor, K. 397",
+                "trackDuration": {
+                  "totalMilliseconds": 336166
+                },
+                "playcount": "275067",
+                "albumOfTrack": {
+                  "uri": "spotify:album:71dufCQDgK1fFZKso7KVfw",
+                  "name": "Morning Piano - Mozart: Fantasia K.397",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:4NJhFmfw43RLBLjQvxDuRS",
+                        "profile": {
+                          "name": "Wolfgang Amadeus Mozart"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e024de2033102512ddf7445d4d8",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d000048514de2033102512ddf7445d4d8",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b2734de2033102512ddf7445d4d8",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:4NJhFmfw43RLBLjQvxDuRS",
+                      "profile": {
+                        "name": "Wolfgang Amadeus Mozart"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 1,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "afcb2f89711b469e",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:1qOm9rbJz9f2AbTZCcZg7Y",
+                "name": "F-A-E Sonata: II. Intermezzo, WoO 22",
+                "trackDuration": {
+                  "totalMilliseconds": 131786
+                },
+                "playcount": "17966",
+                "albumOfTrack": {
+                  "uri": "spotify:album:5ZmdPhzXzbzV6GqDDjxXtK",
+                  "name": "Liebestod",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:7C2uF9MalOXooY95J9PBe0",
+                        "profile": {
+                          "name": "Friedemann Eichhorn"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e02b0fd73aca89e80670a09132f",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00004851b0fd73aca89e80670a09132f",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b273b0fd73aca89e80670a09132f",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:2UqjDAXnDxejEyE0CzfUrZ",
+                      "profile": {
+                        "name": "Robert Schumann"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:7C2uF9MalOXooY95J9PBe0",
+                      "profile": {
+                        "name": "Friedemann Eichhorn"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 8,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "7af4a79f92a5751e",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:3Tsseqo19AzvrcmyGCzAKZ",
+                "name": "Ses, Op. 40b",
+                "trackDuration": {
+                  "totalMilliseconds": 225892
+                },
+                "playcount": "587807",
+                "albumOfTrack": {
+                  "uri": "spotify:album:6BberPxNiD9fnwq1VcP7Bq",
+                  "name": "Say Plays Say",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e02f253fa3a19353e05aa157ff1",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00004851f253fa3a19353e05aa157ff1",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b273f253fa3a19353e05aa157ff1",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 1,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "2827fbfa7e0e82f5",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:1XAXbMrsWAz2Zzfl15wl3A",
+                "name": "Sordum Sarı Çiğdeme",
+                "trackDuration": {
+                  "totalMilliseconds": 182110
+                },
+                "playcount": "2200121",
+                "albumOfTrack": {
+                  "uri": "spotify:album:7apRIODCAwfYPNlBxR725x",
+                  "name": "İlk Şarkılar",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:6zebrRNZzpUnIQH4irGy82",
+                        "profile": {
+                          "name": "Serenad Bağcan"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e029d9bcf4059ff9069967ae624",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d000048519d9bcf4059ff9069967ae624",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b2739d9bcf4059ff9069967ae624",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:6zebrRNZzpUnIQH4irGy82",
+                      "profile": {
+                        "name": "Serenad Bağcan"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 6,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "fe2963644514be87",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:7kI6djJSMciKQHWwpLRmr4",
+                "name": "Beethoven: Piano Sonata No. 14 in C-Sharp Minor, Op. 27 No. 2, \"Moonlight\": I. Adagio sostenuto",
+                "trackDuration": {
+                  "totalMilliseconds": 436653
+                },
+                "playcount": "723321",
+                "albumOfTrack": {
+                  "uri": "spotify:album:3H6ecMXLalw0lH1Wcn5YYa",
+                  "name": "Beethoven: Complete Piano Sonatas",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:2wOqMjp9TyABvtHdOSOTUS",
+                        "profile": {
+                          "name": "Ludwig van Beethoven"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e02f9b3aea09f35ac65f6cfa175",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00004851f9b3aea09f35ac65f6cfa175",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b273f9b3aea09f35ac65f6cfa175",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:2wOqMjp9TyABvtHdOSOTUS",
+                      "profile": {
+                        "name": "Ludwig van Beethoven"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 53,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "f67ef92546f6d63b",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:0bP2XF1CwS3JNv35sQs4ow",
+                "name": "Bach, JS: Goldberg Variations, BWV 988: Variation VII. Al tempo di giga",
+                "trackDuration": {
+                  "totalMilliseconds": 130688
+                },
+                "playcount": "107574",
+                "albumOfTrack": {
+                  "uri": "spotify:album:30KhwzXKLIh3iolvmPBxU5",
+                  "name": "J. S. Bach: Goldberg Variations, BWV 988",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:5aIqB5nVVvmFsvSdExz408",
+                        "profile": {
+                          "name": "Johann Sebastian Bach"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e02d3031a11e24b6465c76e0ddc",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00004851d3031a11e24b6465c76e0ddc",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b273d3031a11e24b6465c76e0ddc",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:5aIqB5nVVvmFsvSdExz408",
+                      "profile": {
+                        "name": "Johann Sebastian Bach"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 8,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "3c2665d23615d2db",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:1KuUdkh97fawcdgjZ0am8t",
+                "name": "Scarlatti, D: Keyboard Sonata in D Minor, Kk. 1",
+                "trackDuration": {
+                  "totalMilliseconds": 149031
+                },
+                "playcount": "80595",
+                "albumOfTrack": {
+                  "uri": "spotify:album:2ghAvMb23anmRQiKtqQ7B5",
+                  "name": "Morning Piano - Scarlatti: Keyboard Sonata Kk. 1",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:0mFblCBw0GcoY7zY1P8tzE",
+                        "profile": {
+                          "name": "Domenico Scarlatti"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e02591587e0357352f0dff28e12",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00004851591587e0357352f0dff28e12",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b273591587e0357352f0dff28e12",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:0mFblCBw0GcoY7zY1P8tzE",
+                      "profile": {
+                        "name": "Domenico Scarlatti"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 1,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "685a3a2f86ad5fd9",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:2eo9aNwTn1Ucu3kLZ3ZpT2",
+                "name": "Sardunyaya Ağıt",
+                "trackDuration": {
+                  "totalMilliseconds": 184547
+                },
+                "playcount": "2275279",
+                "albumOfTrack": {
+                  "uri": "spotify:album:7apRIODCAwfYPNlBxR725x",
+                  "name": "İlk Şarkılar",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:6zebrRNZzpUnIQH4irGy82",
+                        "profile": {
+                          "name": "Serenad Bağcan"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e029d9bcf4059ff9069967ae624",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d000048519d9bcf4059ff9069967ae624",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b2739d9bcf4059ff9069967ae624",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:6zebrRNZzpUnIQH4irGy82",
+                      "profile": {
+                        "name": "Serenad Bağcan"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 5,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "6fa0241479577243",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:59YcoGBrCBaMvfkkTzhuUw",
+                "name": "Kumru Ballad, Op. 12",
+                "trackDuration": {
+                  "totalMilliseconds": 167701
+                },
+                "playcount": "203155",
+                "albumOfTrack": {
+                  "uri": "spotify:album:0bGTaZNheCBsLXagxaclK0",
+                  "name": "Hayat Ağacı",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:57mVIxJ9t0acqvtLuG0TzU",
+                        "profile": {
+                          "name": "Jamal Aliyev"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e02f276b756e9d63560173971c5",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00004851f276b756e9d63560173971c5",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b273f276b756e9d63560173971c5",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:57mVIxJ9t0acqvtLuG0TzU",
+                      "profile": {
+                        "name": "Jamal Aliyev"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 12,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "17c4a6e6c22dc87f",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:3BBQCvYSHoFIQksOn4bR64",
+                "name": "Bach, JS: Goldberg Variations, BWV 988: Aria",
+                "trackDuration": {
+                  "totalMilliseconds": 276743
+                },
+                "playcount": "200562",
+                "albumOfTrack": {
+                  "uri": "spotify:album:30KhwzXKLIh3iolvmPBxU5",
+                  "name": "J. S. Bach: Goldberg Variations, BWV 988",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:5aIqB5nVVvmFsvSdExz408",
+                        "profile": {
+                          "name": "Johann Sebastian Bach"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e02d3031a11e24b6465c76e0ddc",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00004851d3031a11e24b6465c76e0ddc",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b273d3031a11e24b6465c76e0ddc",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:5aIqB5nVVvmFsvSdExz408",
+                      "profile": {
+                        "name": "Johann Sebastian Bach"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 1,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "0fd3e591b2941f3d",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:6vbZOZEJwshlTCMdmScncA",
+                "name": "Bach, JS: The Well-Tempered Clavier, Book 1, Prelude and Fugue No. 2 in C Minor, BWV 847: I. Prelude",
+                "trackDuration": {
+                  "totalMilliseconds": 85489
+                },
+                "playcount": "86348",
+                "albumOfTrack": {
+                  "uri": "spotify:album:6vzI0rg0BgAZssie7kGqfh",
+                  "name": "Morning Piano - J.S. Bach: Prelude and Fugue No. 2 BWV 847",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:5aIqB5nVVvmFsvSdExz408",
+                        "profile": {
+                          "name": "Johann Sebastian Bach"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e025891a03f43e02d8df35c72a8",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d000048515891a03f43e02d8df35c72a8",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b2735891a03f43e02d8df35c72a8",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:5aIqB5nVVvmFsvSdExz408",
+                      "profile": {
+                        "name": "Johann Sebastian Bach"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 1,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "c05629f22f05d794",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:67P27XJlQeJWf3YC7G8Taf",
+                "name": "Mozart: Piano Sonata No. 11 in A Major, K. 331, \"Alla Turca\": I. Andante grazioso",
+                "trackDuration": {
+                  "totalMilliseconds": 852800
+                },
+                "playcount": "6240658",
+                "albumOfTrack": {
+                  "uri": "spotify:album:16RpGAof6TMerrEaGfG1sL",
+                  "name": "Mozart: Complete Piano Sonatas",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:4NJhFmfw43RLBLjQvxDuRS",
+                        "profile": {
+                          "name": "Wolfgang Amadeus Mozart"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e025227d706319f657c388232d0",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d000048515227d706319f657c388232d0",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b2735227d706319f657c388232d0",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:4NJhFmfw43RLBLjQvxDuRS",
+                      "profile": {
+                        "name": "Wolfgang Amadeus Mozart"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 1,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "57840aa391f1fdcd",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:2Q1I0S77WJX5szCiCXwOXT",
+                "name": "Hayat Ağacı Süiti, Op. 100: II. Babam Ahmet Say",
+                "trackDuration": {
+                  "totalMilliseconds": 214506
+                },
+                "playcount": "287186",
+                "albumOfTrack": {
+                  "uri": "spotify:album:0bGTaZNheCBsLXagxaclK0",
+                  "name": "Hayat Ağacı",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:57mVIxJ9t0acqvtLuG0TzU",
+                        "profile": {
+                          "name": "Jamal Aliyev"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e02f276b756e9d63560173971c5",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00004851f276b756e9d63560173971c5",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b273f276b756e9d63560173971c5",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:57mVIxJ9t0acqvtLuG0TzU",
+                      "profile": {
+                        "name": "Jamal Aliyev"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 2,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "88df5994a8e99046",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:7BgE3jhRTcb4byM5E2oAld",
+                "name": "Debussy: Suite bergamasque, CD 82, L. 75: III. Clair de lune",
+                "trackDuration": {
+                  "totalMilliseconds": 314966
+                },
+                "playcount": "91065",
+                "albumOfTrack": {
+                  "uri": "spotify:album:2naKdIRA8LFh0JwE4TVpo7",
+                  "name": "Evening Piano - Debussy: Clair de lune",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:1Uff91EOsvd99rtAupatMP",
+                        "profile": {
+                          "name": "Claude Debussy"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e02c319d6cce8102aca138adc4e",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00004851c319d6cce8102aca138adc4e",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b273c319d6cce8102aca138adc4e",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:1Uff91EOsvd99rtAupatMP",
+                      "profile": {
+                        "name": "Claude Debussy"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 1,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "f8755ab0553b8e0f",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:1GvcTfhETVYE3AG01yDk7W",
+                "name": "Nocturne No. 20 in C-Sharp Minor, (Lento con gran espressione) Op. posth. B. 49",
+                "trackDuration": {
+                  "totalMilliseconds": 213666
+                },
+                "playcount": "1625604",
+                "albumOfTrack": {
+                  "uri": "spotify:album:1ORdNu8iMkR3BMADzDLVCO",
+                  "name": "Chopin: Nocturnes",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:7y97mc3bZRFXzT2szRM4L4",
+                        "profile": {
+                          "name": "Frédéric Chopin"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e02ef7415e2eda4ff6db1777b02",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00004851ef7415e2eda4ff6db1777b02",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b273ef7415e2eda4ff6db1777b02",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:7y97mc3bZRFXzT2szRM4L4",
+                      "profile": {
+                        "name": "Frédéric Chopin"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 14,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "c4d2de64505dacd3",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:2QqBicn3cwD8xM5XMmIWuK",
+                "name": "Granados: 12 Danzas españolas: No. 5, Andaluza",
+                "trackDuration": {
+                  "totalMilliseconds": 212296
+                },
+                "playcount": "53637",
+                "albumOfTrack": {
+                  "uri": "spotify:album:7CqBsYm09Hfn9HD6N4ZpAS",
+                  "name": "Evening Piano - Granados: 12 Danzas españolas: No. 5, Andaluza",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:2xmzOWZeQCDksIQcLcnRrT",
+                        "profile": {
+                          "name": "Enrique Granados"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e02540e03ba23efdc62c1bb2b10",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00004851540e03ba23efdc62c1bb2b10",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b273540e03ba23efdc62c1bb2b10",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:2xmzOWZeQCDksIQcLcnRrT",
+                      "profile": {
+                        "name": "Enrique Granados"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 1,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "930e84e34a0c2dad",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:1HH1eSgElDezHsDuasLQEj",
+                "name": "Beethoven: Piano Sonata No. 8 in C Minor, Op. 13, \"Pathétique\": III. Rondo (Allegro)",
+                "trackDuration": {
+                  "totalMilliseconds": 276053
+                },
+                "playcount": "633843",
+                "albumOfTrack": {
+                  "uri": "spotify:album:5AuBjTnxyHHKNNKiGt8V0c",
+                  "name": "Beethoven: Piano Sonatas Nos 8, \"Pathétique\", 9 & 10",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:2wOqMjp9TyABvtHdOSOTUS",
+                        "profile": {
+                          "name": "Ludwig van Beethoven"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e02ace7c11700bc007aa90335ce",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00004851ace7c11700bc007aa90335ce",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b273ace7c11700bc007aa90335ce",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:2wOqMjp9TyABvtHdOSOTUS",
+                      "profile": {
+                        "name": "Ludwig van Beethoven"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 3,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "d30d2fd6cbfc9696",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:0MGw89QPKE7qMuh9HJQc8t",
+                "name": "İnci'nin Kitabı: I. İnci",
+                "trackDuration": {
+                  "totalMilliseconds": 50631
+                },
+                "playcount": "73082",
+                "albumOfTrack": {
+                  "uri": "spotify:album:76IrKEzeqsDtvLGi1qa1qB",
+                  "name": "Ahmed Adnan Saygun (Türk Bestecileri Serisi, Vol. 5)",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:6vaBxtYSGeJaiYyfhE81Do",
+                        "profile": {
+                          "name": "Ahmet Adnan Saygun"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:2KxmiqgInmIcn8BDZh0Vcw",
+                        "profile": {
+                          "name": "Senem Demircioğlu"
+                        }
+                      },
+                      {
+                        "uri": "spotify:artist:7IQXUJFYsvCmtjD6r7cqGR",
+                        "profile": {
+                          "name": "Atilla Gündoğdu"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e0271256f93a6753a3148db377b",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000485171256f93a6753a3148db377b",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b27371256f93a6753a3148db377b",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:6vaBxtYSGeJaiYyfhE81Do",
+                      "profile": {
+                        "name": "Ahmet Adnan Saygun"
+                      }
+                    },
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 13,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          },
+          {
+            "uid": "154a8aec06775814",
+            "addedAt": {
+              "isoString": "2024-01-30T12:38:55.967Z"
+            },
+            "addedBy": null,
+            "attributes": [],
+            "itemV2": {
+              "__typename": "TrackResponseWrapper",
+              "data": {
+                "__typename": "Track",
+                "uri": "spotify:track:0bziVVeXqQwYJTngoOD9Nl",
+                "name": "Alla Turca Jazz, Op. 5b",
+                "trackDuration": {
+                  "totalMilliseconds": 95246
+                },
+                "playcount": "1152219",
+                "albumOfTrack": {
+                  "uri": "spotify:album:0bfhtFY9pqtmW8V0NqwjEp",
+                  "name": "Say Plays Say",
+                  "artists": {
+                    "items": [
+                      {
+                        "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                        "profile": {
+                          "name": "Fazıl Say"
+                        }
+                      }
+                    ]
+                  },
+                  "coverArt": {
+                    "sources": [
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00001e02a96e869d5fdbe6792e555d13",
+                        "width": 300,
+                        "height": 300
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d00004851a96e869d5fdbe6792e555d13",
+                        "width": 64,
+                        "height": 64
+                      },
+                      {
+                        "url": "https://i.scdn.co/image/ab67616d0000b273a96e869d5fdbe6792e555d13",
+                        "width": 640,
+                        "height": 640
+                      }
+                    ]
+                  }
+                },
+                "artists": {
+                  "items": [
+                    {
+                      "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                      "profile": {
+                        "name": "Fazıl Say"
+                      }
+                    }
+                  ]
+                },
+                "discNumber": 1,
+                "trackNumber": 8,
+                "playability": {
+                  "playable": true,
+                  "reason": "PLAYABLE"
+                },
+                "contentRating": {
+                  "label": "NONE"
+                },
+                "associations": {
+                  "associatedVideos": {
+                    "totalCount": 0
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "extensions": {}
+}

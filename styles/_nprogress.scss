@@ -1,0 +1,22 @@
+@use "colors" as c;
+
+#nprogress {
+  pointer-events: none;
+
+  .bar {
+    background-color: c.$brand;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+  }
+}
+
+.nprogress-custom-parent {
+  overflow: hidden;
+  position: relative;
+
+  #nprogress .bar {
+    position: absolute;
+  }
+}

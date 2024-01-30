@@ -1,0 +1,57 @@
+@use "@/styles/colors" as c;
+
+.tabsRoot {
+  display: flex;
+  flex-direction: column;
+
+  .tabsList {
+    flex-shrink: 0;
+    position: sticky;
+    top: 0;
+    display: flex;
+    gap: var(--size-8);
+    border-bottom: 1px solid c.$layer1;
+
+    &.sticked {
+      z-index: 10;
+      background-color: c.$bg;
+    }
+
+    .tabsTrigger {
+      cursor: pointer;
+      user-select: none;
+      color: c.$subtext;
+      font-weight: 500;
+      padding-block: var(--size-4);
+      background-color: transparent;
+      font-size: var(--scale-0);
+      text-transform: uppercase;
+      position: relative;
+
+      &:hover {
+        color: c.$title;
+      }
+
+      &[data-state="active"] {
+        color: c.$brand;
+
+        &::after {
+          content: "";
+          width: 6px;
+          height: 6px;
+          border-radius: var(--radius-full);
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          background-color: c.$brand;
+        }
+      }
+    }
+  }
+
+  .tabsContent {
+    flex-grow: 1;
+    padding: var(--size-8);
+  }
+}

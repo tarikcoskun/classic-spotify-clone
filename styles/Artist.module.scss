@@ -1,0 +1,41 @@
+@use "@/styles/colors" as c;
+@use "sass:color";
+
+.artistProfile {
+  height: 320px;
+  padding: var(--size-8);
+  display: flex;
+  gap: var(--size-6);
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  background-color: color.adjust(c.$bg, $lightness: -1);
+
+  .artistPhoto {
+    width: 192px;
+    height: 192px;
+    object-fit: cover;
+    border-radius: var(--radius-full);
+  }
+
+  .listeners {
+    color: color.adjust(c.$title, $alpha: -0.25);
+  }
+
+  .artistDetails {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-6);
+
+    .name {
+      color: c.$title;
+      font-size: var(--scale-6);
+      font-weight: 600;
+    }
+
+    .actions {
+      display: flex;
+      gap: var(--size-4);
+    }
+  }
+}

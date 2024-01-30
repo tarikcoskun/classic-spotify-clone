@@ -1,0 +1,92 @@
+@use "colors" as c;
+@use "sass:color";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+html {
+  --left-sidebar-width: 300px;
+  --right-panel-width: 360px;
+  --content-max-width: 1440px;
+  --content-spacing: 32px;
+
+  color-scheme: dark;
+  color: c.$fg;
+  background: linear-gradient(to right, c.$bg, color.adjust(c.$bg, $lightness: 4), c.$bg);
+
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 100%;
+    background-color: color.adjust(c.$bg, $lightness: 3);
+
+    &-thumb {
+      background-color: c.$layer2;
+      border: 2px solid color.adjust(c.$bg, $lightness: 4);
+      border-radius: var(--radius-full);
+
+      &:hover {
+        background-color: c.$layer3;
+      }
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: c.$title;
+  font-weight: 400;
+}
+
+h1 {
+  line-height: 1;
+  font-size: var(--scale-6);
+}
+
+h2 {
+  line-height: 2.5rem;
+  font-size: var(--scale-5);
+}
+
+h3 {
+  line-height: 2.25rem;
+  font-size: var(--scale-4);
+}
+
+h4 {
+  line-height: 2rem;
+  font-size: var(--scale-3);
+}
+
+h5 {
+  line-height: 2rem;
+  font-size: var(--scale-2);
+}
+
+h6 {
+  line-height: 2rem;
+  font-size: var(--scale-1);
+}
+
+button {
+  color: c.$fg;
+  display: flex;
+  background-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  user-select: none;
+}

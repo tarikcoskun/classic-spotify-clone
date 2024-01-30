@@ -1,0 +1,16 @@
+@use "@/styles/colors" as c;
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-6);
+}
+
+.header {
+  .title {
+    color: c.$subtext;
+    font-weight: 500;
+    font-size: var(--scale-0);
+    text-transform: uppercase;
+  }
+}

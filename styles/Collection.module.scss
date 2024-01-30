@@ -1,0 +1,55 @@
+@use "@/styles/colors" as c;
+@use "sass:color";
+
+.collectionHeader {
+  padding: var(--size-8);
+  display: flex;
+  gap: var(--size-6);
+  align-items: flex-end;
+
+  .collectionCover {
+    width: 256px;
+    height: 256px;
+    object-fit: cover;
+    box-shadow: var(--shadow-xl);
+  }
+
+  .collectionDetails {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-4);
+
+    .collectionType {
+      color: c.$title;
+      font-size: var(--scale-00);
+    }
+
+    .title {
+      color: c.$title;
+      font-size: var(--scale-5);
+      font-weight: 600;
+      margin-block: var(--size-2);
+    }
+
+    .description {
+      font-size: var(--scale-00);
+      color: color.adjust(c.$title, $alpha: -0.25);
+    }
+
+    .lower {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      color: color.adjust(c.$title, $alpha: -0.25);
+
+      span {
+        font-size: var(--scale-00);
+      }
+    }
+
+    .actions {
+      display: flex;
+      gap: var(--size-4);
+    }
+  }
+}

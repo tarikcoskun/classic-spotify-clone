@@ -1,0 +1,66 @@
+@use "default";
+@use "util";
+@use "media";
+@use "nprogress";
+@use "colors" as c;
+@use "sass:color";
+
+.contentSpacing {
+  padding: 0 var(--content-spacing);
+}
+
+.truncate {
+  @include util.truncate;
+}
+
+.whiteText {
+  color: c.$title;
+}
+
+.hoverLine:hover {
+  text-decoration: underline;
+}
+
+.toggle {
+  cursor: pointer;
+
+  &:hover {
+    color: c.$title;
+  }
+
+  &[data-state="active"] {
+    color: c.$brand;
+
+    &:hover {
+      color: color.adjust(c.$brand, $lightness: 10);
+    }
+  }
+}
+
+.genericGrid {
+  --cols: 6;
+  display: grid;
+  gap: var(--size-6);
+  grid-template-columns: repeat(var(--cols), minmax(0, 1fr));
+
+  /*
+  @media (--lg-only) {
+    --cols: 3;
+  }
+  @media (--xl-only) {
+    --cols: 4;
+  }
+  @media (--2xl-only) {
+    --cols: 5;
+  }
+  @media (--3xl-only) {
+    --cols: 6;
+  }
+  @media (--4xl-only) {
+    --cols: 7;
+  }
+  @media (--4xl-n-above) {
+    --cols: 8;
+  }
+  */
+}

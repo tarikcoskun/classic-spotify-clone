@@ -1,0 +1,23 @@
+.layout {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .pageLayout {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-start;
+    height: calc(100vh - 56px - 60px);
+
+    .pageContent {
+      flex-grow: 1;
+      height: inherit;
+      overflow-y: auto;
+
+      main {
+        max-width: var(--content-max-width);
+        margin-inline: auto;
+      }
+    }
+  }
+}

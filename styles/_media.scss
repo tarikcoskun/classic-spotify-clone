@@ -1,0 +1,44 @@
+@custom-media --2xs-only (240px <= width <= 360px);
+@custom-media --2xs-n-above (width >= 360px);
+@custom-media --2xs-n-below (width < 360px);
+@custom-media --2xs-phone (--xxs-only) and (--portrait);
+
+@custom-media --xs-only (240px <= width <= 640px);
+@custom-media --xs-n-above (width >= 640px);
+@custom-media --xs-n-below (width < 640px);
+@custom-media --xs-phone (--xs-only) and (--portrait);
+
+@custom-media --sm-only (640px <= width <= 768px);
+@custom-media --sm-n-above (width >= 768px);
+@custom-media --sm-n-below (width < 768px);
+@custom-media --sm-phone (--sm-only) and (--portrait);
+
+@custom-media --md-only (768px <= width <= 1024px);
+@custom-media --md-n-above (width >= 1024px);
+@custom-media --md-n-below (width < 1024px);
+@custom-media --md-phone (--md-only) and (--portrait);
+
+@custom-media --lg-only (1024px <= width <= 1280px);
+@custom-media --lg-n-above (width >= 1280px);
+@custom-media --lg-n-below (width < 1280px);
+@custom-media --lg-phone (--lg-only) and (--portrait);
+
+@custom-media --xl-only (1280px <= width <= 1536px);
+@custom-media --xl-n-above (width >= 1536px);
+@custom-media --xl-n-below (width < 1536px);
+
+@custom-media --2xl-only (1536px <= width <= 1920px);
+@custom-media --2xl-n-above (width >= 1920px);
+@custom-media --2xl-n-below (width < 1920px);
+
+@custom-media --3xl-only (1920px <= width <= 2052px);
+@custom-media --3xl-n-above (width >= 2052px);
+@custom-media --3xl-n-below (width < 2052px);
+
+@custom-media --4xl-only (2052px <= width <= 2256px);
+@custom-media --4xl-n-above (width >= 2256px);
+@custom-media --4xl-n-below (width < 2256px);
+
+@custom-media --5xl-only (2256px <= width <= 2550px);
+@custom-media --5xl-n-above (width >= 2550px);
+@custom-media --5xl-n-below (width < 2550px);
