@@ -47,7 +47,7 @@ export default function App({ Component, pageProps }: AppProps) {
         }}
         twitter={{
           handle: "@tarikcoskunum",
-          cardType: "summary",
+          cardType: "summary_large_image",
         }}
       />
 
