@@ -1,6 +1,7 @@
 import type { PlaylistV2 } from "@/types/Playlist";
 
-import { getReadableTime } from "@/helpers/getTime";
+import { getReadableTime } from "@/helpers/getReadableTime";
+import { getReadableDate } from "@/helpers/getReadableDate";
 
 // Components
 import Layout from "@/ui/Layout";
@@ -51,11 +52,7 @@ export default function Playlist() {
                   {item.itemV2.data.albumOfTrack.name}
                 </Link>
               ),
-              Added: new Date(item.addedAt.isoString).toLocaleDateString("en-US", {
-                day: "numeric",
-                month: "short",
-                year: "numeric",
-              }),
+              Added: getReadableDate(new Date(item.addedAt.isoString)),
               Duration: getReadableTime(item.itemV2.data.trackDuration.totalMilliseconds),
             }))}
           />

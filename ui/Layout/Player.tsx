@@ -1,4 +1,4 @@
-import { getReadableTime } from "@/helpers/getTime";
+import { getReadableTime } from "@/helpers/getReadableTime";
 
 // Icons
 import Icon from "@/ui/Icon";

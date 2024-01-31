@@ -39,11 +39,7 @@ export default function CollectionHeader(props: Props) {
           {date && (
             <>
               🞄
-              <span>
-                {new Date(date).toLocaleDateString("en-US", {
-                  year: "numeric",
-                })}
-              </span>
+              <span>{new Date(date).getFullYear()}</span>
             </>
           )}
           🞄<span>{trackCount} songs</span>

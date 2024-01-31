@@ -1,6 +1,6 @@
 import type { AlbumUnion } from "@/types/Album";
 
-import { getReadableTime } from "@/helpers/getTime";
+import { getReadableTime } from "@/helpers/getReadableTime";
 
 // Components
 import Layout from "@/ui/Layout";
