@@ -20,6 +20,7 @@ interface Props {
 
 export default function CollectionHeader(props: Props) {
   const { color, cover, type, title, description, trackCount, ownerName, date } = props;
+
   const [isFollowing, setFollowing] = useState(false);
 
   return (

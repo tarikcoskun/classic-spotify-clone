@@ -11,7 +11,7 @@ import Icon from "@/ui/Icon";
 import CollectionHeader from "@/ui/CollectionHeader";
 
 // Store
-import { TrackContext } from "@/store/track";
+import { PlayerContext } from "@/store/player";
 
 // Data
 import albumData from "@/data/album.json";
@@ -22,7 +22,7 @@ import s from "@/styles/Collection.module.scss";
 const albumInfo = albumData.data.albumUnion as AlbumUnion;
 
 export default function Album() {
-  const context = useContext(TrackContext);
+  const context = useContext(PlayerContext);
 
   return (
     <Layout>

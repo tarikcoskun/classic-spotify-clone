@@ -1,22 +1,60 @@
-import { useContext } from "react";
+import { useCallback, useContext, useEffect, useRef, useState } from "react";
 import { getReadableTime } from "@/helpers/getReadableTime";
+import { clamp } from "@/helpers/clamp";
 
 // Components
 import Icon from "@/ui/Icon";
 
 // Store
-import { TrackContext } from "@/store/track";
+import { PlayerContext } from "@/store/player";
 
 // Styles
 import s from "@/styles/Player.module.scss";
 
-const elapsed = 26800;
-const total = 248440;
-
-const volume = 75;
-
 export default function Player() {
-  const context = useContext(TrackContext);
+  const context = useContext(PlayerContext);
+  const pbProgressRef = useRef<HTMLDivElement>(null);
+  const volProgressRef = useRef<HTMLDivElement>(null);
+
+  function handlePbChange(x: number) {
+    if (!pbProgressRef.current) return;
+    const clickPos = x - pbProgressRef.current.offsetLeft;
+    const current = (clickPos / pbProgressRef.current.offsetWidth) * 100;
+
+    context.setPlaybackProgress((val) => ({
+      ...val,
+      elapsed: clamp(0, (current * val.total) / 100, val.total),
+    }));
+  }
+
+  function handleVolChange(x: number) {
+    if (!volProgressRef.current) return;
+    const clickPos = x - volProgressRef.current.offsetLeft;
+    context.setVolume(clamp(0, clickPos, 100));
+  }
+
+  function handleMouseDown(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
+    const target = event.target as HTMLElement;
+
+    window.addEventListener("mouseup", handleMouseUp);
+    window.addEventListener("mousemove", handleMouseMove);
+
+    function handleMouseUp() {
+      window.removeEventListener("mouseup", handleMouseUp);
+      window.removeEventListener("mousemove", handleMouseMove);
+    }
+
+    function handleMouseMove(event: MouseEvent) {
+      if (!pbProgressRef.current || !volProgressRef.current) return;
+      if (target.dataset.listener === "pb") {
+        console.log("moving pb");
+        handlePbChange(event.pageX);
+      } else if (target.dataset.listener === "vol") {
+        console.log("moving vol");
+        handleVolChange(event.pageX);
+      }
+    }
+  }
 
   return (
     <div className={s.player}>
@@ -37,12 +75,18 @@ export default function Player() {
         </button>
       </div>
       <div className={s.volume}>
-        <div className={s.volumeProgress}>
-          <div className={s.progressBarWrapper} style={{ ["--progress-bar-transform" as any]: `${volume}%` }}>
-            <div className={s.progressBar}>
-              <div className={s.current} />
+        <div
+          ref={volProgressRef}
+          onMouseDown={handleMouseDown}
+          onClick={(event) => handleVolChange(event.pageX)}
+          className={s.volumeProgress}
+          data-listener="vol"
+        >
+          <div className={s.progressBarWrapper} style={{ ["--progress-bar-transform" as any]: `${context.volume}%` }} data-listener="vol">
+            <div className={s.progressBar} data-listener="vol">
+              <div className={s.current} data-listener="vol" />
             </div>
-            <div className={s.dot} />
+            <div className={s.dot} data-listener="vol" />
           </div>
         </div>
         <button className="toggle" aria-label="Toggle volume">
@@ -50,16 +94,26 @@ export default function Player() {
         </button>
       </div>
       <div className={s.playback}>
-        <span className={s.time}>{getReadableTime(elapsed)}</span>
-        <div className={s.playbackProgress}>
-          <div className={s.progressBarWrapper} style={{ ["--progress-bar-transform" as any]: `${(elapsed / total) * 100}%` }}>
-            <div className={s.progressBar}>
-              <div className={s.current} />
+        <span className={s.time}>{getReadableTime(context.playbackProgress.elapsed)}</span>
+        <div
+          ref={pbProgressRef}
+          onMouseDown={handleMouseDown}
+          onClick={(event) => handlePbChange(event.pageX)}
+          className={s.playbackProgress}
+          data-listener="pb"
+        >
+          <div
+            className={s.progressBarWrapper}
+            style={{ ["--progress-bar-transform" as any]: `${(context.playbackProgress.elapsed / context.playbackProgress.total) * 100}%` }}
+            data-listener="pb"
+          >
+            <div className={s.progressBar} data-listener="pb">
+              <div className={s.current} data-listener="pb" />
             </div>
-            <div className={s.dot} />
+            <div className={s.dot} data-listener="pb" />
           </div>
         </div>
-        <span className={s.time}>{getReadableTime(total)}</span>
+        <span className={s.time}>{getReadableTime(context.playbackProgress.total)}</span>
       </div>
       <div className={s.controlsRight}>
         <button className="toggle" aria-label="Toggle shuffle" data-state="active">

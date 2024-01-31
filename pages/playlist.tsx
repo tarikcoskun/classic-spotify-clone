@@ -12,7 +12,7 @@ import Table from "@/ui/Table";
 import CollectionHeader from "@/ui/CollectionHeader";
 
 // Store
-import { TrackContext } from "@/store/track";
+import { PlayerContext } from "@/store/player";
 
 // Data
 import playlistData from "@/data/playlist.json";
@@ -20,7 +20,7 @@ import playlistData from "@/data/playlist.json";
 const playlistInfo = playlistData.data.playlistV2 as PlaylistV2;
 
 export default function Playlist() {
-  const context = useContext(TrackContext);
+  const context = useContext(PlayerContext);
 
   return (
     <Layout>

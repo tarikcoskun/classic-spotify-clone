@@ -14,6 +14,7 @@ const TabsContext = createContext({} as TabsValue);
 
 const TabsProvider = (props: React.PropsWithChildren<TabsValue>) => {
   const { value, setValue, children } = props;
+
   const initialState = { value, setValue };
 
   return <TabsContext.Provider value={initialState}>{children}</TabsContext.Provider>;
@@ -29,6 +30,7 @@ interface TabsRootProps extends React.HTMLAttributes<HTMLElement> {
 
 const TabsRoot = forwardRef<HTMLDivElement, TabsRootProps>((props, forwardedRef) => {
   const { defaultValue, className, children } = props;
+
   const [value, setValue] = useState(defaultValue);
 
   return (
@@ -52,6 +54,7 @@ interface TabsListProps extends React.HTMLAttributes<HTMLElement> {
 
 const TabsList = forwardRef<HTMLDivElement, TabsListProps>((props, forwardedRef) => {
   const { sticky = true, className, children } = props;
+
   const tableHeadRef = useRef<HTMLElement>(null);
   const [headSticked, setHeadSticked] = useState(false);
 
@@ -65,7 +68,9 @@ const TabsList = forwardRef<HTMLDivElement, TabsListProps>((props, forwardedRef)
 
     document.addEventListener("scroll", listener, { capture: true });
 
-    return () => document.removeEventListener("scroll", listener, { capture: true });
+    return () => {
+      document.removeEventListener("scroll", listener, { capture: true });
+    };
   }, [sticky]);
 
   return (
@@ -87,7 +92,9 @@ interface TabsTriggerProps extends React.ButtonHTMLAttributes<HTMLButtonElement>
 
 const TabsTrigger = forwardRef<HTMLButtonElement, TabsTriggerProps>((props, forwardedRef) => {
   const { value, disabled, className, children } = props;
+
   const context = useContext(TabsContext);
+
   const isSelected = value === context.value;
 
   return (
@@ -119,7 +126,9 @@ interface TabsContentProps extends React.HTMLAttributes<HTMLElement> {
 
 const TabsContent = forwardRef<HTMLDivElement, TabsContentProps>((props, forwardedRef) => {
   const { value, className, children } = props;
+
   const context = useContext(TabsContext);
+
   const isSelected = value === context.value;
 
   return isSelected ? (

@@ -12,14 +12,14 @@ import Button from "@/ui/Button";
 import Section from "@/ui/Section";
 
 // Store
-import { TrackContext } from "@/store/track";
+import { PlayerContext } from "@/store/player";
 
 // Styles
 import s from "./Overview.module.scss";
 
 export default function ArtistOverview({ data }: { data: ArtistUnion }) {
+  const context = useContext(PlayerContext);
   const [popularExpanded, setPopularExpanded] = useState(false);
-  const context = useContext(TrackContext);
 
   const latestRelease = data.discography.popularReleasesAlbums.items.sort((a, b) => b.date.year - a.date.year)[0];
   const topTracks = data.discography.topTracks.items;

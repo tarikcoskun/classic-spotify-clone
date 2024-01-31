@@ -17,7 +17,7 @@
     font-size: var(--scale-00);
   }
 
-  &[color="brand"] {
+  &.brand {
     background-color: c.$brand2;
 
     &:hover {
@@ -25,7 +25,7 @@
     }
   }
 
-  &[color="surface"] {
+  &.surface {
     background-color: c.$layer2;
 
     &:hover {
@@ -33,7 +33,7 @@
     }
   }
 
-  &[color="soft"] {
+  &.soft {
     background-color: color.adjust(c.$title, $alpha: -0.75);
 
     &:hover {

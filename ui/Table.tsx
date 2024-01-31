@@ -2,7 +2,7 @@ import classNames from "classnames";
 import { useContext, useEffect, useRef, useState } from "react";
 
 // Store
-import { TrackContext } from "@/store/track";
+import { PlayerContext } from "@/store/player";
 
 // Styles
 import s from "./Table.module.scss";
@@ -28,11 +28,11 @@ interface TableProps extends React.HTMLAttributes<HTMLElement> {
 
 export default function Table(props: TableProps) {
   const { data, spacing, headless, className, headClassName, headerClassName, rowClassName, dataClassName } = props;
+
+  const context = useContext(PlayerContext);
   const tableHeadRef = useRef<HTMLElement>(null);
   const [isHovering, setHovering] = useState(-1);
   const [headSticked, setHeadSticked] = useState(false);
-
-  const context = useContext(TrackContext);
 
   useEffect(() => {
     const listener = () => {
@@ -44,7 +44,9 @@ export default function Table(props: TableProps) {
 
     document.addEventListener("scroll", listener, { capture: true });
 
-    return () => document.removeEventListener("scroll", listener, { capture: true });
+    return () => {
+      document.removeEventListener("scroll", listener, { capture: true });
+    };
   }, []);
 
   return (
