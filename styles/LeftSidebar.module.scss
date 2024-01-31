@@ -1,0 +1,127 @@
+@use "colors" as c;
+@use "util";
+@use "sass:color";
+
+.sidebar {
+  flex-shrink: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: var(--left-sidebar-width);
+  background: linear-gradient(
+    130deg,
+    color.adjust(c.$layer2, $lightness: -2),
+    color.adjust(c.$layer1, $lightness: -2),
+    color.adjust(c.$layer2, $lightness: -4)
+  );
+
+  .sidebarLinks {
+    --padding-x: var(--size-6);
+    padding-block: var(--size-6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-8);
+    overflow-y: auto;
+
+    .sidebarCategory {
+      .categoryHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .categoryTitle {
+          color: c.$subtext;
+          font-weight: 500;
+          font-size: var(--scale-00);
+          margin-left: var(--padding-x);
+        }
+      }
+
+      .categoryLinks {
+        margin-top: var(--size-2);
+
+        .sidebarItem {
+          cursor: pointer;
+          position: relative;
+          display: flex;
+          gap: var(--size-5);
+          align-items: center;
+          padding: var(--size-2) var(--padding-x);
+
+          .itemIcon {
+            flex-shrink: 0;
+            color: c.$title;
+          }
+
+          .itemLabel {
+            @include util.truncate;
+          }
+
+          &:hover {
+            .itemLabel {
+              color: c.$title;
+            }
+          }
+
+          &[data-state="active"] {
+            &::before {
+              content: "";
+              width: 6px;
+              height: 6px;
+              border-radius: var(--radius-full);
+              position: absolute;
+              top: 50%;
+              left: calc(var(--padding-x) / 2);
+              transform: translate(-50%, -50%);
+              background-color: c.$brand;
+            }
+
+            .itemLabel {
+              color: c.$brand;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .nowPlaying {
+    background: linear-gradient(to bottom right, color.adjust(c.$layer2, $lightness: -3), color.adjust(c.$layer2, $lightness: -2));
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    gap: var(--size-4);
+
+    .albumCover {
+      width: 64px;
+      height: 64px;
+    }
+
+    .trackDetails {
+      .title {
+        color: c.$title;
+        font-size: var(--scale-00);
+      }
+
+      .artist {
+        margin-top: var(--size-1);
+        font-size: var(--scale-000);
+      }
+    }
+  }
+}
+
+.add {
+  cursor: pointer;
+  margin-right: var(--size-4);
+  box-sizing: content-box;
+  padding: var(--size-1);
+  border-radius: var(--radius-full);
+  margin-left: auto;
+  color: c.$title;
+  background-color: c.$layer1;
+
+  &:hover {
+    background-color: c.$layer3;
+  }
+}

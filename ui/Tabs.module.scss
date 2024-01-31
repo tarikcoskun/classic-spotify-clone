@@ -27,6 +27,7 @@
       font-size: var(--scale-0);
       text-transform: uppercase;
       position: relative;
+      letter-spacing: 1px;
 
       &:hover {
         color: c.$title;

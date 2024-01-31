@@ -1,6 +1,8 @@
-## Spotify (2014) Clone
+## Classic Spotify UI Clone
 
-This is a clone of the classic Spotify UI made using Next.js
+<img src="/public/demo.png" />
+
+A clone of the classic Spotify UI made using Next.js
 
 ### Pages
 

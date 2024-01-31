@@ -33,11 +33,6 @@ const greetingCards: CardProps[] = [
     title: "Legendary Guitar Solos",
     description: "Face-melters only. Cover: Eddie Van Halen",
   },
-  {
-    cover: "/playlist/This_Is_Fazıl_Say.jpeg",
-    title: "This Is Fazıl Say",
-    description: "This is Fazıl Say. The essential tracks, all in one playlist.",
-  },
 ];
 
 const genresCards: CardProps[] = [
@@ -65,11 +60,6 @@ const genresCards: CardProps[] = [
     cover: "/playlist/Sad_Indie.jpeg",
     title: "Sad Indie",
     description: "The premier alternative melancholia playlist, featuring Joji",
-  },
-  {
-    cover: "/playlist/my_life_is_a_movie.jpeg",
-    title: "my life is a movie",
-    description: 'every main character needs their soundtrack. Cover: Margaret in the "Tiny Moves" music video from Bleachers.',
   },
 ];
 

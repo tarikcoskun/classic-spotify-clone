@@ -38,7 +38,7 @@
 }
 
 .genericGrid {
-  --cols: 6;
+  --cols: 5;
   display: grid;
   gap: var(--size-6);
   grid-template-columns: repeat(var(--cols), minmax(0, 1fr));

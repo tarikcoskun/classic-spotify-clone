@@ -21,7 +21,6 @@ export default function Home() {
             <Tabs.Trigger value="genres">Genres & Moods</Tabs.Trigger>
             <Tabs.Trigger value="releases">New Releases</Tabs.Trigger>
             <Tabs.Trigger value="news">News</Tabs.Trigger>
-            <Tabs.Trigger value="discover">Discover</Tabs.Trigger>
           </Tabs.List>
           <Tabs.Content value="overview">
             <HomeOverview />

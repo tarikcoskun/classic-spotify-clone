@@ -1,8 +1,8 @@
 // Components
 import Navbar from "./Navbar";
 import Player from "./Player";
-import Sidebar from "./Sidebar";
-import Friends from "./Friends";
+import LeftSidebar from "./LeftSidebar";
+import FriendsPanel from "./FriendsPanel";
 
 // Styles
 import s from "@/styles/Layout.module.scss";
@@ -12,9 +12,9 @@ export default function Layout({ children }: React.PropsWithChildren) {
     <div className={s.layout}>
       <Navbar />
       <div id="innerBody" className={s.pageLayout}>
-        <Sidebar />
+        <LeftSidebar />
         <div className={s.pageContent}>{children}</div>
-        <Friends />
+        <FriendsPanel />
       </div>
       <Player />
     </div>

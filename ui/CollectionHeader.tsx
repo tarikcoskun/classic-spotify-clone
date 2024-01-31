@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 // Components
 import Link from "next/link";
 import Button from "./Button";
@@ -18,6 +20,7 @@ interface Props {
 
 export default function CollectionHeader(props: Props) {
   const { color, cover, type, title, description, trackCount, ownerName, date } = props;
+  const [isFollowing, setFollowing] = useState(false);
 
   return (
     <header className={s.collectionHeader} style={{ backgroundImage: `linear-gradient(to bottom, ${color}, ${color}50)` }}>
@@ -47,7 +50,14 @@ export default function CollectionHeader(props: Props) {
         </div>
         <div className={s.actions}>
           <Button color="brand">PLAY</Button>
-          <Button color="soft">FOLLOW</Button>
+          <Button
+            color="soft"
+            onClick={() => {
+              setFollowing((val) => !val);
+            }}
+          >
+            {isFollowing ? "FOLLOWING" : "FOLLOW"}
+          </Button>
         </div>
       </div>
     </header>

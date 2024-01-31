@@ -1,5 +1,7 @@
 import type { ArtistUnion } from "@/types/Artist";
 
+import { useState } from "react";
+
 // Components
 import Layout from "@/ui/Layout";
 import Tabs from "@/ui/Tabs";
@@ -19,6 +21,8 @@ import s from "@/styles/Artist.module.scss";
 const artistInfo = artistData.data.artistUnion as ArtistUnion;
 
 export default function Artist() {
+  const [isFollowing, setFollowing] = useState(false);
+
   return (
     <Layout>
       <main>
@@ -28,7 +32,14 @@ export default function Artist() {
             <div className={s.listeners}>{new Intl.NumberFormat("en-US").format(artistInfo.stats.monthlyListeners)} monthly listeners</div>
             <div className={s.actions}>
               <Button color="brand">PLAY</Button>
-              <Button color="soft">FOLLOW</Button>
+              <Button
+                color="soft"
+                onClick={() => {
+                  setFollowing((val) => !val);
+                }}
+              >
+                {isFollowing ? "FOLLOWING" : "FOLLOW"}
+              </Button>
             </div>
           </div>
         </header>

@@ -1,0 +1,67 @@
+@use "colors" as c;
+@use "sass:color";
+
+.sidebar {
+  flex-shrink: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: var(--right-sidebar-width);
+  background: linear-gradient(
+    130deg,
+    color.adjust(c.$layer2, $lightness: -2),
+    color.adjust(c.$layer1, $lightness: -2),
+    color.adjust(c.$layer2, $lightness: -4)
+  );
+
+  .activities {
+    overflow-y: auto;
+
+    .activity {
+      display: flex;
+      gap: var(--size-4);
+      padding: var(--size-4);
+
+      a:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      .info {
+        flex-grow: 1;
+        display: flex;
+        gap: var(--size-1);
+        flex-direction: column;
+
+        .userInfo {
+          display: flex;
+          justify-content: space-between;
+
+          .username {
+            color: c.$title;
+            font-size: var(--scale-00);
+          }
+
+          .active {
+            color: c.$brand;
+          }
+
+          .lastActive {
+            font-size: var(--scale-000);
+          }
+        }
+
+        .trackInfo {
+          font-size: var(--scale-000);
+        }
+
+        .sourceInfo {
+          display: flex;
+          align-items: center;
+          gap: var(--size-1);
+          font-size: var(--scale-000);
+        }
+      }
+    }
+  }
+}

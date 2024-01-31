@@ -51,9 +51,6 @@ export default function Player() {
         <span className={s.time}>{getReadableTime(total)}</span>
       </div>
       <div className={s.controlsRight}>
-        <button className="toggle" aria-label="Queue">
-          <Icon icon="queue" size={20} />
-        </button>
         <button className="toggle" aria-label="Toggle shuffle" data-state="active">
           <Icon icon="shuffle" size={20} />
         </button>
