@@ -2,32 +2,32 @@
   "data": {
     "albumUnion": {
       "__typename": "Album",
-      "uri": "spotify:album:0W8KSck9ZXiDwPZhDsiwYu",
-      "name": "Morning Piano - Say: Winter Morning in Istanbul",
+      "uri": "spotify:album:4QIz1Y3b8xVUARo3b3mGI4",
+      "name": "İnsan Gelir İnsan Geçer",
       "artists": {
         "totalCount": 1,
         "items": [
           {
-            "id": "15NSFL63oPhmpXLcZHny2N",
-            "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+            "id": "7CW2eGwAuElNq09rVtZYsM",
+            "uri": "spotify:artist:7CW2eGwAuElNq09rVtZYsM",
             "profile": {
-              "name": "Fazıl Say"
+              "name": "Sena Şener"
             },
             "visuals": {
               "avatarImage": {
                 "sources": [
                   {
-                    "url": "https://i.scdn.co/image/ab6761610000e5ebb0a3661ac20b5453a42750b8",
+                    "url": "https://i.scdn.co/image/ab6761610000e5eb66fefa054e300d79d04dc1fc",
                     "width": 640,
                     "height": 640
                   },
                   {
-                    "url": "https://i.scdn.co/image/ab6761610000f178b0a3661ac20b5453a42750b8",
+                    "url": "https://i.scdn.co/image/ab6761610000f17866fefa054e300d79d04dc1fc",
                     "width": 160,
                     "height": 160
                   },
                   {
-                    "url": "https://i.scdn.co/image/ab67616100005174b0a3661ac20b5453a42750b8",
+                    "url": "https://i.scdn.co/image/ab6761610000517466fefa054e300d79d04dc1fc",
                     "width": 320,
                     "height": 320
                   }
@@ -35,7 +35,7 @@
               }
             },
             "sharingInfo": {
-              "shareUrl": "https://open.spotify.com/artist/15NSFL63oPhmpXLcZHny2N?si=zvcZA6f8S820rOx0qiMQmQ"
+              "shareUrl": "https://open.spotify.com/artist/7CW2eGwAuElNq09rVtZYsM?si=6syiZVYyTmaDzvj-VaeTvQ"
             }
           }
         ]
@@ -43,28 +43,28 @@
       "coverArt": {
         "extractedColors": {
           "colorRaw": {
-            "hex": "#535353"
+            "hex": "#504838"
           },
           "colorLight": {
-            "hex": "#7F7F7F"
+            "hex": "#83765C"
           },
           "colorDark": {
-            "hex": "#535353"
+            "hex": "#504838"
           }
         },
         "sources": [
           {
-            "url": "https://i.scdn.co/image/ab67616d00001e0208c587d67d554d5409f9aac4",
+            "url": "https://i.scdn.co/image/ab67616d00001e020f4616fed8f2f4fc249f0074",
             "width": 300,
             "height": 300
           },
           {
-            "url": "https://i.scdn.co/image/ab67616d0000485108c587d67d554d5409f9aac4",
+            "url": "https://i.scdn.co/image/ab67616d000048510f4616fed8f2f4fc249f0074",
             "width": 64,
             "height": 64
           },
           {
-            "url": "https://i.scdn.co/image/ab67616d0000b27308c587d67d554d5409f9aac4",
+            "url": "https://i.scdn.co/image/ab67616d0000b2730f4616fed8f2f4fc249f0074",
             "width": 640,
             "height": 640
           }
@@ -76,54 +76,59 @@
           {
             "number": 1,
             "tracks": {
-              "totalCount": 1
+              "totalCount": 10
             }
           }
         ]
       },
       "releases": {
-        "totalCount": 0,
-        "items": []
+        "totalCount": 1,
+        "items": [
+          {
+            "uri": "spotify:album:2jwXQyKhhM3WyYHx7BqMYB",
+            "name": "İnsan Gelir İnsan Geçer (Deluxe)"
+          }
+        ]
       },
-      "type": "SINGLE",
+      "type": "ALBUM",
       "date": {
-        "isoString": "2024-01-12T00:00:00Z",
+        "isoString": "2018-09-14T00:00:00Z",
         "precision": "DAY"
       },
       "playability": {
         "playable": true,
         "reason": "PLAYABLE"
       },
-      "label": "Warner Classics",
+      "label": "PASAJ",
       "copyright": {
         "totalCount": 2,
         "items": [
           {
             "type": "C",
-            "text": "A Warner Classics/Erato release, © 2024 Parlophone Records Limited"
+            "text": "2018 Pasaj"
           },
           {
             "type": "P",
-            "text": "A Warner Classics/Erato release, ℗ 2024 Fazil Say under exclusive licence to Parlophone Records Limited"
+            "text": "2018 Pasaj"
           }
         ]
       },
       "courtesyLine": "",
       "saved": false,
       "sharingInfo": {
-        "shareUrl": "https://open.spotify.com/album/0W8KSck9ZXiDwPZhDsiwYu?si=tKk23WyaRMyK8lm_8_juwQ",
-        "shareId": "tKk23WyaRMyK8lm_8_juwQ"
+        "shareUrl": "https://open.spotify.com/album/4QIz1Y3b8xVUARo3b3mGI4?si=N9W6lBNtSfuwwvvI8r7Msg",
+        "shareId": "N9W6lBNtSfuwwvvI8r7Msg"
       },
       "tracks": {
-        "totalCount": 1,
+        "totalCount": 10,
         "items": [
           {
-            "uid": "81fbf816bfbd126be91a",
+            "uid": "1ed1a3b80ea01b14eab5",
             "track": {
               "saved": false,
-              "uri": "spotify:track:67trH3Unzyz2lG5tHJ7lZ5",
-              "name": "Say: Art of Piano, Op. 66: III. Winter Morning in Istanbul",
-              "playcount": "55061",
+              "uri": "spotify:track:62pwmuTpUFd1X7XbdDWloR",
+              "name": "İnsan Gelir İnsan Geçer",
+              "playcount": "6655504",
               "discNumber": 1,
               "trackNumber": 1,
               "associations": {
@@ -136,7 +141,7 @@
               },
               "relinkingInformation": null,
               "duration": {
-                "totalMilliseconds": 229104
+                "totalMilliseconds": 338008
               },
               "playability": {
                 "playable": true
@@ -144,9 +149,333 @@
               "artists": {
                 "items": [
                   {
-                    "uri": "spotify:artist:15NSFL63oPhmpXLcZHny2N",
+                    "uri": "spotify:artist:7CW2eGwAuElNq09rVtZYsM",
                     "profile": {
-                      "name": "Fazıl Say"
+                      "name": "Sena Şener"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "uid": "9e20908e6f94a05ae12c",
+            "track": {
+              "saved": false,
+              "uri": "spotify:track:7znUMyZDxIw7a4rimZ1gLW",
+              "name": "Çirkin Dünya",
+              "playcount": "5967086",
+              "discNumber": 1,
+              "trackNumber": 2,
+              "associations": {
+                "associatedVideos": {
+                  "totalCount": 0
+                }
+              },
+              "contentRating": {
+                "label": "NONE"
+              },
+              "relinkingInformation": null,
+              "duration": {
+                "totalMilliseconds": 291008
+              },
+              "playability": {
+                "playable": true
+              },
+              "artists": {
+                "items": [
+                  {
+                    "uri": "spotify:artist:7CW2eGwAuElNq09rVtZYsM",
+                    "profile": {
+                      "name": "Sena Şener"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "uid": "b438678abde5a30806ca",
+            "track": {
+              "saved": false,
+              "uri": "spotify:track:7AaL1aqGHRsXFPIO0W2m1R",
+              "name": "Sendin Düşmanım",
+              "playcount": "13330693",
+              "discNumber": 1,
+              "trackNumber": 3,
+              "associations": {
+                "associatedVideos": {
+                  "totalCount": 0
+                }
+              },
+              "contentRating": {
+                "label": "NONE"
+              },
+              "relinkingInformation": null,
+              "duration": {
+                "totalMilliseconds": 284008
+              },
+              "playability": {
+                "playable": true
+              },
+              "artists": {
+                "items": [
+                  {
+                    "uri": "spotify:artist:7CW2eGwAuElNq09rVtZYsM",
+                    "profile": {
+                      "name": "Sena Şener"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "uid": "82ea9dbcb7ff9a88152a",
+            "track": {
+              "saved": false,
+              "uri": "spotify:track:75qBv3kRqO9lV99IkMfPRD",
+              "name": "Yalnızım",
+              "playcount": "6390983",
+              "discNumber": 1,
+              "trackNumber": 4,
+              "associations": {
+                "associatedVideos": {
+                  "totalCount": 0
+                }
+              },
+              "contentRating": {
+                "label": "NONE"
+              },
+              "relinkingInformation": null,
+              "duration": {
+                "totalMilliseconds": 249508
+              },
+              "playability": {
+                "playable": true
+              },
+              "artists": {
+                "items": [
+                  {
+                    "uri": "spotify:artist:7CW2eGwAuElNq09rVtZYsM",
+                    "profile": {
+                      "name": "Sena Şener"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "uid": "9c5d93e004a7ed5764f0",
+            "track": {
+              "saved": false,
+              "uri": "spotify:track:3jJXVYy20l6cmiRoiFORY4",
+              "name": "Bak Bana",
+              "playcount": "30198813",
+              "discNumber": 1,
+              "trackNumber": 5,
+              "associations": {
+                "associatedVideos": {
+                  "totalCount": 0
+                }
+              },
+              "contentRating": {
+                "label": "NONE"
+              },
+              "relinkingInformation": null,
+              "duration": {
+                "totalMilliseconds": 231542
+              },
+              "playability": {
+                "playable": true
+              },
+              "artists": {
+                "items": [
+                  {
+                    "uri": "spotify:artist:7CW2eGwAuElNq09rVtZYsM",
+                    "profile": {
+                      "name": "Sena Şener"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "uid": "0542eea7b883efafcb4b",
+            "track": {
+              "saved": false,
+              "uri": "spotify:track:2LDpuIJVl2vQmFpzr2eSsq",
+              "name": "Ona",
+              "playcount": "4919872",
+              "discNumber": 1,
+              "trackNumber": 6,
+              "associations": {
+                "associatedVideos": {
+                  "totalCount": 0
+                }
+              },
+              "contentRating": {
+                "label": "NONE"
+              },
+              "relinkingInformation": null,
+              "duration": {
+                "totalMilliseconds": 206307
+              },
+              "playability": {
+                "playable": true
+              },
+              "artists": {
+                "items": [
+                  {
+                    "uri": "spotify:artist:7CW2eGwAuElNq09rVtZYsM",
+                    "profile": {
+                      "name": "Sena Şener"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "uid": "6f22026f520309ceda2b",
+            "track": {
+              "saved": false,
+              "uri": "spotify:track:5WonPoQrqkJDRG3WMi1XNa",
+              "name": "Dostum Değil Uykular",
+              "playcount": "9721980",
+              "discNumber": 1,
+              "trackNumber": 7,
+              "associations": {
+                "associatedVideos": {
+                  "totalCount": 0
+                }
+              },
+              "contentRating": {
+                "label": "NONE"
+              },
+              "relinkingInformation": null,
+              "duration": {
+                "totalMilliseconds": 256851
+              },
+              "playability": {
+                "playable": true
+              },
+              "artists": {
+                "items": [
+                  {
+                    "uri": "spotify:artist:7CW2eGwAuElNq09rVtZYsM",
+                    "profile": {
+                      "name": "Sena Şener"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "uid": "b5c487d318832db898ad",
+            "track": {
+              "saved": false,
+              "uri": "spotify:track:15qi1Qh6rxflx6RkQjgBMt",
+              "name": "Sonraki Gün",
+              "playcount": "5231530",
+              "discNumber": 1,
+              "trackNumber": 8,
+              "associations": {
+                "associatedVideos": {
+                  "totalCount": 0
+                }
+              },
+              "contentRating": {
+                "label": "NONE"
+              },
+              "relinkingInformation": null,
+              "duration": {
+                "totalMilliseconds": 259508
+              },
+              "playability": {
+                "playable": true
+              },
+              "artists": {
+                "items": [
+                  {
+                    "uri": "spotify:artist:7CW2eGwAuElNq09rVtZYsM",
+                    "profile": {
+                      "name": "Sena Şener"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "uid": "adad4a61db5734bd65e9",
+            "track": {
+              "saved": false,
+              "uri": "spotify:track:1LcF20hJRmx6MgEjXwVoeq",
+              "name": "Parya İçin Hep Günöte",
+              "playcount": "4412889",
+              "discNumber": 1,
+              "trackNumber": 9,
+              "associations": {
+                "associatedVideos": {
+                  "totalCount": 0
+                }
+              },
+              "contentRating": {
+                "label": "NONE"
+              },
+              "relinkingInformation": null,
+              "duration": {
+                "totalMilliseconds": 295224
+              },
+              "playability": {
+                "playable": true
+              },
+              "artists": {
+                "items": [
+                  {
+                    "uri": "spotify:artist:7CW2eGwAuElNq09rVtZYsM",
+                    "profile": {
+                      "name": "Sena Şener"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "uid": "f073d834c71533c0d8d6",
+            "track": {
+              "saved": true,
+              "uri": "spotify:track:7sNgPpXH3mDpC12yRUqEtz",
+              "name": "Sevmemeliyiz",
+              "playcount": "74782194",
+              "discNumber": 1,
+              "trackNumber": 10,
+              "associations": {
+                "associatedVideos": {
+                  "totalCount": 0
+                }
+              },
+              "contentRating": {
+                "label": "NONE"
+              },
+              "relinkingInformation": null,
+              "duration": {
+                "totalMilliseconds": 358208
+              },
+              "playability": {
+                "playable": true
+              },
+              "artists": {
+                "items": [
+                  {
+                    "uri": "spotify:artist:7CW2eGwAuElNq09rVtZYsM",
+                    "profile": {
+                      "name": "Sena Şener"
                     }
                   }
                 ]
@@ -162,170 +491,26 @@
               "popularReleasesAlbums": {
                 "items": [
                   {
-                    "id": "7apRIODCAwfYPNlBxR725x",
-                    "uri": "spotify:album:7apRIODCAwfYPNlBxR725x",
-                    "name": "İlk Şarkılar",
-                    "date": {
-                      "year": 2013
-                    },
-                    "coverArt": {
-                      "sources": [
-                        {
-                          "url": "https://i.scdn.co/image/ab67616d00001e029d9bcf4059ff9069967ae624",
-                          "width": 300,
-                          "height": 300
-                        },
-                        {
-                          "url": "https://i.scdn.co/image/ab67616d000048519d9bcf4059ff9069967ae624",
-                          "width": 64,
-                          "height": 64
-                        },
-                        {
-                          "url": "https://i.scdn.co/image/ab67616d0000b2739d9bcf4059ff9069967ae624",
-                          "width": 640,
-                          "height": 640
-                        }
-                      ]
-                    },
-                    "playability": {
-                      "playable": true,
-                      "reason": "PLAYABLE"
-                    },
-                    "sharingInfo": {
-                      "shareId": "AcPwkSPGSu2VNguRIfVnnw",
-                      "shareUrl": "https://open.spotify.com/album/7apRIODCAwfYPNlBxR725x?si=AcPwkSPGSu2VNguRIfVnnw"
-                    },
-                    "type": "ALBUM"
-                  },
-                  {
-                    "id": "2GCs7UuM83toYpS5mAhuwG",
-                    "uri": "spotify:album:2GCs7UuM83toYpS5mAhuwG",
-                    "name": "Morning Piano - Scarlatti: Keyboard Sonata K. 466",
-                    "date": {
-                      "year": 2022
-                    },
-                    "coverArt": {
-                      "sources": [
-                        {
-                          "url": "https://i.scdn.co/image/ab67616d00001e028793e92eff7d5afaa07906ad",
-                          "width": 300,
-                          "height": 300
-                        },
-                        {
-                          "url": "https://i.scdn.co/image/ab67616d000048518793e92eff7d5afaa07906ad",
-                          "width": 64,
-                          "height": 64
-                        },
-                        {
-                          "url": "https://i.scdn.co/image/ab67616d0000b2738793e92eff7d5afaa07906ad",
-                          "width": 640,
-                          "height": 640
-                        }
-                      ]
-                    },
-                    "playability": {
-                      "playable": true,
-                      "reason": "PLAYABLE"
-                    },
-                    "sharingInfo": {
-                      "shareId": "9MEYJN1hQvufGLIT4Q11Ng",
-                      "shareUrl": "https://open.spotify.com/album/2GCs7UuM83toYpS5mAhuwG?si=9MEYJN1hQvufGLIT4Q11Ng"
-                    },
-                    "type": "SINGLE"
-                  },
-                  {
-                    "id": "5AuBjTnxyHHKNNKiGt8V0c",
-                    "uri": "spotify:album:5AuBjTnxyHHKNNKiGt8V0c",
-                    "name": "Beethoven: Piano Sonatas Nos 8, \"Pathétique\", 9 & 10",
-                    "date": {
-                      "year": 2020
-                    },
-                    "coverArt": {
-                      "sources": [
-                        {
-                          "url": "https://i.scdn.co/image/ab67616d00001e02ace7c11700bc007aa90335ce",
-                          "width": 300,
-                          "height": 300
-                        },
-                        {
-                          "url": "https://i.scdn.co/image/ab67616d00004851ace7c11700bc007aa90335ce",
-                          "width": 64,
-                          "height": 64
-                        },
-                        {
-                          "url": "https://i.scdn.co/image/ab67616d0000b273ace7c11700bc007aa90335ce",
-                          "width": 640,
-                          "height": 640
-                        }
-                      ]
-                    },
-                    "playability": {
-                      "playable": true,
-                      "reason": "PLAYABLE"
-                    },
-                    "sharingInfo": {
-                      "shareId": "pO8I_VL2SdmWBFwm0f3S_w",
-                      "shareUrl": "https://open.spotify.com/album/5AuBjTnxyHHKNNKiGt8V0c?si=pO8I_VL2SdmWBFwm0f3S_w"
-                    },
-                    "type": "ALBUM"
-                  },
-                  {
-                    "id": "6Chpy30qHn9fkEMrJZpeoX",
-                    "uri": "spotify:album:6Chpy30qHn9fkEMrJZpeoX",
-                    "name": "Evening Piano - Satie: Gnossienne No. 1",
-                    "date": {
-                      "year": 2022
-                    },
-                    "coverArt": {
-                      "sources": [
-                        {
-                          "url": "https://i.scdn.co/image/ab67616d00001e024736bcd658e6dbb5f6616449",
-                          "width": 300,
-                          "height": 300
-                        },
-                        {
-                          "url": "https://i.scdn.co/image/ab67616d000048514736bcd658e6dbb5f6616449",
-                          "width": 64,
-                          "height": 64
-                        },
-                        {
-                          "url": "https://i.scdn.co/image/ab67616d0000b2734736bcd658e6dbb5f6616449",
-                          "width": 640,
-                          "height": 640
-                        }
-                      ]
-                    },
-                    "playability": {
-                      "playable": true,
-                      "reason": "PLAYABLE"
-                    },
-                    "sharingInfo": {
-                      "shareId": "NL1U3Qj1T7C3d8PXyyz0mA",
-                      "shareUrl": "https://open.spotify.com/album/6Chpy30qHn9fkEMrJZpeoX?si=NL1U3Qj1T7C3d8PXyyz0mA"
-                    },
-                    "type": "SINGLE"
-                  },
-                  {
-                    "id": "2Chfbmo9OHMWXNsee3KzLk",
-                    "uri": "spotify:album:2Chfbmo9OHMWXNsee3KzLk",
-                    "name": "Nazım Oratoryosu (Live)",
+                    "id": "4QIz1Y3b8xVUARo3b3mGI4",
+                    "uri": "spotify:album:4QIz1Y3b8xVUARo3b3mGI4",
+                    "name": "İnsan Gelir İnsan Geçer",
                     "date": {
                       "year": 2018
                     },
                     "coverArt": {
                       "sources": [
                         {
-                          "url": "https://i.scdn.co/image/ab67616d00001e02c6a0ee7706d05f5d9bd44805",
+                          "url": "https://i.scdn.co/image/ab67616d00001e020f4616fed8f2f4fc249f0074",
                           "width": 300,
                           "height": 300
                         },
                         {
-                          "url": "https://i.scdn.co/image/ab67616d00004851c6a0ee7706d05f5d9bd44805",
+                          "url": "https://i.scdn.co/image/ab67616d000048510f4616fed8f2f4fc249f0074",
                           "width": 64,
                           "height": 64
                         },
                         {
-                          "url": "https://i.scdn.co/image/ab67616d0000b273c6a0ee7706d05f5d9bd44805",
+                          "url": "https://i.scdn.co/image/ab67616d0000b2730f4616fed8f2f4fc249f0074",
                           "width": 640,
                           "height": 640
                         }
@@ -336,32 +521,32 @@
                       "reason": "PLAYABLE"
                     },
                     "sharingInfo": {
-                      "shareId": "3LsujgddQ82HxmATNXmp_g",
-                      "shareUrl": "https://open.spotify.com/album/2Chfbmo9OHMWXNsee3KzLk?si=3LsujgddQ82HxmATNXmp_g"
+                      "shareId": "N9W6lBNtSfuwwvvI8r7Msg",
+                      "shareUrl": "https://open.spotify.com/album/4QIz1Y3b8xVUARo3b3mGI4?si=N9W6lBNtSfuwwvvI8r7Msg"
                     },
                     "type": "ALBUM"
                   },
                   {
-                    "id": "6BberPxNiD9fnwq1VcP7Bq",
-                    "uri": "spotify:album:6BberPxNiD9fnwq1VcP7Bq",
-                    "name": "Say Plays Say",
+                    "id": "4dJnUvIIMRvTq7un0DXS1V",
+                    "uri": "spotify:album:4dJnUvIIMRvTq7un0DXS1V",
+                    "name": "Teni Tenime",
                     "date": {
-                      "year": 2014
+                      "year": 2020
                     },
                     "coverArt": {
                       "sources": [
                         {
-                          "url": "https://i.scdn.co/image/ab67616d00001e02f253fa3a19353e05aa157ff1",
+                          "url": "https://i.scdn.co/image/ab67616d00001e0284e043cd1528ed670f251ea1",
                           "width": 300,
                           "height": 300
                         },
                         {
-                          "url": "https://i.scdn.co/image/ab67616d00004851f253fa3a19353e05aa157ff1",
+                          "url": "https://i.scdn.co/image/ab67616d0000485184e043cd1528ed670f251ea1",
                           "width": 64,
                           "height": 64
                         },
                         {
-                          "url": "https://i.scdn.co/image/ab67616d0000b273f253fa3a19353e05aa157ff1",
+                          "url": "https://i.scdn.co/image/ab67616d0000b27384e043cd1528ed670f251ea1",
                           "width": 640,
                           "height": 640
                         }
@@ -372,32 +557,32 @@
                       "reason": "PLAYABLE"
                     },
                     "sharingInfo": {
-                      "shareId": "EHBkEuTzTUuLnSWlDmJ5dA",
-                      "shareUrl": "https://open.spotify.com/album/6BberPxNiD9fnwq1VcP7Bq?si=EHBkEuTzTUuLnSWlDmJ5dA"
+                      "shareId": "zrkrLJMdRsmAknARJ15zVw",
+                      "shareUrl": "https://open.spotify.com/album/4dJnUvIIMRvTq7un0DXS1V?si=zrkrLJMdRsmAknARJ15zVw"
                     },
-                    "type": "ALBUM"
+                    "type": "SINGLE"
                   },
                   {
-                    "id": "0NmH5U2LbFl4pqDDEo2Pv6",
-                    "uri": "spotify:album:0NmH5U2LbFl4pqDDEo2Pv6",
-                    "name": "Evening Piano - Schumann: Träumerei",
+                    "id": "2TYt9I16VcjqPaSxJXYTLD",
+                    "uri": "spotify:album:2TYt9I16VcjqPaSxJXYTLD",
+                    "name": "Porselen Kalbim",
                     "date": {
                       "year": 2022
                     },
                     "coverArt": {
                       "sources": [
                         {
-                          "url": "https://i.scdn.co/image/ab67616d00001e02ddd6030dc39dd8ef87dd2ff3",
+                          "url": "https://i.scdn.co/image/ab67616d00001e02f0bb8a34d190f96d1d213f79",
                           "width": 300,
                           "height": 300
                         },
                         {
-                          "url": "https://i.scdn.co/image/ab67616d00004851ddd6030dc39dd8ef87dd2ff3",
+                          "url": "https://i.scdn.co/image/ab67616d00004851f0bb8a34d190f96d1d213f79",
                           "width": 64,
                           "height": 64
                         },
                         {
-                          "url": "https://i.scdn.co/image/ab67616d0000b273ddd6030dc39dd8ef87dd2ff3",
+                          "url": "https://i.scdn.co/image/ab67616d0000b273f0bb8a34d190f96d1d213f79",
                           "width": 640,
                           "height": 640
                         }
@@ -408,32 +593,32 @@
                       "reason": "PLAYABLE"
                     },
                     "sharingInfo": {
-                      "shareId": "-sRzVS22Rpu3RWpujbnNvw",
-                      "shareUrl": "https://open.spotify.com/album/0NmH5U2LbFl4pqDDEo2Pv6?si=-sRzVS22Rpu3RWpujbnNvw"
+                      "shareId": "DT-JKSPnS4GG4ijOXkuCQg",
+                      "shareUrl": "https://open.spotify.com/album/2TYt9I16VcjqPaSxJXYTLD?si=DT-JKSPnS4GG4ijOXkuCQg"
                     },
                     "type": "SINGLE"
                   },
                   {
-                    "id": "0W8KSck9ZXiDwPZhDsiwYu",
-                    "uri": "spotify:album:0W8KSck9ZXiDwPZhDsiwYu",
-                    "name": "Morning Piano - Say: Winter Morning in Istanbul",
+                    "id": "4QFNhlCd4lbvRuhk2p91fJ",
+                    "uri": "spotify:album:4QFNhlCd4lbvRuhk2p91fJ",
+                    "name": "Ölsem",
                     "date": {
-                      "year": 2024
+                      "year": 2019
                     },
                     "coverArt": {
                       "sources": [
                         {
-                          "url": "https://i.scdn.co/image/ab67616d00001e0208c587d67d554d5409f9aac4",
+                          "url": "https://i.scdn.co/image/ab67616d00001e025b1103eea507f58c2b48d0b1",
                           "width": 300,
                           "height": 300
                         },
                         {
-                          "url": "https://i.scdn.co/image/ab67616d0000485108c587d67d554d5409f9aac4",
+                          "url": "https://i.scdn.co/image/ab67616d000048515b1103eea507f58c2b48d0b1",
                           "width": 64,
                           "height": 64
                         },
                         {
-                          "url": "https://i.scdn.co/image/ab67616d0000b27308c587d67d554d5409f9aac4",
+                          "url": "https://i.scdn.co/image/ab67616d0000b2735b1103eea507f58c2b48d0b1",
                           "width": 640,
                           "height": 640
                         }
@@ -444,32 +629,140 @@
                       "reason": "PLAYABLE"
                     },
                     "sharingInfo": {
-                      "shareId": "tKk23WyaRMyK8lm_8_juwQ",
-                      "shareUrl": "https://open.spotify.com/album/0W8KSck9ZXiDwPZhDsiwYu?si=tKk23WyaRMyK8lm_8_juwQ"
+                      "shareId": "-N8lny8tQFSNzVSElOhKYw",
+                      "shareUrl": "https://open.spotify.com/album/4QFNhlCd4lbvRuhk2p91fJ?si=-N8lny8tQFSNzVSElOhKYw"
                     },
                     "type": "SINGLE"
                   },
                   {
-                    "id": "2k2sYzO0pcjKW92ZIjB3mz",
-                    "uri": "spotify:album:2k2sYzO0pcjKW92ZIjB3mz",
-                    "name": "Evening Piano - Chopin: Prelude No. 6",
+                    "id": "4wAlRrIk3lrX5RacbUVTT5",
+                    "uri": "spotify:album:4wAlRrIk3lrX5RacbUVTT5",
+                    "name": "Affetmem",
+                    "date": {
+                      "year": 2020
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00001e02a2b491f1dc865339641e7d3a",
+                          "width": 300,
+                          "height": 300
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00004851a2b491f1dc865339641e7d3a",
+                          "width": 64,
+                          "height": 64
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d0000b273a2b491f1dc865339641e7d3a",
+                          "width": 640,
+                          "height": 640
+                        }
+                      ]
+                    },
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "jLZb1amkRSKxenMlZodN4g",
+                      "shareUrl": "https://open.spotify.com/album/4wAlRrIk3lrX5RacbUVTT5?si=jLZb1amkRSKxenMlZodN4g"
+                    },
+                    "type": "SINGLE"
+                  },
+                  {
+                    "id": "2apkKxeARmkaknlhJ7gMJe",
+                    "uri": "spotify:album:2apkKxeARmkaknlhJ7gMJe",
+                    "name": "Dönmek (Yeni Türkü Zamansız)",
+                    "date": {
+                      "year": 2022
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00001e02421086ceedb8a4bb3678fd22",
+                          "width": 300,
+                          "height": 300
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00004851421086ceedb8a4bb3678fd22",
+                          "width": 64,
+                          "height": 64
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d0000b273421086ceedb8a4bb3678fd22",
+                          "width": 640,
+                          "height": 640
+                        }
+                      ]
+                    },
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "WZEOLA5AR6eiTLRWElWDJw",
+                      "shareUrl": "https://open.spotify.com/album/2apkKxeARmkaknlhJ7gMJe?si=WZEOLA5AR6eiTLRWElWDJw"
+                    },
+                    "type": "SINGLE"
+                  },
+                  {
+                    "id": "4rhdtRbIHy4JflyyQ8enbZ",
+                    "uri": "spotify:album:4rhdtRbIHy4JflyyQ8enbZ",
+                    "name": "Çok Geç Kaldın",
+                    "date": {
+                      "year": 2022
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00001e02fede1ca5b39690a4f84172d6",
+                          "width": 300,
+                          "height": 300
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00004851fede1ca5b39690a4f84172d6",
+                          "width": 64,
+                          "height": 64
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d0000b273fede1ca5b39690a4f84172d6",
+                          "width": 640,
+                          "height": 640
+                        }
+                      ]
+                    },
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "YXjA_N8nSly18A9S2MIBww",
+                      "shareUrl": "https://open.spotify.com/album/4rhdtRbIHy4JflyyQ8enbZ?si=YXjA_N8nSly18A9S2MIBww"
+                    },
+                    "type": "SINGLE"
+                  },
+                  {
+                    "id": "61dhI5XMTkrMAg5cT0Mzw0",
+                    "uri": "spotify:album:61dhI5XMTkrMAg5cT0Mzw0",
+                    "name": "Kaybettiklerimi Geri Ver",
                     "date": {
                       "year": 2023
                     },
                     "coverArt": {
                       "sources": [
                         {
-                          "url": "https://i.scdn.co/image/ab67616d00001e021c3da9967938414319e5c9ff",
+                          "url": "https://i.scdn.co/image/ab67616d00001e02d60be3a90ae2d3eae00fc004",
                           "width": 300,
                           "height": 300
                         },
                         {
-                          "url": "https://i.scdn.co/image/ab67616d000048511c3da9967938414319e5c9ff",
+                          "url": "https://i.scdn.co/image/ab67616d00004851d60be3a90ae2d3eae00fc004",
                           "width": 64,
                           "height": 64
                         },
                         {
-                          "url": "https://i.scdn.co/image/ab67616d0000b2731c3da9967938414319e5c9ff",
+                          "url": "https://i.scdn.co/image/ab67616d0000b273d60be3a90ae2d3eae00fc004",
                           "width": 640,
                           "height": 640
                         }
@@ -480,32 +773,32 @@
                       "reason": "PLAYABLE"
                     },
                     "sharingInfo": {
-                      "shareId": "-us8-FN7TJyCQvcNHfg2hA",
-                      "shareUrl": "https://open.spotify.com/album/2k2sYzO0pcjKW92ZIjB3mz?si=-us8-FN7TJyCQvcNHfg2hA"
+                      "shareId": "I0ngznY7RSy3OUk84FD-Vg",
+                      "shareUrl": "https://open.spotify.com/album/61dhI5XMTkrMAg5cT0Mzw0?si=I0ngznY7RSy3OUk84FD-Vg"
                     },
                     "type": "SINGLE"
                   },
                   {
-                    "id": "2gXpeABGMcy9VzSyKDLCW5",
-                    "uri": "spotify:album:2gXpeABGMcy9VzSyKDLCW5",
-                    "name": "Morning Piano - Albéniz: Asturias",
+                    "id": "6eEdPgM4YVywErIZ6Bs3tG",
+                    "uri": "spotify:album:6eEdPgM4YVywErIZ6Bs3tG",
+                    "name": "Fly Above",
                     "date": {
-                      "year": 2023
+                      "year": 2021
                     },
                     "coverArt": {
                       "sources": [
                         {
-                          "url": "https://i.scdn.co/image/ab67616d00001e0279d800695ecaaf67bb542377",
+                          "url": "https://i.scdn.co/image/ab67616d00001e022936611c729910bc0d8ca054",
                           "width": 300,
                           "height": 300
                         },
                         {
-                          "url": "https://i.scdn.co/image/ab67616d0000485179d800695ecaaf67bb542377",
+                          "url": "https://i.scdn.co/image/ab67616d000048512936611c729910bc0d8ca054",
                           "width": 64,
                           "height": 64
                         },
                         {
-                          "url": "https://i.scdn.co/image/ab67616d0000b27379d800695ecaaf67bb542377",
+                          "url": "https://i.scdn.co/image/ab67616d0000b2732936611c729910bc0d8ca054",
                           "width": 640,
                           "height": 640
                         }
@@ -516,8 +809,44 @@
                       "reason": "PLAYABLE"
                     },
                     "sharingInfo": {
-                      "shareId": "SrDxABuiTwKunzTOvg8hgA",
-                      "shareUrl": "https://open.spotify.com/album/2gXpeABGMcy9VzSyKDLCW5?si=SrDxABuiTwKunzTOvg8hgA"
+                      "shareId": "CsgRhENMQ3OvpY_9xH1ZCA",
+                      "shareUrl": "https://open.spotify.com/album/6eEdPgM4YVywErIZ6Bs3tG?si=CsgRhENMQ3OvpY_9xH1ZCA"
+                    },
+                    "type": "SINGLE"
+                  },
+                  {
+                    "id": "4bYuwZbYDCJ7nGIm5rjpr2",
+                    "uri": "spotify:album:4bYuwZbYDCJ7nGIm5rjpr2",
+                    "name": "Kapkaranlık Her Günüm",
+                    "date": {
+                      "year": 2020
+                    },
+                    "coverArt": {
+                      "sources": [
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00001e02bf49e38e8f7676cb269bd96c",
+                          "width": 300,
+                          "height": 300
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d00004851bf49e38e8f7676cb269bd96c",
+                          "width": 64,
+                          "height": 64
+                        },
+                        {
+                          "url": "https://i.scdn.co/image/ab67616d0000b273bf49e38e8f7676cb269bd96c",
+                          "width": 640,
+                          "height": 640
+                        }
+                      ]
+                    },
+                    "playability": {
+                      "playable": true,
+                      "reason": "PLAYABLE"
+                    },
+                    "sharingInfo": {
+                      "shareId": "5IYOpi0ZT86eaMjhaZsr3g",
+                      "shareUrl": "https://open.spotify.com/album/4bYuwZbYDCJ7nGIm5rjpr2?si=5IYOpi0ZT86eaMjhaZsr3g"
                     },
                     "type": "SINGLE"
                   }

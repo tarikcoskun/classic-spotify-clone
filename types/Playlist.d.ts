@@ -39,7 +39,7 @@ export interface ContentItem {
   uid: string;
   addedAt: AddedAt;
   addedBy: null;
-  attributes: any[];
+  attributes: Attribute[];
   itemV2: ItemV2;
 }
 
