@@ -1,0 +1,587 @@
+{
+  "data": {
+    "browse": {
+      "__typename": "BrowseSectionContainer",
+      "header": {
+        "backgroundImage": null,
+        "color": {
+          "hex": "#006450"
+        },
+        "title": {
+          "transformedLabel": "New Releases"
+        },
+        "subtitle": null
+      },
+      "uri": "spotify:page:0JQ5DAqbMKFz6FAsUtgAab",
+      "sections": {
+        "totalCount": 3,
+        "pagingInfo": {
+          "nextOffset": null
+        },
+        "items": [
+          {
+            "__typename": "BrowseSection",
+            "uri": "spotify:section:0JQ5IMCbQBLAWEq6iGFi0w",
+            "data": {
+              "__typename": "BrowseGenericSectionData",
+              "title": {
+                "transformedLabel": "The best new releases"
+              },
+              "subtitle": null
+            },
+            "sectionItems": {
+              "totalCount": 2,
+              "items": [
+                {
+                  "uri": "spotify:playlist:37i9dQZF1DXd8Yptw1g5FC",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZF1DXd8Yptw1g5FC",
+                      "name": "New Music Friday Türkiye",
+                      "description": "Haftanın en iyi yeni çıkışları. Kapak: Selin",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://i.scdn.co/image/ab67706f00000002a7b825e3bc41a46afd63b87e",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "format-shows-shuffle",
+                      "attributes": [
+                        {
+                          "key": "mediaListConfig",
+                          "value": "spotify:medialistconfig:editorial:default_v45"
+                        },
+                        {
+                          "key": "request_id",
+                          "value": "ssp|06103db542df80566e0661c6c20797f3d871"
+                        },
+                        {
+                          "key": "uri",
+                          "value": "spotify:user:spotify:playlist:37i9dQZF1DXd8Yptw1g5FC"
+                        },
+                        {
+                          "key": "status",
+                          "value": "PUBLISHED"
+                        },
+                        {
+                          "key": "isAlgotorial",
+                          "value": "false"
+                        },
+                        {
+                          "key": "primary_color",
+                          "value": "#A0C3D2"
+                        },
+                        {
+                          "key": "recs.hasArtists",
+                          "value": "spotify:artist:5xkqotsRPu6KQ4PiWjSGQf,spotify:artist:6YapGsI8u59kfewJjjJ2LJ,spotify:artist:0V2oXYR7DtrZAEFeILRW2r,spotify:artist:1ITjgqpqMDJlqZGAK3mlPQ,spotify:artist:6wOhMMln8EAGF1fJz5bn78"
+                        },
+                        {
+                          "key": "header_image_url_desktop",
+                          "value": "https://i.scdn.co/image/ab6768640000fe898e81759db6e1aa2534d83edf"
+                        },
+                        {
+                          "key": "image_url",
+                          "value": "https://i.scdn.co/image/ab67686d00003ae0cc340a87443fa5cd9b8702c2"
+                        },
+                        {
+                          "key": "episode_description",
+                          "value": "Haftanın en iyi yeni çıkışları. Kapak: Selin"
+                        },
+                        {
+                          "key": "correlation-id",
+                          "value": "ssp|06103db542df80566e0661c6c20797f3d871"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:playlist:37i9dQZEVXbxnqp0GFZtBG",
+                  "content": {
+                    "__typename": "PlaylistResponseWrapper",
+                    "data": {
+                      "__typename": "Playlist",
+                      "uri": "spotify:playlist:37i9dQZEVXbxnqp0GFZtBG",
+                      "name": "Yeni Müzik Radarı",
+                      "description": "Takip ettiğin sanatçıların en son müziklerinin hepsini, artı sadece senin için seçilmiş yeni single'ları yakala. Her Cuma güncellenir.",
+                      "images": {
+                        "items": [
+                          {
+                            "sources": [
+                              {
+                                "url": "https://newjams-images.scdn.co/image/ab67647800003f8a/dt/v3/release-radar/ab67616d0000b273c0d235b72361786b64300283/tr",
+                                "width": null,
+                                "height": null
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      "format": "release-radar",
+                      "attributes": [
+                        {
+                          "key": "madeFor.username",
+                          "value": "31jnptbmyoqegvgwjswchc3hgwnu"
+                        },
+                        {
+                          "key": "madeFor.displayed",
+                          "value": "1"
+                        }
+                      ],
+                      "ownerV2": {
+                        "data": {
+                          "__typename": "User",
+                          "name": "Spotify"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "targetLocation": ""
+          },
+          {
+            "__typename": "BrowseSection",
+            "uri": "spotify:section:0JQ5IMCbQBLAlPhkJ41ypw",
+            "data": {
+              "__typename": "BrowseGenericSectionData",
+              "title": {
+                "transformedLabel": "Hand-picked new releases"
+              },
+              "subtitle": null
+            },
+            "sectionItems": {
+              "totalCount": 4491,
+              "items": [
+                {
+                  "uri": "spotify:album:4NGIX0BP6xxRaGh64hhJhe",
+                  "content": {
+                    "__typename": "AlbumResponseWrapper",
+                    "data": {
+                      "__typename": "Album",
+                      "uri": "spotify:album:4NGIX0BP6xxRaGh64hhJhe",
+                      "name": "All Is Yellow",
+                      "artists": {
+                        "items": [
+                          {
+                            "uri": "spotify:artist:3VrGfWE8YdYMK4ySpnE0ly",
+                            "profile": {
+                              "name": "Lyrical Lemonade"
+                            }
+                          }
+                        ]
+                      },
+                      "coverArt": {
+                        "sources": [
+                          {
+                            "url": "https://i.scdn.co/image/ab67616d00001e023011c33da8122f277da3b0e5",
+                            "width": 300,
+                            "height": 300
+                          },
+                          {
+                            "url": "https://i.scdn.co/image/ab67616d000048513011c33da8122f277da3b0e5",
+                            "width": 64,
+                            "height": 64
+                          },
+                          {
+                            "url": "https://i.scdn.co/image/ab67616d0000b2733011c33da8122f277da3b0e5",
+                            "width": 640,
+                            "height": 640
+                          }
+                        ]
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:album:5figFvXRBXHKm9XDyYlXqG",
+                  "content": {
+                    "__typename": "AlbumResponseWrapper",
+                    "data": {
+                      "__typename": "Album",
+                      "uri": "spotify:album:5figFvXRBXHKm9XDyYlXqG",
+                      "name": "MODUS 7.62",
+                      "artists": {
+                        "items": [
+                          {
+                            "uri": "spotify:artist:4ESPwgMOkNWv8mZIfe2mdO",
+                            "profile": {
+                              "name": "Tankurt Manas"
+                            }
+                          }
+                        ]
+                      },
+                      "coverArt": {
+                        "sources": [
+                          {
+                            "url": "https://i.scdn.co/image/ab67616d00001e0260b09445722a73c0ac2da371",
+                            "width": 300,
+                            "height": 300
+                          },
+                          {
+                            "url": "https://i.scdn.co/image/ab67616d0000485160b09445722a73c0ac2da371",
+                            "width": 64,
+                            "height": 64
+                          },
+                          {
+                            "url": "https://i.scdn.co/image/ab67616d0000b27360b09445722a73c0ac2da371",
+                            "width": 640,
+                            "height": 640
+                          }
+                        ]
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:album:72DVw5ejr9H2AnzgpRBL3F",
+                  "content": {
+                    "__typename": "AlbumResponseWrapper",
+                    "data": {
+                      "__typename": "Album",
+                      "uri": "spotify:album:72DVw5ejr9H2AnzgpRBL3F",
+                      "name": "Seçkiler - Essentials 4 / CEM",
+                      "artists": {
+                        "items": [
+                          {
+                            "uri": "spotify:artist:2AWUCT9xtcvkjpFq1ZgpPj",
+                            "profile": {
+                              "name": "Cem Adrian"
+                            }
+                          }
+                        ]
+                      },
+                      "coverArt": {
+                        "sources": [
+                          {
+                            "url": "https://i.scdn.co/image/ab67616d00001e0295aea9c65280787eb7942510",
+                            "width": 300,
+                            "height": 300
+                          },
+                          {
+                            "url": "https://i.scdn.co/image/ab67616d0000485195aea9c65280787eb7942510",
+                            "width": 64,
+                            "height": 64
+                          },
+                          {
+                            "url": "https://i.scdn.co/image/ab67616d0000b27395aea9c65280787eb7942510",
+                            "width": 640,
+                            "height": 640
+                          }
+                        ]
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:album:3dUQMZfmYCKV2jRcZT0GpB",
+                  "content": {
+                    "__typename": "AlbumResponseWrapper",
+                    "data": {
+                      "__typename": "Album",
+                      "uri": "spotify:album:3dUQMZfmYCKV2jRcZT0GpB",
+                      "name": "Yargı (Music From The Original Tv Series)",
+                      "artists": {
+                        "items": [
+                          {
+                            "uri": "spotify:artist:2l0Ol9ASKE7E196nHpblB7",
+                            "profile": {
+                              "name": "Toygar Işıklı"
+                            }
+                          }
+                        ]
+                      },
+                      "coverArt": {
+                        "sources": [
+                          {
+                            "url": "https://i.scdn.co/image/ab67616d00001e027577d0540eca84c41bb93207",
+                            "width": 300,
+                            "height": 300
+                          },
+                          {
+                            "url": "https://i.scdn.co/image/ab67616d000048517577d0540eca84c41bb93207",
+                            "width": 64,
+                            "height": 64
+                          },
+                          {
+                            "url": "https://i.scdn.co/image/ab67616d0000b2737577d0540eca84c41bb93207",
+                            "width": 640,
+                            "height": 640
+                          }
+                        ]
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:album:241VWmEbUmlVFqWauaJ2VR",
+                  "content": {
+                    "__typename": "AlbumResponseWrapper",
+                    "data": {
+                      "__typename": "Album",
+                      "uri": "spotify:album:241VWmEbUmlVFqWauaJ2VR",
+                      "name": "KÖTÜ MÜZİK",
+                      "artists": {
+                        "items": [
+                          {
+                            "uri": "spotify:artist:5uc5qmVVzOLECcqTywPNXV",
+                            "profile": {
+                              "name": "Rinxlaya"
+                            }
+                          },
+                          {
+                            "uri": "spotify:artist:7zIcHMhD4nOi0IpORMwGih",
+                            "profile": {
+                              "name": "Gantz"
+                            }
+                          }
+                        ]
+                      },
+                      "coverArt": {
+                        "sources": [
+                          {
+                            "url": "https://i.scdn.co/image/ab67616d00001e026bdee44e8ef04219beed14be",
+                            "width": 300,
+                            "height": 300
+                          },
+                          {
+                            "url": "https://i.scdn.co/image/ab67616d000048516bdee44e8ef04219beed14be",
+                            "width": 64,
+                            "height": 64
+                          },
+                          {
+                            "url": "https://i.scdn.co/image/ab67616d0000b2736bdee44e8ef04219beed14be",
+                            "width": 640,
+                            "height": 640
+                          }
+                        ]
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:album:6rMJDXvOhOOsB7AsgVOP6Q",
+                  "content": {
+                    "__typename": "AlbumResponseWrapper",
+                    "data": {
+                      "__typename": "Album",
+                      "uri": "spotify:album:6rMJDXvOhOOsB7AsgVOP6Q",
+                      "name": "ALABORA",
+                      "artists": {
+                        "items": [
+                          {
+                            "uri": "spotify:artist:0EJe5gUmpf6NraeLEyFF7E",
+                            "profile": {
+                              "name": "Bora"
+                            }
+                          }
+                        ]
+                      },
+                      "coverArt": {
+                        "sources": [
+                          {
+                            "url": "https://i.scdn.co/image/ab67616d00001e02d3b6c6235f6aad27493f71c9",
+                            "width": 300,
+                            "height": 300
+                          },
+                          {
+                            "url": "https://i.scdn.co/image/ab67616d00004851d3b6c6235f6aad27493f71c9",
+                            "width": 64,
+                            "height": 64
+                          },
+                          {
+                            "url": "https://i.scdn.co/image/ab67616d0000b273d3b6c6235f6aad27493f71c9",
+                            "width": 640,
+                            "height": 640
+                          }
+                        ]
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:album:4ktOuEyfPqsFTxNupKdXoV",
+                  "content": {
+                    "__typename": "AlbumResponseWrapper",
+                    "data": {
+                      "__typename": "Album",
+                      "uri": "spotify:album:4ktOuEyfPqsFTxNupKdXoV",
+                      "name": "Silah Gibi",
+                      "artists": {
+                        "items": [
+                          {
+                            "uri": "spotify:artist:7J7IAR4rkzo4FcZTDid3Jk",
+                            "profile": {
+                              "name": "Cash Flow"
+                            }
+                          }
+                        ]
+                      },
+                      "coverArt": {
+                        "sources": [
+                          {
+                            "url": "https://i.scdn.co/image/ab67616d00001e02ddfc0cd41d0d5db778f3efee",
+                            "width": 300,
+                            "height": 300
+                          },
+                          {
+                            "url": "https://i.scdn.co/image/ab67616d00004851ddfc0cd41d0d5db778f3efee",
+                            "width": 64,
+                            "height": 64
+                          },
+                          {
+                            "url": "https://i.scdn.co/image/ab67616d0000b273ddfc0cd41d0d5db778f3efee",
+                            "width": 640,
+                            "height": 640
+                          }
+                        ]
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:album:0kKWs0ComnwZkfZyeTgMkI",
+                  "content": {
+                    "__typename": "AlbumResponseWrapper",
+                    "data": {
+                      "__typename": "Album",
+                      "uri": "spotify:album:0kKWs0ComnwZkfZyeTgMkI",
+                      "name": "Eteğimdeki Taşlar",
+                      "artists": {
+                        "items": [
+                          {
+                            "uri": "spotify:artist:571gGI6PcQbBN0SZ5QEI5i",
+                            "profile": {
+                              "name": "Şenceylik"
+                            }
+                          }
+                        ]
+                      },
+                      "coverArt": {
+                        "sources": [
+                          {
+                            "url": "https://i.scdn.co/image/ab67616d00001e023a36ff4abe8e71718f2ca06b",
+                            "width": 300,
+                            "height": 300
+                          },
+                          {
+                            "url": "https://i.scdn.co/image/ab67616d000048513a36ff4abe8e71718f2ca06b",
+                            "width": 64,
+                            "height": 64
+                          },
+                          {
+                            "url": "https://i.scdn.co/image/ab67616d0000b2733a36ff4abe8e71718f2ca06b",
+                            "width": 640,
+                            "height": 640
+                          }
+                        ]
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:album:3lcsRejIVqC2ZzgohbS9X1",
+                  "content": {
+                    "__typename": "AlbumResponseWrapper",
+                    "data": {
+                      "__typename": "Album",
+                      "uri": "spotify:album:3lcsRejIVqC2ZzgohbS9X1",
+                      "name": "Reveries",
+                      "artists": {
+                        "items": [
+                          {
+                            "uri": "spotify:artist:586eJg9tmYDLSahAhozZBo",
+                            "profile": {
+                              "name": "Akın Sevgör"
+                            }
+                          }
+                        ]
+                      },
+                      "coverArt": {
+                        "sources": [
+                          {
+                            "url": "https://i.scdn.co/image/ab67616d00001e0246dc98f1a15d2d4c1cd95674",
+                            "width": 300,
+                            "height": 300
+                          },
+                          {
+                            "url": "https://i.scdn.co/image/ab67616d0000485146dc98f1a15d2d4c1cd95674",
+                            "width": 64,
+                            "height": 64
+                          },
+                          {
+                            "url": "https://i.scdn.co/image/ab67616d0000b27346dc98f1a15d2d4c1cd95674",
+                            "width": 640,
+                            "height": 640
+                          }
+                        ]
+                      }
+                    }
+                  }
+                },
+                {
+                  "uri": "spotify:album:2GQKPC1ISn1FfCDkb5QemD",
+                  "content": {
+                    "__typename": "AlbumResponseWrapper",
+                    "data": {
+                      "__typename": "Album",
+                      "uri": "spotify:album:2GQKPC1ISn1FfCDkb5QemD",
+                      "name": "Anka",
+                      "artists": {
+                        "items": [
+                          {
+                            "uri": "spotify:artist:3bwJHOVtO7XdqHwLYRlgEV",
+                            "profile": {
+                              "name": "Ezgi Arıkan"
+                            }
+                          }
+                        ]
+                      },
+                      "coverArt": {
+                        "sources": [
+                          {
+                            "url": "https://i.scdn.co/image/ab67616d00001e0206fca3ecd35511dc446c4249",
+                            "width": 300,
+                            "height": 300
+                          },
+                          {
+                            "url": "https://i.scdn.co/image/ab67616d0000485106fca3ecd35511dc446c4249",
+                            "width": 64,
+                            "height": 64
+                          },
+                          {
+                            "url": "https://i.scdn.co/image/ab67616d0000b27306fca3ecd35511dc446c4249",
+                            "width": 640,
+                            "height": 640
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "targetLocation": ""
+          }
+        ]
+      }
+    }
+  },
+  "extensions": {}
+}

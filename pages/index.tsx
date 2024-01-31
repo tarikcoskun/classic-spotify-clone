@@ -7,6 +7,7 @@ import Tabs from "@/ui/Tabs";
 import HomeOverview from "@/views/Home/Overview";
 import HomeCharts from "@/views/Home/Charts";
 import HomeGenres from "@/views/Home/Genres";
+import HomeNewReleases from "@/views/Home/NewReleases";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
             <Tabs.Trigger value="overview">Overview</Tabs.Trigger>
             <Tabs.Trigger value="charts">Charts</Tabs.Trigger>
             <Tabs.Trigger value="genres">Genres & Moods</Tabs.Trigger>
-            <Tabs.Trigger value="releases">New Releases</Tabs.Trigger>
+            <Tabs.Trigger value="newReleases">New Releases</Tabs.Trigger>
             <Tabs.Trigger value="news">News</Tabs.Trigger>
           </Tabs.List>
           <Tabs.Content value="overview">
@@ -30,6 +31,9 @@ export default function Home() {
           </Tabs.Content>
           <Tabs.Content value="genres">
             <HomeGenres />
+          </Tabs.Content>
+          <Tabs.Content value="newReleases">
+            <HomeNewReleases />
           </Tabs.Content>
         </Tabs>
       </main>
