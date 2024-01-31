@@ -1,7 +1,11 @@
+import { useContext } from "react";
 import { getReadableTime } from "@/helpers/getReadableTime";
 
-// Icons
+// Components
 import Icon from "@/ui/Icon";
+
+// Store
+import { TrackContext } from "@/store/track";
 
 // Styles
 import s from "@/styles/Player.module.scss";
@@ -12,14 +16,21 @@ const total = 248440;
 const volume = 75;
 
 export default function Player() {
+  const context = useContext(TrackContext);
+
   return (
     <div className={s.player}>
       <div className={s.controlsLeft}>
         <button aria-label="Previous">
           <Icon icon="previous" size={24} />
         </button>
-        <button aria-label="Play">
-          <Icon icon="play" size={24} />
+        <button
+          aria-label={context.isPlaying ? "Pause" : "Play"}
+          onClick={() => {
+            context.setPlaying((val) => !val);
+          }}
+        >
+          <Icon icon={context.isPlaying ? "pause" : "play"} size={24} />
         </button>
         <button aria-label="Next">
           <Icon icon="next" size={24} />

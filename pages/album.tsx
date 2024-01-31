@@ -1,12 +1,17 @@
 import type { AlbumUnion } from "@/types/Album";
 
+import { useContext } from "react";
 import { getReadableTime } from "@/helpers/getReadableTime";
 
 // Components
 import Layout from "@/ui/Layout";
 import Link from "next/link";
 import Table from "@/ui/Table";
+import Icon from "@/ui/Icon";
 import CollectionHeader from "@/ui/CollectionHeader";
+
+// Store
+import { TrackContext } from "@/store/track";
 
 // Data
 import albumData from "@/data/album.json";
@@ -17,6 +22,8 @@ import s from "@/styles/Collection.module.scss";
 const albumInfo = albumData.data.albumUnion as AlbumUnion;
 
 export default function Album() {
+  const context = useContext(TrackContext);
+
   return (
     <Layout>
       <main>
@@ -35,21 +42,50 @@ export default function Album() {
             spacing={["40px", "4fr", "5fr", "40px"]}
             rowClassName={s.tableRow}
             data={albumInfo.tracks.items.map((item, idx) => ({
-              "#": idx + 1,
-              Track: (
-                <span className="whiteText truncate" title={item.track.name}>
-                  {item.track.name}
-                </span>
-              ),
-              Artist: (
-                <Link
-                  href="/artist"
-                  className="whiteText hoverLine truncate"
-                  title={item.track.artists.items.map((artist) => artist.profile.name).join(", ")}
-                >
-                  {item.track.artists.items.map((artist) => artist.profile.name).join(", ")}
-                </Link>
-              ),
+              "#": {
+                html: context.isPlaying && context.track === item.track.name ? <Icon icon="volume" className="whiteText" /> : idx + 1,
+                whileHover:
+                  context.isPlaying && context.track === item.track.name ? (
+                    <button
+                      aria-label="Pause"
+                      className="whiteText"
+                      onClick={() => {
+                        context.setPlaying(false);
+                      }}
+                    >
+                      <Icon icon="pause-alt" size={20} />
+                    </button>
+                  ) : (
+                    <button
+                      aria-label="Play"
+                      className="whiteText"
+                      onClick={() => {
+                        context.setPlaying(true);
+                        context.setTrack(item.track.name);
+                      }}
+                    >
+                      <Icon icon="play-alt" size={20} />
+                    </button>
+                  ),
+              },
+              Track: {
+                html: (
+                  <span className="whiteText truncate" title={item.track.name} data-active={context.track === item.track.name}>
+                    {item.track.name}
+                  </span>
+                ),
+              },
+              Artist: {
+                html: (
+                  <Link
+                    href="/artist"
+                    className="whiteText hoverLine truncate"
+                    title={item.track.artists.items.map((artist) => artist.profile.name).join(", ")}
+                  >
+                    {item.track.artists.items.map((artist) => artist.profile.name).join(", ")}
+                  </Link>
+                ),
+              },
               Duration: getReadableTime(item.track.duration.totalMilliseconds),
             }))}
           />

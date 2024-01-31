@@ -8,6 +8,7 @@ import { DefaultSeo } from "next-seo";
 import "pollen-css";
 import "@/styles/globals.scss";
 import { Inter } from "next/font/google";
+import TrackProvider from "@/store/track";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -51,7 +52,9 @@ export default function App({ Component, pageProps }: AppProps) {
         }}
       />
 
-      <Component {...pageProps} />
+      <TrackProvider>
+        <Component {...pageProps} />
+      </TrackProvider>
     </>
   );
 }

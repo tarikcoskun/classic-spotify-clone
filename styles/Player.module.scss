@@ -19,7 +19,8 @@
       border-radius: var(--radius-full);
       background-color: transparent;
 
-      &[aria-label="Play"] {
+      &[aria-label="Play"],
+      &[aria-label="Pause"] {
         background-color: c.$layer3;
 
         &:hover {

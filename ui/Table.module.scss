@@ -51,6 +51,10 @@
       align-items: center;
       font-size: var(--scale-00);
       @include util.truncate;
+
+      [data-active="true"] {
+        color: c.$brand;
+      }
     }
 
     > :last-child {
@@ -61,9 +65,5 @@
   [aria-rowindex="1"],
   [aria-rowindex="2"] .tableRow {
     border-top: 0;
-  }
-
-  .play {
-    color: c.$title;
   }
 }

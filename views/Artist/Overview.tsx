@@ -1,20 +1,25 @@
 import type { ArtistUnion } from "@/types/Artist";
 
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { getReadableTime } from "@/helpers/getReadableTime";
 
 // Components
 import Link from "next/link";
 import Card from "@/ui/Card";
+import Icon from "@/ui/Icon";
 import Table from "@/ui/Table";
 import Button from "@/ui/Button";
 import Section from "@/ui/Section";
+
+// Store
+import { TrackContext } from "@/store/track";
 
 // Styles
 import s from "./Overview.module.scss";
 
 export default function ArtistOverview({ data }: { data: ArtistUnion }) {
   const [popularExpanded, setPopularExpanded] = useState(false);
+  const context = useContext(TrackContext);
 
   const latestRelease = data.discography.popularReleasesAlbums.items.sort((a, b) => b.date.year - a.date.year)[0];
   const topTracks = data.discography.topTracks.items;
@@ -50,21 +55,50 @@ export default function ArtistOverview({ data }: { data: ArtistUnion }) {
                 headless
                 spacing={["40px", "40px", "5fr", "2fr", "40px"]}
                 data={(popularExpanded ? topTracks : topTracks.slice(0, 5)).map((track, idx) => ({
-                  Cover: (
-                    <img
-                      src={track.track.albumOfTrack.coverArt.sources[0].url}
-                      alt={track.track.name}
-                      width={40}
-                      height={40}
-                      draggable="false"
-                    />
-                  ),
-                  "#": idx + 1,
-                  Title: (
-                    <span className="whiteText truncate" title={track.track.name}>
-                      {track.track.name}
-                    </span>
-                  ),
+                  Cover: {
+                    html: (
+                      <img
+                        src={track.track.albumOfTrack.coverArt.sources[0].url}
+                        alt={track.track.name}
+                        width={40}
+                        height={40}
+                        draggable="false"
+                      />
+                    ),
+                  },
+                  "#": {
+                    html: context.isPlaying && context.track === track.track.name ? <Icon icon="volume" className="whiteText" /> : idx + 1,
+                    whileHover:
+                      context.isPlaying && context.track === track.track.name ? (
+                        <button
+                          aria-label="Pause"
+                          className="whiteText"
+                          onClick={() => {
+                            context.setPlaying(false);
+                          }}
+                        >
+                          <Icon icon="pause-alt" size={20} />
+                        </button>
+                      ) : (
+                        <button
+                          aria-label="Play"
+                          className="whiteText"
+                          onClick={() => {
+                            context.setPlaying(true);
+                            context.setTrack(track.track.name);
+                          }}
+                        >
+                          <Icon icon="play-alt" size={20} />
+                        </button>
+                      ),
+                  },
+                  Track: {
+                    html: (
+                      <span className="whiteText truncate" title={track.track.name} data-active={context.track === track.track.name}>
+                        {track.track.name}
+                      </span>
+                    ),
+                  },
                   Playcount: new Intl.NumberFormat("en-US").format(parseInt(track.track.playcount)),
                   Duration: getReadableTime(track.track.duration.totalMilliseconds),
                 }))}

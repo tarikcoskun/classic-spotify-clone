@@ -39,10 +39,8 @@
   }
 }
 
-.popularContainer {
-  button {
-    margin-top: var(--size-4);
-  }
+.popularContainer > button {
+  margin-top: var(--size-4);
 }
 
 .relatedArtists {

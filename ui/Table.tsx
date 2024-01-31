@@ -1,12 +1,19 @@
 import classNames from "classnames";
-import { useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
+
+// Store
+import { TrackContext } from "@/store/track";
 
 // Styles
 import s from "./Table.module.scss";
-import Icon from "./Icon";
 
 interface TableItem {
-  [field: string]: React.ReactNode;
+  [field: string]: string | number | DetailedTableItem;
+}
+
+interface DetailedTableItem {
+  html: React.ReactNode;
+  whileHover?: React.ReactNode;
 }
 
 interface TableProps extends React.HTMLAttributes<HTMLElement> {
@@ -24,6 +31,8 @@ export default function Table(props: TableProps) {
   const tableHeadRef = useRef<HTMLElement>(null);
   const [isHovering, setHovering] = useState(-1);
   const [headSticked, setHeadSticked] = useState(false);
+
+  const context = useContext(TrackContext);
 
   useEffect(() => {
     const listener = () => {
@@ -59,16 +68,24 @@ export default function Table(props: TableProps) {
       )}
 
       <div role="presentation" className={s.tableBody}>
-        {data.map((dataRows, idx) => (
+        {data.map((dataRow, idx) => (
           <div key={idx} role="row" aria-rowindex={idx + 2} onMouseEnter={() => setHovering(idx)} onMouseLeave={() => setHovering(-1)}>
-            <div role="presentation" className={classNames(s.tableRow, !headless && s.spaced, rowClassName)}>
-              {Object.values(dataRows).map((value, valIdx) => (
-                <div key={idx} role="gridcell" className={classNames(s.tableData, dataClassName)}>
-                  {Object.keys(data[0])[valIdx] === "#" && isHovering === idx ? (
-                    <Icon icon="play-alt" size={20} className={s.play} />
-                  ) : (
-                    value
-                  )}
+            <div
+              role="presentation"
+              className={classNames(s.tableRow, !headless && s.spaced, rowClassName)}
+              onDoubleClick={() => {
+                const data = dataRow["Track"] as DetailedTableItem;
+                context.setPlaying(true);
+                context.setTrack((data.html as React.ReactElement).props.title);
+              }}
+            >
+              {Object.values(dataRow).map((property, propIdx) => (
+                <div key={propIdx} role="gridcell" className={classNames(s.tableData, dataClassName)}>
+                  {typeof property === "object"
+                    ? property.whileHover && isHovering === idx
+                      ? (property as DetailedTableItem).whileHover
+                      : (property as DetailedTableItem).html
+                    : property}
                 </div>
               ))}
             </div>
