@@ -1,81 +1,75 @@
 @use "@/styles/colors" as c;
 
-.tabView {
-  display: flex;
-  flex-direction: column;
+.grid {
+  display: grid;
   gap: var(--size-10);
+  grid-template-columns: 2fr 1fr;
 
-  .grid {
-    display: grid;
-    gap: var(--size-10);
-    grid-template-columns: 2fr 1fr;
-
-    .leftSide {
-      display: flex;
-      flex-direction: column;
-      gap: var(--size-10);
-    }
-
-    .latestRelease {
-      background-color: c.$layer1;
-      display: flex;
-      align-items: center;
-      gap: var(--size-6);
-
-      &:hover {
-        background-color: c.$layer2;
-      }
-
-      .albumCover {
-        width: 96px;
-        height: 96px;
-      }
-
-      .albumDetails {
-        .title {
-          color: c.$title;
-        }
-
-        .releaseDate {
-          margin-top: var(--size-3);
-          font-size: var(--scale-00);
-        }
-      }
-    }
-  }
-
-  .popularContainer {
-    button {
-      margin-top: var(--size-4);
-    }
-  }
-
-  .relatedArtists {
+  .leftSide {
     display: flex;
-    gap: var(--size-1);
     flex-direction: column;
+    gap: var(--size-10);
+  }
 
-    .card {
-      background-color: c.$layer1;
-      padding: var(--size-2);
-      display: flex;
-      gap: var(--size-4);
-      align-items: center;
+  .latestRelease {
+    background-color: c.$layer1;
+    display: flex;
+    align-items: center;
+    gap: var(--size-6);
 
-      &:hover {
-        background-color: c.$layer2;
-      }
+    &:hover {
+      background-color: c.$layer2;
+    }
 
-      .artistPhoto {
-        width: 48px;
-        height: 48px;
-        object-fit: cover;
-        border-radius: var(--radius-full);
-      }
+    .albumCover {
+      width: 96px;
+      height: 96px;
+    }
 
-      .name {
+    .albumDetails {
+      .title {
         color: c.$title;
       }
+
+      .releaseDate {
+        margin-top: var(--size-3);
+        font-size: var(--scale-00);
+      }
+    }
+  }
+}
+
+.popularContainer {
+  button {
+    margin-top: var(--size-4);
+  }
+}
+
+.relatedArtists {
+  display: flex;
+  gap: var(--size-1);
+  flex-direction: column;
+
+  .card {
+    background-color: c.$layer1;
+    padding: var(--size-2);
+    display: flex;
+    gap: var(--size-4);
+    align-items: center;
+
+    &:hover {
+      background-color: c.$layer2;
+    }
+
+    .artistPhoto {
+      width: 48px;
+      height: 48px;
+      object-fit: cover;
+      border-radius: var(--radius-full);
+    }
+
+    .name {
+      color: c.$title;
     }
   }
 }

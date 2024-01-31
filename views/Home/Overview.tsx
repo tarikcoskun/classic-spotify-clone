@@ -95,7 +95,7 @@ const newReleases = [
 
 export default function HomeOverview() {
   return (
-    <div className={s.tabView}>
+    <div className="genericContainer">
       <Section className={s.greeting}>
         <header className={s.header}>
           <div className={s.title}>The best music for any moment.</div>

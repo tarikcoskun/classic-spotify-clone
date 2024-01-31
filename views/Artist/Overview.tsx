@@ -21,7 +21,7 @@ export default function ArtistOverview({ data }: { data: ArtistUnion }) {
   const relatedArtists = data.relatedContent.relatedArtists.items.slice(0, 6);
 
   return (
-    <div className={s.tabView}>
+    <div className="genericContainer">
       <div className={s.grid}>
         <div className={s.leftSide}>
           <Section>

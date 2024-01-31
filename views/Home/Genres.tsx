@@ -9,7 +9,7 @@ import s from "./Genres.module.scss";
 
 export default function HomeGenres() {
   return (
-    <div className={s.tabView}>
+    <div className="genericContainer">
       <Section>
         <Section.Header title="Browse All" />
         <div className="genericGrid">

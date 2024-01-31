@@ -4,14 +4,11 @@ import type { ArtistUnion } from "@/types/Artist";
 import Link from "next/link";
 import Card from "@/ui/Card";
 
-// Styles
-import s from "./Related.module.scss";
-
 export default function ArtistRelated({ data }: { data: ArtistUnion }) {
   const relatedArtists = data.relatedContent.relatedArtists.items;
 
   return (
-    <div className={s.tabView}>
+    <div className="genericContainer">
       <div className="genericGrid">
         {relatedArtists.map((artist, idx) => (
           <Link href="/artist" key={idx}>

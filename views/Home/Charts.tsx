@@ -6,12 +6,9 @@ import Section from "@/ui/Section";
 // Data
 import chartsData from "@/data/charts.json";
 
-// Styles
-import s from "./Charts.module.scss";
-
 export default function HomeCharts() {
   return (
-    <div className={s.tabView}>
+    <div className="genericContainer">
       {chartsData.data.browse.sections.items.map((section, idx) => (
         <Section key={idx}>
           <Section.Header title={section.data.title.transformedLabel} />

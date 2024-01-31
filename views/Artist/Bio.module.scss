@@ -1,69 +1,63 @@
 @use "@/styles/colors" as c;
 @use "sass:color";
 
-.tabView {
-  display: flex;
-  flex-direction: column;
-  gap: var(--size-10);
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .leftSide {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-6);
+    padding-right: var(--size-8);
 
-    .leftSide {
-      display: flex;
-      flex-direction: column;
+    .bio {
+      line-height: var(--scale-3);
+      color: color.adjust(c.$title, $alpha: -0.25);
+    }
+  }
+
+  .rightSide {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-12);
+    padding-left: var(--size-8);
+    border-left: 1px solid c.$layer1;
+
+    > div {
+      display: grid;
       gap: var(--size-6);
-      padding-right: var(--size-8);
-
-      .bio {
-        line-height: var(--scale-3);
-        color: color.adjust(c.$title, $alpha: -0.25);
-      }
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .rightSide {
+    .stat {
       display: flex;
       flex-direction: column;
-      gap: var(--size-12);
-      padding-left: var(--size-8);
-      border-left: 1px solid c.$layer1;
+      gap: var(--size-2);
 
-      > div {
-        display: grid;
-        gap: var(--size-6);
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
+      .title {
+        color: c.$title;
+        font-weight: 500;
 
-      .stat {
-        display: flex;
-        flex-direction: column;
-        gap: var(--size-2);
-
-        .title {
-          color: c.$title;
-          font-weight: 500;
-
-          &.big {
-            font-size: var(--scale-4);
-          }
+        &.big {
+          font-size: var(--scale-4);
         }
       }
     }
   }
+}
 
-  .socialLink {
-    display: flex;
-    gap: var(--size-2);
-    align-items: center;
+.socialLink {
+  display: flex;
+  gap: var(--size-2);
+  align-items: center;
 
-    span {
-      text-transform: capitalize;
-    }
+  span {
+    text-transform: capitalize;
+  }
 
-    &:hover {
-      color: c.$title;
-      text-decoration: underline;
-    }
+  &:hover {
+    color: c.$title;
+    text-decoration: underline;
   }
 }
