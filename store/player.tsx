@@ -25,7 +25,7 @@ const PlayerProvider = (props: React.PropsWithChildren) => {
 
   const [track, setTrack] = useState<string | null>(null);
   const [isPlaying, setPlaying] = useState(false);
-  const [volume, setVolume] = useState(75);
+  const [volume, setVolume] = useState(50);
   const [playbackProgress, setPlaybackProgress] = useState({
     elapsed: 0,
     total: 248440,

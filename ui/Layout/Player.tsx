@@ -35,7 +35,7 @@ export default function Player() {
     context.setVolume(clamp(0, clickPos, 100));
   }
 
-  function handleMouseDown(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
+  function handleMouseDown(event: React.MouseEvent) {
     const target = event.target as HTMLElement;
 
     if (target.dataset.listener === "pb") pbDotRef.current?.setAttribute("aria-pressed", "true");
@@ -58,6 +58,10 @@ export default function Player() {
         handleVolChange(event.pageX);
       }
     }
+  }
+
+  function handleWheel(event: React.WheelEvent) {
+    context.setVolume((val) => clamp(0, val + (event.deltaY * -1) / 10, 100));
   }
 
   return (
@@ -83,6 +87,7 @@ export default function Player() {
           ref={volProgressRef}
           onMouseDown={handleMouseDown}
           onClick={(event) => handleVolChange(event.pageX)}
+          onWheel={handleWheel}
           className={s.volumeProgress}
           data-listener="vol"
         >
