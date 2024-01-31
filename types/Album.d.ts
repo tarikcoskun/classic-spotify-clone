@@ -11,10 +11,10 @@ export interface AlbumUnion {
   __typename: string;
   uri: string;
   name: string;
-  artists: AlbumUnionArtists;
+  artists: ReleasesClass;
   coverArt: CoverArt;
   discs: Discs;
-  releases: Releases;
+  releases: ReleasesClass;
   type: Type;
   date: AlbumUnionDate;
   playability: ItemPlayability;
@@ -27,33 +27,25 @@ export interface AlbumUnion {
   moreAlbumsByArtist: MoreAlbumsByArtist;
 }
 
-export interface AlbumUnionArtists {
+export interface ReleasesClass {
   totalCount: number;
-  items: PurpleItem[];
+  items: ReleasesItem[];
 }
 
-export interface PurpleItem {
+export interface ReleasesItem {
   id: string;
-  uri: URI;
+  uri: string;
   profile: Profile;
   visuals: Visuals;
   sharingInfo: PurpleSharingInfo;
 }
 
 export interface Profile {
-  name: Name;
-}
-
-export enum Name {
-  SenaŞener = "Sena Şener",
+  name: string;
 }
 
 export interface PurpleSharingInfo {
   shareUrl: string;
-}
-
-export enum URI {
-  SpotifyArtist7CW2EGwAuElNq09RVTZYsM = "spotify:artist:7CW2eGwAuElNq09rVtZYsM",
 }
 
 export interface Visuals {
@@ -164,16 +156,6 @@ export enum Type {
   Single = "SINGLE",
 }
 
-export interface Releases {
-  totalCount: number;
-  items: ReleasesItem[];
-}
-
-export interface ReleasesItem {
-  uri: string;
-  name: string;
-}
-
 export interface AlbumUnionTracks {
   totalCount: number;
   items: TracksItem[];
@@ -200,11 +182,11 @@ export interface Track {
 }
 
 export interface TrackArtists {
-  items: FluffyItem[];
+  items: PurpleItem[];
 }
 
-export interface FluffyItem {
-  uri: URI;
+export interface PurpleItem {
+  uri: string;
   profile: Profile;
 }
 
@@ -213,11 +195,7 @@ export interface Associations {
 }
 
 export interface ContentRating {
-  label: Label;
-}
-
-export enum Label {
-  None = "NONE",
+  label: string;
 }
 
 export interface Duration {

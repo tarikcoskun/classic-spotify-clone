@@ -87,28 +87,12 @@ export interface Artists {
 }
 
 export interface ArtistsItem {
-  uri: URI;
+  uri: string;
   profile: Profile;
 }
 
 export interface Profile {
-  name: Name;
-}
-
-export enum Name {
-  CemAdrian = "Cem Adrian",
-  MahmutOrhan = "Mahmut Orhan",
-  SenaŞener = "Sena Şener",
-  TunaKiremitçi = "Tuna Kiremitçi",
-  Şanışer = "Şanışer",
-}
-
-export enum URI {
-  SpotifyArtist2AWUCT9XtcvkjpFq1ZgpPj = "spotify:artist:2AWUCT9xtcvkjpFq1ZgpPj",
-  SpotifyArtist3T8WiyalpvnB9AObcMufiE = "spotify:artist:3t8WiyalpvnB9AObcMufiE",
-  SpotifyArtist5LUxu287CSPM7Jy3YS3L86 = "spotify:artist:5LUxu287CsPM7jy3yS3l86",
-  SpotifyArtist799GDxXgsUDuGSbh5HJ3Kv = "spotify:artist:799GDxXgsUDuGSbh5HJ3Kv",
-  SpotifyArtist7CW2EGwAuElNq09RVTZYsM = "spotify:artist:7CW2eGwAuElNq09rVtZYsM",
+  name: string;
 }
 
 export interface Avatar {
@@ -134,7 +118,6 @@ export interface ContentRating {
 }
 
 export enum Label {
-  Explicit = "EXPLICIT",
   None = "NONE",
 }
 
@@ -144,6 +127,7 @@ export interface Playability {
 }
 
 export enum Reason {
+  CountryRestricted = "COUNTRY_RESTRICTED",
   Playable = "PLAYABLE",
 }
 
