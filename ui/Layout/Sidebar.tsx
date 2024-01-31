@@ -2,7 +2,6 @@ import { useRouter } from "next/router";
 
 // Components
 import Link from "next/link";
-import Image from "next/image";
 import Icon, { type Icons } from "@/ui/Icon";
 
 // Styles
@@ -106,7 +105,7 @@ export default function Sidebar() {
       </div>
 
       <div aria-label="Now playing" className={s.nowPlaying}>
-        <Image src="/album/Hot_Space.jpeg" alt="Hot Space" width={64} height={64} draggable="false" className={s.albumCover} />
+        <img src="/album/Hot_Space.jpeg" alt="Hot Space" width={64} height={64} draggable="false" className={s.albumCover} />
         <div className={s.trackDetails}>
           <div className={s.title}>Under Pressure</div>
           <div className={s.artist}>Queen, David Bowie</div>

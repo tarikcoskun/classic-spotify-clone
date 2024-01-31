@@ -47,6 +47,7 @@
         flex-direction: column;
         align-items: center;
         background: radial-gradient(circle, #41362f, #43403c, #5b5653);
+        overflow: hidden;
 
         .cardHeader {
           padding: var(--size-12);
@@ -70,15 +71,16 @@
 
           img {
             width: 192px;
-            height: 160px;
+            height: 192px;
             object-fit: cover;
             object-position: top;
+            margin-bottom: -10%;
             box-shadow: var(--shadow-xl);
 
             &:first-child,
             &:last-child {
               width: 160px;
-              height: 128px;
+              height: 160px;
               opacity: 0.75;
               margin-inline: -48px;
             }
