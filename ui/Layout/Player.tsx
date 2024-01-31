@@ -82,12 +82,11 @@ export default function Player() {
           <Icon icon="next" size={24} />
         </button>
       </div>
-      <div className={s.volume}>
+      <div className={s.volume} onWheel={handleWheel}>
         <div
           ref={volProgressRef}
           onMouseDown={handleMouseDown}
           onClick={(event) => handleVolChange(event.pageX)}
-          onWheel={handleWheel}
           className={s.volumeProgress}
           data-listener="vol"
         >

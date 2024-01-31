@@ -39,6 +39,7 @@
     display: flex;
     align-items: center;
     gap: var(--size-4);
+    height: 32px;
 
     .volumeProgress {
       width: 96px;
