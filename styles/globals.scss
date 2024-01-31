@@ -43,24 +43,16 @@
   gap: var(--size-6);
   grid-template-columns: repeat(var(--cols), minmax(0, 1fr));
 
-  /*
-  @media (--lg-only) {
-    --cols: 3;
-  }
-  @media (--xl-only) {
+  @media (--xl-n-below) {
     --cols: 4;
+    :nth-child(5) {
+      display: none;
+    }
   }
-  @media (--2xl-only) {
+  @media (--xl-n-above) {
     --cols: 5;
+    :nth-child(5) {
+      display: unset;
+    }
   }
-  @media (--3xl-only) {
-    --cols: 6;
-  }
-  @media (--4xl-only) {
-    --cols: 7;
-  }
-  @media (--4xl-n-above) {
-    --cols: 8;
-  }
-  */
 }

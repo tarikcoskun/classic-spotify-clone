@@ -1,3 +1,7 @@
+@use "colors" as c;
+@use "media";
+@use "sass:color";
+
 .layout {
   height: 100vh;
   display: flex;
@@ -17,6 +21,10 @@
       main {
         max-width: var(--content-max-width);
         margin-inline: auto;
+        background: linear-gradient(to right, c.$bg, color.adjust(c.$bg, $lightness: 4), c.$bg);
+        @media (--xl-n-above) {
+          border-inline: 1px solid c.$layer1;
+        }
       }
     }
   }

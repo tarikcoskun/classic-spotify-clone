@@ -12,12 +12,11 @@
 html {
   --left-sidebar-width: 300px;
   --right-sidebar-width: 360px;
-  --content-max-width: 1440px;
+  --content-max-width: 1536px;
   --content-spacing: 32px;
 
   color-scheme: dark;
   color: c.$fg;
-  background: linear-gradient(to right, c.$bg, color.adjust(c.$bg, $lightness: 4), c.$bg);
 
   ::-webkit-scrollbar {
     width: 12px;

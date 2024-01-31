@@ -1,4 +1,5 @@
 @use "colors" as c;
+@use "media";
 @use "sass:color";
 
 .sidebar {
@@ -13,6 +14,9 @@
     color.adjust(c.$layer1, $lightness: -2),
     color.adjust(c.$layer2, $lightness: -4)
   );
+  @media (--lg-n-below) {
+    display: none;
+  }
 
   .activities {
     overflow-y: auto;
