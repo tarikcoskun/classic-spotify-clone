@@ -2,12 +2,12 @@ import type { AppProps } from "next/app";
 
 import Router from "next/router";
 import NProgress from "nprogress";
+import { DefaultSeo } from "next-seo";
 
 // Styles
 import "pollen-css";
 import "@/styles/globals.scss";
 import { Inter } from "next/font/google";
-import Head from "next/head";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -32,9 +32,16 @@ export default function App({ Component, pageProps }: AppProps) {
         }
       `}</style>
 
-      <Head>
-        <title>Spotify Clone</title>
-      </Head>
+      <DefaultSeo
+        title="Spotify Clone"
+        description="A clone of the classic Spotify UI made using Next.js"
+        themeColor="#82bf00"
+        openGraph={{}}
+        twitter={{
+          handle: "@tarikcoskunum",
+          cardType: "summary_large_image",
+        }}
+      />
 
       <Component {...pageProps} />
     </>

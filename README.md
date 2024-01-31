@@ -1,6 +1,6 @@
 ## Spotify (2014) Clone
 
-This is an old-fashioned Spotify clone made using Next.js and SCSS
+This is a clone of the classic Spotify UI made using Next.js
 
 ### Pages
 
