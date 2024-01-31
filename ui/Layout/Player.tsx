@@ -13,7 +13,9 @@ import s from "@/styles/Player.module.scss";
 
 export default function Player() {
   const context = useContext(PlayerContext);
+  const pbDotRef = useRef<HTMLDivElement>(null);
   const pbProgressRef = useRef<HTMLDivElement>(null);
+  const volDotRef = useRef<HTMLDivElement>(null);
   const volProgressRef = useRef<HTMLDivElement>(null);
 
   function handlePbChange(x: number) {
@@ -36,10 +38,14 @@ export default function Player() {
   function handleMouseDown(event: React.MouseEvent<HTMLDivElement, MouseEvent>) {
     const target = event.target as HTMLElement;
 
+    if (target.dataset.listener === "pb") pbDotRef.current?.setAttribute("aria-pressed", "true");
+    else if (target.dataset.listener === "vol") volDotRef.current?.setAttribute("aria-pressed", "true");
     window.addEventListener("mouseup", handleMouseUp);
     window.addEventListener("mousemove", handleMouseMove);
 
     function handleMouseUp() {
+      if (target.dataset.listener === "pb") pbDotRef.current?.setAttribute("aria-pressed", "false");
+      else if (target.dataset.listener === "vol") volDotRef.current?.setAttribute("aria-pressed", "false");
       window.removeEventListener("mouseup", handleMouseUp);
       window.removeEventListener("mousemove", handleMouseMove);
     }
@@ -47,10 +53,8 @@ export default function Player() {
     function handleMouseMove(event: MouseEvent) {
       if (!pbProgressRef.current || !volProgressRef.current) return;
       if (target.dataset.listener === "pb") {
-        console.log("moving pb");
         handlePbChange(event.pageX);
       } else if (target.dataset.listener === "vol") {
-        console.log("moving vol");
         handleVolChange(event.pageX);
       }
     }
@@ -86,7 +90,7 @@ export default function Player() {
             <div className={s.progressBar} data-listener="vol">
               <div className={s.current} data-listener="vol" />
             </div>
-            <div className={s.dot} data-listener="vol" />
+            <div ref={volDotRef} className={s.dot} data-listener="vol" />
           </div>
         </div>
         <button className="toggle" aria-label="Toggle volume">
@@ -110,7 +114,7 @@ export default function Player() {
             <div className={s.progressBar} data-listener="pb">
               <div className={s.current} data-listener="pb" />
             </div>
-            <div className={s.dot} data-listener="pb" />
+            <div ref={pbDotRef} className={s.dot} data-listener="pb" />
           </div>
         </div>
         <span className={s.time}>{getReadableTime(context.playbackProgress.total)}</span>

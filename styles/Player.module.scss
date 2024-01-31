@@ -90,6 +90,17 @@
     transform: translateY(-50%);
     margin-left: -6px;
     z-index: 10;
+
+    &[aria-pressed="true"]::after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      position: absolute;
+      left: 2px;
+      top: 2px;
+      box-shadow: inset 1px 1px 3px 2px rgba(0, 0, 0, 0.25);
+      border-radius: var(--radius-full);
+    }
   }
 
   .progressBar {
