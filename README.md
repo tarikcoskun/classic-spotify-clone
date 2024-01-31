@@ -9,14 +9,14 @@ A clone of the classic Spotify UI made using Next.js
   <em>Home page</em>
 </a>
 
-<br />
+<br /><br />
 
 <a href="https://old-spotify-clone.vercel.app/artist">
   <img src="demo/artist.png" alt="Artist page" />
   <em>Artist page</em>
 </a>
 
-<br />
+<br /><br />
 
 <a href="https://old-spotify-clone.vercel.app/playlist">
   <img src="demo/playlist.png" alt="Playlist page" />
