@@ -34,7 +34,7 @@ export default function Player() {
             <div className={s.dot} />
           </div>
         </div>
-        <button className="toggle">
+        <button className="toggle" aria-label="Toggle volume">
           <Icon icon="volume" size={20} />
         </button>
       </div>
@@ -51,13 +51,13 @@ export default function Player() {
         <span className={s.time}>{getReadableTime(total)}</span>
       </div>
       <div className={s.controlsRight}>
-        <button className="toggle">
+        <button className="toggle" aria-label="Queue">
           <Icon icon="queue" size={20} />
         </button>
-        <button className="toggle" data-state="active">
+        <button className="toggle" aria-label="Toggle shuffle" data-state="active">
           <Icon icon="shuffle" size={20} />
         </button>
-        <button className="toggle">
+        <button className="toggle" aria-label="Toggle repeat">
           <Icon icon="repeat" size={20} />
         </button>
       </div>

@@ -96,7 +96,7 @@ export default function FriendActivity() {
           <Avatar size={48} padding={12} rounded />
           <div className={s.info}>
             <header className={s.userInfo}>
-              <a className={s.username}>{activity.user.username}</a>{" "}
+              <div className={s.username}>{activity.user.username}</div>{" "}
               {activity.user.active ? (
                 <span className={s.active}>
                   <Icon icon="volume" />
@@ -106,7 +106,7 @@ export default function FriendActivity() {
               )}
             </header>
             <div className={s.trackInfo}>
-              <a>{activity.track.name}</a> 🞄 <Link href="/artist">{activity.track.artist}</Link>
+              <span>{activity.track.name}</span> 🞄 <Link href="/artist">{activity.track.artist}</Link>
             </div>
             <Link href={activity.source.href} className={s.sourceInfo}>
               <Icon

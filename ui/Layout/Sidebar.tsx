@@ -110,7 +110,7 @@ export default function Sidebar() {
           <div className={s.title}>Under Pressure</div>
           <div className={s.artist}>Queen, David Bowie</div>
         </div>
-        <button className={s.add}>
+        <button className={s.add} aria-label="Add to playlist">
           <Icon icon="add" />
         </button>
       </div>

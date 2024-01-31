@@ -108,7 +108,7 @@ export default function HomeOverview() {
     <div className={s.tabView}>
       <Section className={s.greeting}>
         <header className={s.header}>
-          <h5>The best music for any moment.</h5>
+          <div className={s.title}>The best music for any moment.</div>
           <div className={s.controls}>
             <button aria-label="Back" disabled>
               <Icon icon="chevron-left" size={16} />

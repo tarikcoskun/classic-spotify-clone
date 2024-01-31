@@ -36,46 +36,6 @@ html {
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: c.$title;
-  font-weight: 400;
-}
-
-h1 {
-  line-height: 1;
-  font-size: var(--scale-6);
-}
-
-h2 {
-  line-height: 2.5rem;
-  font-size: var(--scale-5);
-}
-
-h3 {
-  line-height: 2.25rem;
-  font-size: var(--scale-4);
-}
-
-h4 {
-  line-height: 2rem;
-  font-size: var(--scale-3);
-}
-
-h5 {
-  line-height: 2rem;
-  font-size: var(--scale-2);
-}
-
-h6 {
-  line-height: 2rem;
-  font-size: var(--scale-1);
-}
-
 button {
   color: c.$fg;
   display: flex;

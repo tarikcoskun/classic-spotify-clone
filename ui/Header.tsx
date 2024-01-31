@@ -10,7 +10,7 @@ export default function Header(props: HeaderProps) {
 
   return (
     <header className={s.header}>
-      <h2>{title}</h2>
+      <div className={s.title}>{title}</div>
     </header>
   );
 }
