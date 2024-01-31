@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 
 // Styles
 import s from "./Table.module.scss";
+import Icon from "./Icon";
 
 interface TableItem {
   [field: string]: React.ReactNode;
@@ -21,6 +22,7 @@ interface TableProps extends React.HTMLAttributes<HTMLElement> {
 export default function Table(props: TableProps) {
   const { data, spacing, headless, className, headClassName, headerClassName, rowClassName, dataClassName } = props;
   const tableHeadRef = useRef<HTMLElement>(null);
+  const [isHovering, setHovering] = useState(-1);
   const [headSticked, setHeadSticked] = useState(false);
 
   useEffect(() => {
@@ -58,11 +60,15 @@ export default function Table(props: TableProps) {
 
       <div role="presentation" className={s.tableBody}>
         {data.map((dataRows, idx) => (
-          <div key={idx} role="row" aria-rowindex={idx + 2}>
+          <div key={idx} role="row" aria-rowindex={idx + 2} onMouseEnter={() => setHovering(idx)} onMouseLeave={() => setHovering(-1)}>
             <div role="presentation" className={classNames(s.tableRow, !headless && s.spaced, rowClassName)}>
-              {Object.values(dataRows).map((property, idx) => (
+              {Object.values(dataRows).map((value, valIdx) => (
                 <div key={idx} role="gridcell" className={classNames(s.tableData, dataClassName)}>
-                  {property}
+                  {Object.keys(data[0])[valIdx] === "#" && isHovering === idx ? (
+                    <Icon icon="play-alt" size={20} className={s.play} />
+                  ) : (
+                    value
+                  )}
                 </div>
               ))}
             </div>
