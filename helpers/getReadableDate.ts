@@ -4,7 +4,7 @@ const intlFormatter = new Intl.DateTimeFormat("en-US", {
   day: "numeric",
 });
 
-export function getReadableDate(date: Date): string {
+export const getReadableDate = (date: Date) => {
   const today = new Date();
   const diff = Math.floor((today.getTime() - date.getTime()) / 86400000);
 
@@ -13,4 +13,4 @@ export function getReadableDate(date: Date): string {
     const num = diff;
     return `${num} day${num === 1 ? "" : "s"} ago`;
   } else return intlFormatter.format(date);
-}
+};

@@ -18,7 +18,7 @@ export default function Player() {
   const volDotRef = useRef<HTMLDivElement>(null);
   const volProgressRef = useRef<HTMLDivElement>(null);
 
-  function handlePbChange(x: number) {
+  const handlePbChange = (x: number) => {
     if (!pbProgressRef.current) return;
     const clickPos = x - pbProgressRef.current.offsetLeft;
     const current = (clickPos / pbProgressRef.current.offsetWidth) * 100;
@@ -27,42 +27,42 @@ export default function Player() {
       ...val,
       elapsed: clamp(0, (current * val.total) / 100, val.total),
     }));
-  }
+  };
 
-  function handleVolChange(x: number) {
+  const handleVolChange = (x: number) => {
     if (!volProgressRef.current) return;
     const clickPos = x - volProgressRef.current.offsetLeft;
     context.setVolume(clamp(0, clickPos, 100));
-  }
+  };
 
-  function handleMouseDown(event: React.MouseEvent) {
-    const target = event.target as HTMLElement;
-
-    if (target.dataset.listener === "pb") pbDotRef.current?.setAttribute("aria-pressed", "true");
-    else if (target.dataset.listener === "vol") volDotRef.current?.setAttribute("aria-pressed", "true");
-    window.addEventListener("mouseup", handleMouseUp);
-    window.addEventListener("mousemove", handleMouseMove);
-
-    function handleMouseUp() {
+  const handleMouseDown = (event: React.MouseEvent) => {
+    const handleMouseUp = () => {
       if (target.dataset.listener === "pb") pbDotRef.current?.setAttribute("aria-pressed", "false");
       else if (target.dataset.listener === "vol") volDotRef.current?.setAttribute("aria-pressed", "false");
       window.removeEventListener("mouseup", handleMouseUp);
       window.removeEventListener("mousemove", handleMouseMove);
-    }
+    };
 
-    function handleMouseMove(event: MouseEvent) {
+    const handleMouseMove = (event: MouseEvent) => {
       if (!pbProgressRef.current || !volProgressRef.current) return;
       if (target.dataset.listener === "pb") {
         handlePbChange(event.pageX);
       } else if (target.dataset.listener === "vol") {
         handleVolChange(event.pageX);
       }
-    }
-  }
+    };
 
-  function handleWheel(event: React.WheelEvent) {
+    const target = event.target as HTMLElement;
+
+    if (target.dataset.listener === "pb") pbDotRef.current?.setAttribute("aria-pressed", "true");
+    else if (target.dataset.listener === "vol") volDotRef.current?.setAttribute("aria-pressed", "true");
+    window.addEventListener("mouseup", handleMouseUp);
+    window.addEventListener("mousemove", handleMouseMove);
+  };
+
+  const handleWheel = (event: React.WheelEvent) => {
     context.setVolume((val) => clamp(0, val + (event.deltaY * -1) / 10, 100));
-  }
+  };
 
   return (
     <div className={s.player}>
