@@ -154,7 +154,7 @@ const activities: Activity[] = [
   },
   {
     user: {
-      username: "İlayda",
+      username: "Kardelen",
       active: false,
       lastActive: "19h",
     },
