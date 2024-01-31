@@ -36,10 +36,18 @@ export default function App({ Component, pageProps }: AppProps) {
         title="Spotify Clone"
         description="A clone of the classic Spotify UI made using Next.js"
         themeColor="#82bf00"
-        openGraph={{}}
+        openGraph={{
+          images: [
+            {
+              url: "/demo/home.png",
+              width: 1920,
+              height: 1200,
+            },
+          ],
+        }}
         twitter={{
           handle: "@tarikcoskunum",
-          cardType: "summary_large_image",
+          cardType: "summary",
         }}
       />
 
