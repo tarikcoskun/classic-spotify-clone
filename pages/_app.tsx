@@ -39,7 +39,7 @@ export default function App({ Component, pageProps }: AppProps) {
         openGraph={{
           images: [
             {
-              url: "/demo/home.png",
+              url: "/demo.png",
               width: 1920,
               height: 1200,
             },
