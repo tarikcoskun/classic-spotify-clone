@@ -74,16 +74,6 @@ const PlayerProvider = ({ children }: React.PropsWithChildren) => {
             width: 300,
             height: 300,
           },
-          {
-            url: "https://i.scdn.co/image/ab67616d00004851d254ca497999ae980a5a38c5",
-            width: 64,
-            height: 64,
-          },
-          {
-            url: "https://i.scdn.co/image/ab67616d0000b273d254ca497999ae980a5a38c5",
-            width: 640,
-            height: 640,
-          },
         ],
       },
     },
