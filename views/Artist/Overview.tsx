@@ -67,7 +67,8 @@ export default function ArtistOverview({ data }: { data: ArtistUnion }) {
                     ),
                   },
                   "#": {
-                    html: context.isPlaying && context.track === track.track.name ? <Icon icon="volume" className="whiteText" /> : idx + 1,
+                    html:
+                      context.isPlaying && context.track === track.track.name ? <Icon icon="volume-high" className="whiteText" /> : idx + 1,
                     whileHover:
                       context.isPlaying && context.track === track.track.name ? (
                         <button

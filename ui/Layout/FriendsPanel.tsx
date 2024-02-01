@@ -181,7 +181,7 @@ export default function FriendsPanel() {
                 <div className={s.username}>{activity.user.username}</div>{" "}
                 {activity.user.active ? (
                   <span className={s.active}>
-                    <Icon icon="volume" />
+                    <Icon icon="volume-high" />
                   </span>
                 ) : (
                   activity.user.lastActive && <span className={s.lastActive}>{activity.user.lastActive}</span>

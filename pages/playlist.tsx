@@ -40,7 +40,12 @@ export default function Playlist() {
             spacing={["40px", "5fr", "4fr", "5fr", "2fr", "40px"]}
             data={playlistInfo.content.items.map((item, idx) => ({
               "#": {
-                html: context.isPlaying && context.track === item.itemV2.data.name ? <Icon icon="volume" className="whiteText" /> : idx + 1,
+                html:
+                  context.isPlaying && context.track === item.itemV2.data.name ? (
+                    <Icon icon="volume-high" className="whiteText" />
+                  ) : (
+                    idx + 1
+                  ),
                 whileHover:
                   context.isPlaying && context.track === item.itemV2.data.name ? (
                     <button

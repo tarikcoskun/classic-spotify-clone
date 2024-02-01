@@ -43,7 +43,7 @@ export default function Album() {
             rowClassName={s.tableRow}
             data={albumInfo.tracks.items.map((item, idx) => ({
               "#": {
-                html: context.isPlaying && context.track === item.track.name ? <Icon icon="volume" className="whiteText" /> : idx + 1,
+                html: context.isPlaying && context.track === item.track.name ? <Icon icon="volume-high" className="whiteText" /> : idx + 1,
                 whileHover:
                   context.isPlaying && context.track === item.track.name ? (
                     <button

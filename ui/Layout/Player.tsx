@@ -31,6 +31,7 @@ export default function Player() {
 
   const handleVolChange = (x: number) => {
     if (!volProgressRef.current) return;
+    context.setMuted(false);
     const clickPos = x - volProgressRef.current.offsetLeft;
     context.setVolume(clamp(0, clickPos, 100));
   };
@@ -61,7 +62,8 @@ export default function Player() {
   };
 
   const handleWheel = (event: React.WheelEvent) => {
-    context.setVolume((val) => clamp(0, val + (event.deltaY * -1) / 10, 100));
+    context.setMuted(false);
+    context.setVolume((val) => clamp(0, context.isMuted ? 10 : val + (event.deltaY * -1) / 10, 100));
   };
 
   return (
@@ -90,15 +92,36 @@ export default function Player() {
           className={s.volumeProgress}
           data-listener="vol"
         >
-          <div className={s.progressBarWrapper} style={{ ["--progress-bar-transform" as any]: `${context.volume}%` }} data-listener="vol">
+          <div
+            className={s.progressBarWrapper}
+            style={{ ["--progress-bar-transform" as any]: `${context.isMuted ? 0 : context.volume}%` }}
+            data-listener="vol"
+          >
             <div className={s.progressBar} data-listener="vol">
               <div className={s.current} data-listener="vol" />
             </div>
             <div ref={volDotRef} className={s.dot} data-listener="vol" />
           </div>
         </div>
-        <button className="toggle" aria-label="Toggle volume">
-          <Icon icon="volume" size={20} />
+        <button
+          className="toggle"
+          aria-label="Toggle muted"
+          onClick={() => {
+            context.setMuted((val) => !val);
+          }}
+        >
+          <Icon
+            icon={
+              context.isMuted || context.volume === 0
+                ? "volume-muted"
+                : context.volume >= 70
+                ? "volume-high"
+                : context.volume >= 40
+                ? "volume-medium"
+                : "volume-low"
+            }
+            size={20}
+          />
         </button>
       </div>
       <div className={s.playback}>
