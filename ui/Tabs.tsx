@@ -12,9 +12,7 @@ interface TabsValue {
 
 const TabsContext = createContext({} as TabsValue);
 
-const TabsProvider = (props: React.PropsWithChildren<TabsValue>) => {
-  const { value, setValue, children } = props;
-
+const TabsProvider = ({ value, setValue, children }: React.PropsWithChildren<TabsValue>) => {
   const initialState = { value, setValue };
 
   return <TabsContext.Provider value={initialState}>{children}</TabsContext.Provider>;
@@ -28,9 +26,7 @@ interface TabsRootProps extends React.HTMLAttributes<HTMLElement> {
   defaultValue: string;
 }
 
-const TabsRoot = forwardRef<HTMLDivElement, TabsRootProps>((props, forwardedRef) => {
-  const { defaultValue, className, children } = props;
-
+const TabsRoot = forwardRef<HTMLDivElement, TabsRootProps>(({ defaultValue, className, children, ...props }, forwardedRef) => {
   const [value, setValue] = useState(defaultValue);
 
   return (
@@ -52,9 +48,7 @@ interface TabsListProps extends React.HTMLAttributes<HTMLElement> {
   sticky?: boolean;
 }
 
-const TabsList = forwardRef<HTMLDivElement, TabsListProps>((props, forwardedRef) => {
-  const { sticky = true, className, children } = props;
-
+const TabsList = forwardRef<HTMLDivElement, TabsListProps>(({ sticky = true, className, children }, forwardedRef) => {
   const tableHeadRef = useRef<HTMLElement>(null);
   const [headSticked, setHeadSticked] = useState(false);
 
@@ -90,9 +84,7 @@ interface TabsTriggerProps extends React.ButtonHTMLAttributes<HTMLButtonElement>
   value: string;
 }
 
-const TabsTrigger = forwardRef<HTMLButtonElement, TabsTriggerProps>((props, forwardedRef) => {
-  const { value, disabled, className, children } = props;
-
+const TabsTrigger = forwardRef<HTMLButtonElement, TabsTriggerProps>(({ value, disabled, className, children }, forwardedRef) => {
   const context = useContext(TabsContext);
 
   const isSelected = value === context.value;
@@ -124,15 +116,13 @@ interface TabsContentProps extends React.HTMLAttributes<HTMLElement> {
   value: string;
 }
 
-const TabsContent = forwardRef<HTMLDivElement, TabsContentProps>((props, forwardedRef) => {
-  const { value, className, children } = props;
-
+const TabsContent = forwardRef<HTMLDivElement, TabsContentProps>(({ value, className, children, ...props }, forwardedRef) => {
   const context = useContext(TabsContext);
 
   const isSelected = value === context.value;
 
   return isSelected ? (
-    <div ref={forwardedRef} role="tabpanel" className={classNames(s.tabsContent, className)}>
+    <div {...props} ref={forwardedRef} role="tabpanel" className={classNames(s.tabsContent, className)}>
       {children}
     </div>
   ) : null;

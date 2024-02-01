@@ -5,9 +5,7 @@ interface HeaderProps {
   title: string;
 }
 
-export default function Header(props: HeaderProps) {
-  const { title } = props;
-
+export default function Header({ title }: HeaderProps) {
   return (
     <header className={s.header}>
       <div className={s.title}>{title}</div>

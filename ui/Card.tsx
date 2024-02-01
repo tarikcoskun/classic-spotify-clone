@@ -10,9 +10,7 @@ export interface CardProps {
   description: string;
 }
 
-export default function Card(props: CardProps) {
-  const { className, cover, title, description } = props;
-
+export default function Card({ cover, title, description, className, ...props }: CardProps) {
   return (
     <div {...props} className={classNames(s.card, className)}>
       <img src={cover} alt={title} draggable="false" className={s.cover} />

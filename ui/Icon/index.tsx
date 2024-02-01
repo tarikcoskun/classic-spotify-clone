@@ -7,9 +7,7 @@ interface IconProps extends React.SVGProps<SVGSVGElement> {
   size?: number | string;
 }
 
-export default function Icon(props: IconProps) {
-  const { icon, size = 16 } = props;
-
+export default function Icon({ icon, size = 16, ...props }: IconProps) {
   const body = icons[icon];
 
   return (

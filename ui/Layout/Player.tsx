@@ -17,6 +17,8 @@ export default function Player() {
   const pbProgressRef = useRef<HTMLDivElement>(null);
   const volDotRef = useRef<HTMLDivElement>(null);
   const volProgressRef = useRef<HTMLDivElement>(null);
+  const [shuffle, setShuffle] = useState(true);
+  const [repeat, setRepeat] = useState(false);
 
   const handlePbChange = (x: number) => {
     if (!pbProgressRef.current) return;
@@ -69,7 +71,12 @@ export default function Player() {
   return (
     <div className={s.player}>
       <div className={s.controlsLeft}>
-        <button aria-label="Previous">
+        <button
+          aria-label="Previous"
+          onClick={() => {
+            context.setPlaybackProgress((val) => ({ ...val, elapsed: 0 }));
+          }}
+        >
           <Icon icon="previous" size={24} />
         </button>
         <button
@@ -147,10 +154,24 @@ export default function Player() {
         <span className={s.time}>{getReadableTime(context.playbackProgress.total)}</span>
       </div>
       <div className={s.controlsRight}>
-        <button className="toggle" aria-label="Toggle shuffle" data-state="active">
+        <button
+          className="toggle"
+          aria-label="Toggle shuffle"
+          data-state={shuffle ? "active" : "inactive"}
+          onClick={() => {
+            setShuffle((val) => !val);
+          }}
+        >
           <Icon icon="shuffle" size={20} />
         </button>
-        <button className="toggle" aria-label="Toggle repeat">
+        <button
+          className="toggle"
+          aria-label="Toggle repeat"
+          data-state={repeat ? "active" : "inactive"}
+          onClick={() => {
+            setRepeat((val) => !val);
+          }}
+        >
           <Icon icon="repeat" size={20} />
         </button>
       </div>

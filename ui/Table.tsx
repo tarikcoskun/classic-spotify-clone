@@ -26,9 +26,16 @@ interface TableProps extends React.HTMLAttributes<HTMLElement> {
   dataClassName?: string;
 }
 
-export default function Table(props: TableProps) {
-  const { data, spacing, headless, className, headClassName, headerClassName, rowClassName, dataClassName } = props;
-
+export default function Table({
+  data,
+  spacing,
+  headless,
+  className,
+  headClassName,
+  headerClassName,
+  rowClassName,
+  dataClassName,
+}: TableProps) {
   const context = useContext(PlayerContext);
   const tableHeadRef = useRef<HTMLElement>(null);
   const [isHovering, setHovering] = useState(-1);

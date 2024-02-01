@@ -10,9 +10,7 @@ interface AvatarProps {
   padding?: number;
 }
 
-export default function Avatar(props: AvatarProps) {
-  const { size = 32, padding = 6, rounded = false } = props;
-
+export default function Avatar({ size = 32, padding = 6, rounded = false }: AvatarProps) {
   return (
     <div
       className={s.avatar}

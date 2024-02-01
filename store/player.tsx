@@ -22,9 +22,7 @@ interface PlaybackProgress {
 
 export const PlayerContext = createContext({} as PlayerValue);
 
-const PlayerProvider = (props: React.PropsWithChildren) => {
-  const { children } = props;
-
+const PlayerProvider = ({ children }: React.PropsWithChildren) => {
   const [track, setTrack] = useState<string | null>(null);
   const [isMuted, setMuted] = useState(false);
   const [isPlaying, setPlaying] = useState(false);
