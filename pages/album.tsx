@@ -42,9 +42,14 @@ export default function Album() {
             rowClassName={s.tableRow}
             data={albumInfo.tracks.items.map((item, idx) => ({
               "#": {
-                html: context.isPlaying && context.track === item.track.name ? <Icon icon="volume-high" className="whiteText" /> : idx + 1,
+                html:
+                  context.isPlaying && context.playback.track.name === item.track.name ? (
+                    <Icon icon="volume-high" className="whiteText" />
+                  ) : (
+                    idx + 1
+                  ),
                 whileHover:
-                  context.isPlaying && context.track === item.track.name ? (
+                  context.isPlaying && context.playback.track.name === item.track.name ? (
                     <button
                       aria-label="Pause"
                       className="whiteText"
@@ -60,7 +65,18 @@ export default function Album() {
                       className="whiteText"
                       onClick={() => {
                         context.setPlaying(true);
-                        context.setTrack(item.track.name);
+                        context.setPlayback({
+                          elapsed: 0,
+                          duration: item.track.duration.totalMilliseconds,
+                          track: {
+                            name: item.track.name,
+                            artists: item.track.artists.items,
+                            album: {
+                              name: albumInfo.name,
+                              coverArt: albumInfo.coverArt.sources,
+                            },
+                          },
+                        });
                       }}
                     >
                       <Icon icon="play-alt" size={20} />
@@ -69,10 +85,25 @@ export default function Album() {
               },
               Track: {
                 html: (
-                  <span className="whiteText truncate" title={item.track.name} data-active={context.track === item.track.name}>
+                  <span
+                    className="whiteText truncate"
+                    title={item.track.name}
+                    data-active={context.playback.track.name === item.track.name}
+                  >
                     {item.track.name}
                   </span>
                 ),
+                pass: {
+                  duration: item.track.duration.totalMilliseconds,
+                  track: {
+                    name: item.track.name,
+                    artists: item.track.artists.items,
+                    album: {
+                      name: albumInfo.name,
+                      coverArt: albumInfo.coverArt.sources,
+                    },
+                  },
+                },
               },
               Artist: {
                 html: (

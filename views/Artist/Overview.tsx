@@ -54,12 +54,12 @@ export default function ArtistOverview({ data }: { data: ArtistUnion }) {
               <Table
                 headless
                 spacing={["40px", "40px", "5fr", "2fr", "40px"]}
-                data={(popularExpanded ? topTracks : topTracks.slice(0, 5)).map((track, idx) => ({
+                data={(popularExpanded ? topTracks : topTracks.slice(0, 5)).map((item, idx) => ({
                   Cover: {
                     html: (
                       <img
-                        src={track.track.albumOfTrack.coverArt.sources[0].url}
-                        alt={track.track.name}
+                        src={item.track.albumOfTrack.coverArt.sources[0].url}
+                        alt={item.track.name}
                         width={40}
                         height={40}
                         draggable="false"
@@ -68,9 +68,13 @@ export default function ArtistOverview({ data }: { data: ArtistUnion }) {
                   },
                   "#": {
                     html:
-                      context.isPlaying && context.track === track.track.name ? <Icon icon="volume-high" className="whiteText" /> : idx + 1,
+                      context.isPlaying && context.playback.track.name === item.track.name ? (
+                        <Icon icon="volume-high" className="whiteText" />
+                      ) : (
+                        idx + 1
+                      ),
                     whileHover:
-                      context.isPlaying && context.track === track.track.name ? (
+                      context.isPlaying && context.playback.track.name === item.track.name ? (
                         <button
                           aria-label="Pause"
                           className="whiteText"
@@ -86,7 +90,18 @@ export default function ArtistOverview({ data }: { data: ArtistUnion }) {
                           className="whiteText"
                           onClick={() => {
                             context.setPlaying(true);
-                            context.setTrack(track.track.name);
+                            context.setPlayback({
+                              elapsed: 0,
+                              duration: item.track.duration.totalMilliseconds,
+                              track: {
+                                name: item.track.name,
+                                artists: item.track.artists.items,
+                                album: {
+                                  name: item.track.name,
+                                  coverArt: item.track.albumOfTrack.coverArt.sources,
+                                },
+                              },
+                            });
                           }}
                         >
                           <Icon icon="play-alt" size={20} />
@@ -95,13 +110,28 @@ export default function ArtistOverview({ data }: { data: ArtistUnion }) {
                   },
                   Track: {
                     html: (
-                      <span className="whiteText truncate" title={track.track.name} data-active={context.track === track.track.name}>
-                        {track.track.name}
+                      <span
+                        className="whiteText truncate"
+                        title={item.track.name}
+                        data-active={context.playback.track.name === item.track.name}
+                      >
+                        {item.track.name}
                       </span>
                     ),
+                    pass: {
+                      duration: item.track.duration.totalMilliseconds,
+                      track: {
+                        name: item.track.name,
+                        artists: item.track.artists.items,
+                        album: {
+                          name: item.track.name,
+                          coverArt: item.track.albumOfTrack.coverArt.sources,
+                        },
+                      },
+                    },
                   },
-                  Playcount: new Intl.NumberFormat("en-US").format(parseInt(track.track.playcount)),
-                  Duration: getReadableTime(track.track.duration.totalMilliseconds),
+                  Playcount: new Intl.NumberFormat("en-US").format(parseInt(item.track.playcount)),
+                  Duration: getReadableTime(item.track.duration.totalMilliseconds),
                 }))}
               />
               <Button

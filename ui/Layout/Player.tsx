@@ -37,9 +37,9 @@ export default function Player() {
         const clickPos = event.pageX - pbProgressRef.current.offsetLeft;
         const current = (clickPos / pbProgressRef.current.offsetWidth) * 100;
 
-        context.setPlaybackProgress((val) => ({
+        context.setPlayback((val) => ({
           ...val,
-          elapsed: clamp(0, (current * val.total) / 100, val.total),
+          elapsed: clamp(0, (current * val.duration) / 100, val.duration),
         }));
       } else if (target.dataset.listener === "vol") {
         const clickPos = event.pageX - volProgressRef.current.offsetLeft;
@@ -67,7 +67,7 @@ export default function Player() {
         <button
           aria-label="Previous"
           onClick={() => {
-            context.setPlaybackProgress((val) => ({ ...val, elapsed: 0 }));
+            context.setPlayback((val) => ({ ...val, elapsed: 0 }));
           }}
         >
           <Icon icon="previous" size={24} />
@@ -119,11 +119,11 @@ export default function Player() {
         </button>
       </div>
       <div className={s.playback}>
-        <span className={s.time}>{getReadableTime(context.playbackProgress.elapsed)}</span>
+        <span className={s.time}>{getReadableTime(context.playback.elapsed)}</span>
         <div ref={pbProgressRef} onMouseDown={handleMouseDown} className={s.playbackProgress} data-listener="pb">
           <div
             className={s.progressBarWrapper}
-            style={{ ["--progress-bar-transform" as any]: `${(context.playbackProgress.elapsed / context.playbackProgress.total) * 100}%` }}
+            style={{ ["--progress-bar-transform" as any]: `${(context.playback.elapsed / context.playback.duration) * 100}%` }}
             data-listener="pb"
           >
             <div className={s.progressBar} data-listener="pb">
@@ -132,7 +132,7 @@ export default function Player() {
             <div ref={pbDotRef} className={s.dot} data-listener="pb" />
           </div>
         </div>
-        <span className={s.time}>{getReadableTime(context.playbackProgress.total)}</span>
+        <span className={s.time}>{getReadableTime(context.playback.duration)}</span>
       </div>
       <div className={s.controlsRight}>
         <button

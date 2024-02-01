@@ -98,14 +98,18 @@
     }
 
     .trackDetails {
+      width: calc(var(--left-sidebar-width) - 64px - 24px - var(--size-12));
+
       .title {
         color: c.$title;
         font-size: var(--scale-00);
+        @include util.truncate;
       }
 
       .artist {
         margin-top: var(--size-1);
         font-size: var(--scale-000);
+        @include util.truncate;
       }
     }
   }

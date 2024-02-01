@@ -40,13 +40,13 @@ export default function Playlist() {
             data={playlistInfo.content.items.map((item, idx) => ({
               "#": {
                 html:
-                  context.isPlaying && context.track === item.itemV2.data.name ? (
+                  context.isPlaying && context.playback.track.name === item.itemV2.data.name ? (
                     <Icon icon="volume-high" className="whiteText" />
                   ) : (
                     idx + 1
                   ),
                 whileHover:
-                  context.isPlaying && context.track === item.itemV2.data.name ? (
+                  context.isPlaying && context.playback.track.name === item.itemV2.data.name ? (
                     <button
                       aria-label="Pause"
                       className="whiteText"
@@ -62,7 +62,18 @@ export default function Playlist() {
                       className="whiteText"
                       onClick={() => {
                         context.setPlaying(true);
-                        context.setTrack(item.itemV2.data.name);
+                        context.setPlayback({
+                          elapsed: 0,
+                          duration: item.itemV2.data.trackDuration.totalMilliseconds,
+                          track: {
+                            name: item.itemV2.data.name,
+                            artists: item.itemV2.data.artists.items,
+                            album: {
+                              name: item.itemV2.data.albumOfTrack.name,
+                              coverArt: item.itemV2.data.albumOfTrack.coverArt.sources,
+                            },
+                          },
+                        });
                       }}
                     >
                       <Icon icon="play-alt" size={20} />
@@ -71,10 +82,25 @@ export default function Playlist() {
               },
               Track: {
                 html: (
-                  <span className="whiteText truncate" title={item.itemV2.data.name} data-active={context.track === item.itemV2.data.name}>
+                  <span
+                    className="whiteText truncate"
+                    title={item.itemV2.data.name}
+                    data-active={context.playback.track.name === item.itemV2.data.name}
+                  >
                     {item.itemV2.data.name}
                   </span>
                 ),
+                pass: {
+                  duration: item.itemV2.data.trackDuration.totalMilliseconds,
+                  track: {
+                    name: item.itemV2.data.name,
+                    artists: item.itemV2.data.artists.items,
+                    album: {
+                      name: item.itemV2.data.albumOfTrack.name,
+                      coverArt: item.itemV2.data.albumOfTrack.coverArt.sources,
+                    },
+                  },
+                },
               },
               Artist: {
                 html: (

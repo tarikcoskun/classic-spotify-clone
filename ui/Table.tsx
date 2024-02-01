@@ -14,6 +14,7 @@ interface TableItem {
 interface DetailedTableItem {
   html: React.ReactNode;
   whileHover?: React.ReactNode;
+  pass?: any;
 }
 
 interface TableProps extends React.HTMLAttributes<HTMLElement> {
@@ -84,8 +85,13 @@ export default function Table({
               className={classNames(s.tableRow, !headless && s.spaced, rowClassName)}
               onDoubleClick={() => {
                 const data = dataRow["Track"] as DetailedTableItem;
+                console.log(data.pass);
                 context.setPlaying(true);
-                context.setTrack((data.html as React.ReactElement).props.title);
+                context.setPlayback((val) => ({
+                  ...val,
+                  ...data.pass,
+                  elapsed: 0,
+                }));
               }}
             >
               {Object.values(dataRow).map((property, propIdx) => (

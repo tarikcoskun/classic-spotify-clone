@@ -3,43 +3,100 @@ import { type Dispatch, type SetStateAction, createContext, useState, useEffect,
 import { clamp } from "@/helpers/clamp";
 
 interface PlayerValue {
-  track: string | null;
-  setTrack: Dispatch<SetStateAction<string | null>>;
   isMuted: boolean;
   setMuted: Dispatch<SetStateAction<boolean>>;
   isPlaying: boolean;
   setPlaying: Dispatch<SetStateAction<boolean>>;
   volume: number;
   setVolume: Dispatch<SetStateAction<number>>;
-  playbackProgress: PlaybackProgress;
-  setPlaybackProgress: Dispatch<SetStateAction<PlaybackProgress>>;
+  playback: Playback;
+  setPlayback: Dispatch<SetStateAction<Playback>>;
 }
 
-interface PlaybackProgress {
+interface Playback {
   elapsed: number;
-  total: number;
+  duration: number;
+  track: Track;
+}
+
+interface Track {
+  name: string;
+  artists: Artist[];
+  album: Album;
+}
+
+interface Artist {
+  uri?: string;
+  profile: {
+    name: string;
+  };
+}
+
+interface Album {
+  name: string;
+  coverArt: Source[];
+}
+
+interface Source {
+  url: string;
+  width?: number | null;
+  height?: number | null;
 }
 
 export const PlayerContext = createContext({} as PlayerValue);
 
 const PlayerProvider = ({ children }: React.PropsWithChildren) => {
-  const [track, setTrack] = useState<string | null>(null);
   const [isMuted, setMuted] = useState(false);
   const [isPlaying, setPlaying] = useState(false);
   const [volume, setVolume] = useState(50);
-  const [playbackProgress, setPlaybackProgress] = useState({
+  const [playback, setPlayback] = useState<Playback>({
     elapsed: 0,
-    total: 248440,
+    duration: 248440,
+    track: {
+      name: "Under Pressure",
+      artists: [
+        {
+          profile: {
+            name: "Queen",
+          },
+        },
+        {
+          profile: {
+            name: "David Bowie",
+          },
+        },
+      ],
+      album: {
+        name: "Hot Space",
+        coverArt: [
+          {
+            url: "https://i.scdn.co/image/ab67616d00001e02d254ca497999ae980a5a38c5",
+            width: 300,
+            height: 300,
+          },
+          {
+            url: "https://i.scdn.co/image/ab67616d00004851d254ca497999ae980a5a38c5",
+            width: 64,
+            height: 64,
+          },
+          {
+            url: "https://i.scdn.co/image/ab67616d0000b273d254ca497999ae980a5a38c5",
+            width: 640,
+            height: 640,
+          },
+        ],
+      },
+    },
   });
 
   const timeoutRef = useRef<any>(null);
 
   useEffect(() => {
-    if (isPlaying && playbackProgress.elapsed < playbackProgress.total) {
+    if (isPlaying && playback.elapsed < playback.duration) {
       timeoutRef.current = setTimeout(() => {
-        setPlaybackProgress((val) => ({ ...val, elapsed: clamp(0, val.elapsed + 1000, val.total) }));
+        setPlayback((val) => ({ ...val, elapsed: clamp(0, val.elapsed + 1000, val.duration) }));
       }, 1000);
-    } else if (playbackProgress.elapsed >= playbackProgress.total) {
+    } else if (playback.elapsed >= playback.duration) {
       setPlaying(false);
       clearTimeout(timeoutRef.current);
     }
@@ -47,19 +104,17 @@ const PlayerProvider = ({ children }: React.PropsWithChildren) => {
     return () => {
       clearTimeout(timeoutRef.current);
     };
-  }, [isPlaying, playbackProgress.elapsed, playbackProgress.total]);
+  }, [isPlaying, playback.elapsed, playback.duration]);
 
   const initialState = {
-    track,
-    setTrack,
     isMuted,
     setMuted,
     isPlaying,
     setPlaying,
     volume,
     setVolume,
-    playbackProgress,
-    setPlaybackProgress,
+    playback,
+    setPlayback: setPlayback,
   };
 
   return <PlayerContext.Provider value={initialState}>{children}</PlayerContext.Provider>;
