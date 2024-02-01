@@ -28,10 +28,9 @@ export default function Album() {
     <Layout>
       <main>
         <CollectionHeader
-          color={albumInfo.coverArt.extractedColors.colorDark.hex}
-          cover={albumInfo.coverArt.sources[0].url}
           type={albumInfo.type}
           title={albumInfo.name}
+          cover={albumInfo.coverArt.sources[0].url}
           ownerName={albumInfo.artists.items[0].profile.name}
           trackCount={albumInfo.discs.items[0].tracks.totalCount}
           date={albumInfo.date.isoString}

@@ -26,10 +26,9 @@ export default function Playlist() {
     <Layout>
       <main>
         <CollectionHeader
-          color={playlistInfo.images.items[0].extractedColors.colorRaw.hex}
-          cover={playlistInfo.images.items[0].sources[0].url}
           type="PLAYLIST"
           title={playlistInfo.name}
+          cover={playlistInfo.images.items[0].sources[0].url}
           description={playlistInfo.description}
           ownerName={playlistInfo.ownerV2.data.name}
           trackCount={playlistInfo.content.totalCount}

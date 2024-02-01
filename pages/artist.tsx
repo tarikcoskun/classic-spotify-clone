@@ -31,9 +31,12 @@ export default function Artist() {
             <div className={s.name}>{artistInfo.profile.name}</div>
             <div className={s.listeners}>{new Intl.NumberFormat("en-US").format(artistInfo.stats.monthlyListeners)} monthly listeners</div>
             <div className={s.actions}>
-              <Button color="brand">PLAY</Button>
+              <Button variant="solid" color="brand">
+                PLAY
+              </Button>
               <Button
-                color="soft"
+                variant="outline"
+                color={isFollowing ? "brand" : "surface"}
                 onClick={() => {
                   setFollowing((val) => !val);
                 }}

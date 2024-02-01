@@ -4,9 +4,11 @@ import classNames from "classnames";
 // Styles
 import s from "./Button.module.scss";
 
-export type ButtonColors = "brand" | "surface" | "soft";
+export type ButtonVariants = "solid" | "outline";
+export type ButtonColors = "brand" | "surface";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  variant: ButtonVariants;
   color: ButtonColors;
   small?: boolean;
   square?: boolean;
@@ -15,9 +17,9 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ color, small, leading, trailing, className, children, ...props }, forwardedRef) => {
+  ({ variant, color, small, leading, trailing, className, children, ...props }, forwardedRef) => {
     return (
-      <button {...props} ref={forwardedRef} className={classNames(s.button, small && s.small, s[color], className)}>
+      <button {...props} ref={forwardedRef} className={classNames(s.button, small && s.small, s[variant], s[color], className)}>
         {leading && <>{leading}</>}
         {children}
         {trailing && <>{trailing}</>}

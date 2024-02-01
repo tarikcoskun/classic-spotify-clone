@@ -8,21 +8,20 @@ import Button from "./Button";
 import s from "@/styles/Collection.module.scss";
 
 interface Props {
-  color: string;
-  cover: string;
   type: string;
   title: string;
+  cover: string;
   description?: string;
   trackCount: number;
   ownerName: string;
   date?: string;
 }
 
-export default function CollectionHeader({ color, cover, type, title, description, trackCount, ownerName, date }: Props) {
+export default function CollectionHeader({ type, title, cover, description, trackCount, ownerName, date }: Props) {
   const [isFollowing, setFollowing] = useState(false);
 
   return (
-    <header className={s.collectionHeader} style={{ backgroundImage: `linear-gradient(to bottom, ${color}, ${color}50)` }}>
+    <header className={s.collectionHeader}>
       <img src={cover} alt={title} width={256} height={256} draggable="false" className={s.collectionCover} />
       <div className={s.collectionDetails}>
         <div className={s.collectionType}>{type}</div>
@@ -44,14 +43,17 @@ export default function CollectionHeader({ color, cover, type, title, descriptio
           🞄<span>{trackCount} songs</span>
         </div>
         <div className={s.actions}>
-          <Button color="brand">PLAY</Button>
+          <Button variant="solid" color="brand">
+            PLAY
+          </Button>
           <Button
-            color="soft"
+            variant="outline"
+            color={isFollowing ? "brand" : "surface"}
             onClick={() => {
               setFollowing((val) => !val);
             }}
           >
-            {isFollowing ? "FOLLOWING" : "FOLLOW"}
+            {type === "PLAYLIST" ? (isFollowing ? "SAVED" : "SAVE") : isFollowing ? "FOLLOWING" : "FOLLOW"}
           </Button>
         </div>
       </div>

@@ -17,27 +17,28 @@
     font-size: var(--scale-00);
   }
 
-  &.brand {
-    background-color: c.$brand2;
-
-    &:hover {
+  &.solid {
+    &.brand {
       background-color: c.$brand;
+      &:hover {
+        background-color: c.$brand2;
+      }
+    }
+    &.surface {
+      background-color: c.$layer2;
+      &:hover {
+        background-color: c.$layer3;
+      }
     }
   }
 
-  &.surface {
-    background-color: c.$layer2;
-
-    &:hover {
-      background-color: c.$layer3;
+  &.outline {
+    border: 1px solid transparent;
+    &.brand {
+      border-color: c.$brand;
     }
-  }
-
-  &.soft {
-    background-color: color.adjust(c.$title, $alpha: -0.75);
-
-    &:hover {
-      background-color: color.adjust(c.$title, $alpha: -0.65);
+    &.surface {
+      border-color: c.$layer3;
     }
   }
 }

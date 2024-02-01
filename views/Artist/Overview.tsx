@@ -106,12 +106,13 @@ export default function ArtistOverview({ data }: { data: ArtistUnion }) {
               />
               <Button
                 small
+                variant="outline"
                 color="surface"
                 onClick={() => {
                   setPopularExpanded((val) => !val);
                 }}
               >
-                {popularExpanded ? "Show less" : "Show more"}
+                {popularExpanded ? "SHOW LESS" : "SHOW MORE"}
               </Button>
             </div>
           </Section>
