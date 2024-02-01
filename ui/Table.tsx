@@ -78,14 +78,19 @@ export default function Table({
       )}
 
       <div role="presentation" className={s.tableBody}>
-        {data.map((dataRow, idx) => (
-          <div key={idx} role="row" aria-rowindex={idx + 2} onMouseEnter={() => setHovering(idx)} onMouseLeave={() => setHovering(-1)}>
+        {data.map((row, rowIdx) => (
+          <div
+            key={rowIdx}
+            role="row"
+            aria-rowindex={rowIdx + 2}
+            onMouseEnter={() => setHovering(rowIdx)}
+            onMouseLeave={() => setHovering(-1)}
+          >
             <div
               role="presentation"
               className={classNames(s.tableRow, !headless && s.spaced, rowClassName)}
               onDoubleClick={() => {
-                const data = dataRow["Track"] as DetailedTableItem;
-                console.log(data.pass);
+                const data = row["Track"] as DetailedTableItem;
                 context.setPlaying(true);
                 context.setPlayback((val) => ({
                   ...val,
@@ -94,13 +99,13 @@ export default function Table({
                 }));
               }}
             >
-              {Object.values(dataRow).map((property, propIdx) => (
+              {Object.values(row).map((prop, propIdx) => (
                 <div key={propIdx} role="gridcell" className={classNames(s.tableData, dataClassName)}>
-                  {typeof property === "object"
-                    ? property.whileHover && isHovering === idx
-                      ? (property as DetailedTableItem).whileHover
-                      : (property as DetailedTableItem).html
-                    : property}
+                  {typeof prop === "object"
+                    ? prop.whileHover && isHovering === rowIdx
+                      ? (prop as DetailedTableItem).whileHover
+                      : (prop as DetailedTableItem).html
+                    : prop}
                 </div>
               ))}
             </div>

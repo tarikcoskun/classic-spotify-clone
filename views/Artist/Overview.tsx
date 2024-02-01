@@ -67,12 +67,11 @@ export default function ArtistOverview({ data }: { data: ArtistUnion }) {
                     ),
                   },
                   "#": {
-                    html:
-                      context.isPlaying && context.playback.track.name === item.track.name ? (
-                        <Icon icon="volume-high" className="whiteText" />
-                      ) : (
-                        idx + 1
-                      ),
+                    html: (
+                      <span data-active={context.playback.track.name === item.track.name} style={{ display: "flex" }}>
+                        {context.isPlaying && context.playback.track.name === item.track.name ? <Icon icon="volume-high" /> : idx + 1}
+                      </span>
+                    ),
                     whileHover:
                       context.isPlaying && context.playback.track.name === item.track.name ? (
                         <button
@@ -136,13 +135,13 @@ export default function ArtistOverview({ data }: { data: ArtistUnion }) {
               />
               <Button
                 small
-                variant="outline"
+                variant="solid"
                 color="surface"
                 onClick={() => {
                   setPopularExpanded((val) => !val);
                 }}
               >
-                {popularExpanded ? "SHOW LESS" : "SHOW MORE"}
+                {popularExpanded ? "SHOW LESS" : "SHOW 5 MORE"}
               </Button>
             </div>
           </Section>
