@@ -95,11 +95,10 @@
     .albumCover {
       width: 64px;
       height: 64px;
+      flex-shrink: 0;
     }
 
     .trackDetails {
-      width: calc(var(--left-sidebar-width) - 64px - 24px - var(--size-12));
-
       .title {
         color: c.$title;
         font-size: var(--scale-00);
@@ -124,6 +123,7 @@
   margin-left: auto;
   color: c.$title;
   background-color: c.$layer1;
+  flex-shrink: 0;
 
   &:hover {
     background-color: c.$layer3;
