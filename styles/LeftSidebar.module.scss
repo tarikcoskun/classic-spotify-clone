@@ -99,6 +99,8 @@
     }
 
     .trackDetails {
+      min-width: 0;
+
       .title {
         color: c.$title;
         font-size: var(--scale-00);
