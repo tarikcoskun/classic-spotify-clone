@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { useRouter } from "next/router";
 
 // Components
@@ -104,6 +104,7 @@ const sidebarLinks: { [key: string]: SidebarLink[] } = {
 export default function LeftSidebar() {
   const router = useRouter();
   const context = useContext(PlayerContext);
+  const [expanded, setExpanded] = useState(false);
 
   return (
     <nav className={s.sidebar}>
@@ -131,26 +132,30 @@ export default function LeftSidebar() {
         ))}
       </div>
 
-      <div aria-label="Now playing" className={s.nowPlaying}>
-        <img
-          src={context.playback.track.album.coverArt[0].url}
-          alt={context.playback.track.album.name}
-          width={64}
-          height={64}
-          draggable="false"
-          className={s.albumCover}
-        />
-        <div className={s.trackDetails}>
-          <div className={s.title} title={context.playback.track.name}>
-            {context.playback.track.name}
-          </div>
-          <div className={s.artist} title={context.playback.track.artists.map((artist) => artist.profile.name).join(", ")}>
-            {context.playback.track.artists.map((artist) => artist.profile.name).join(", ")}
-          </div>
+      <div className={s.nowPlaying} data-expanded={expanded}>
+        <div className={s.albumCover} style={{ backgroundImage: `url(${context.playback.track.album.coverArt[0].url})` }}>
+          <button
+            className={s.expand}
+            onClick={() => {
+              setExpanded((val) => !val);
+            }}
+          >
+            <Icon icon={expanded ? "chevron-down" : "chevron-up"} />
+          </button>
         </div>
-        <button className={s.add} aria-label="Add to playlist">
-          <Icon icon="add" />
-        </button>
+        <div className={s.flexGroup}>
+          <div className={s.trackDetails}>
+            <div className={s.title} title={context.playback.track.name}>
+              {context.playback.track.name}
+            </div>
+            <div className={s.artist} title={context.playback.track.artists.map((artist) => artist.profile.name).join(", ")}>
+              {context.playback.track.artists.map((artist) => artist.profile.name).join(", ")}
+            </div>
+          </div>
+          <button className={s.add} aria-label="Add to playlist">
+            <Icon icon="add" />
+          </button>
+        </div>
       </div>
     </nav>
   );

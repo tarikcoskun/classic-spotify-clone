@@ -28,12 +28,12 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-inline: var(--padding-x);
 
         .categoryTitle {
           color: c.$subtext;
           font-weight: 500;
           font-size: var(--scale-00);
-          margin-left: var(--padding-x);
         }
       }
 
@@ -86,31 +86,73 @@
   }
 
   .nowPlaying {
-    background: linear-gradient(to bottom right, color.adjust(c.$layer2, $lightness: -3), color.adjust(c.$layer2, $lightness: -2));
     margin-top: auto;
     display: flex;
-    align-items: center;
-    gap: var(--size-4);
+    background: linear-gradient(to bottom right, color.adjust(c.$layer2, $lightness: -3), color.adjust(c.$layer2, $lightness: -2));
 
-    .albumCover {
-      width: 64px;
-      height: 64px;
-      flex-shrink: 0;
-    }
+    &[data-expanded="true"] {
+      flex-direction: column;
 
-    .trackDetails {
-      min-width: 0;
-
-      .title {
-        color: c.$title;
-        font-size: var(--scale-00);
-        @include util.truncate;
+      .albumCover {
+        width: var(--left-sidebar-width);
+        height: var(--left-sidebar-width);
       }
 
-      .artist {
-        margin-top: var(--size-1);
-        font-size: var(--scale-000);
-        @include util.truncate;
+      .flexGroup {
+        width: 300px;
+      }
+    }
+
+    .albumCover {
+      aspect-ratio: 1/1;
+      width: 64px;
+      height: 64px;
+      background-size: cover;
+      flex-shrink: 0;
+      padding: var(--size-1);
+
+      &:hover .expand {
+        display: flex;
+      }
+
+      .expand {
+        margin-left: auto;
+        color: c.$title;
+        background-color: color.adjust(c.$layer1, $alpha: -0.5);
+        padding: var(--size-1);
+        border-radius: var(--radius-full);
+        display: none;
+
+        &:hover {
+          background-color: c.$layer1;
+        }
+      }
+    }
+
+    .flexGroup {
+      width: 236px;
+      padding: var(--size-4);
+      gap: var(--size-4);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-grow: 1;
+      min-width: 0;
+
+      .trackDetails {
+        min-width: 0;
+
+        .title {
+          color: c.$title;
+          font-size: var(--scale-00);
+          @include util.truncate;
+        }
+
+        .artist {
+          margin-top: var(--size-1);
+          font-size: var(--scale-000);
+          @include util.truncate;
+        }
       }
     }
   }
@@ -118,11 +160,8 @@
 
 .add {
   cursor: pointer;
-  margin-right: var(--size-4);
-  box-sizing: content-box;
   padding: var(--size-1);
   border-radius: var(--radius-full);
-  margin-left: auto;
   color: c.$title;
   background-color: c.$layer1;
   flex-shrink: 0;
