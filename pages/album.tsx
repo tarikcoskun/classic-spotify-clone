@@ -16,9 +16,6 @@ import { PlayerContext } from "@/store/player";
 // Data
 import albumData from "@/data/album.json";
 
-// Styles
-import s from "@/styles/Collection.module.scss";
-
 const albumInfo = albumData.data.albumUnion as AlbumUnion;
 
 export default function Album() {
@@ -39,7 +36,6 @@ export default function Album() {
         <div className="contentSpacing">
           <Table
             spacing={["40px", "4fr", "5fr", "40px"]}
-            rowClassName={s.tableRow}
             data={albumInfo.tracks.items.map((item, idx) => ({
               "#": {
                 html: (
