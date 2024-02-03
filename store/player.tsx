@@ -3,6 +3,8 @@ import { type Dispatch, type SetStateAction, createContext, useState, useEffect,
 import { clamp } from "@/helpers/clamp";
 
 interface PlayerValue {
+  isExpanded: boolean;
+  setExpanded: Dispatch<SetStateAction<boolean>>;
   isMuted: boolean;
   setMuted: Dispatch<SetStateAction<boolean>>;
   isPlaying: boolean;
@@ -46,6 +48,7 @@ interface Source {
 export const PlayerContext = createContext({} as PlayerValue);
 
 const PlayerProvider = ({ children }: React.PropsWithChildren) => {
+  const [isExpanded, setExpanded] = useState(false);
   const [isMuted, setMuted] = useState(false);
   const [isPlaying, setPlaying] = useState(false);
   const [volume, setVolume] = useState(50);
@@ -97,6 +100,8 @@ const PlayerProvider = ({ children }: React.PropsWithChildren) => {
   }, [isPlaying, playback.elapsed, playback.duration]);
 
   const initialState = {
+    isExpanded,
+    setExpanded,
     isMuted,
     setMuted,
     isPlaying,

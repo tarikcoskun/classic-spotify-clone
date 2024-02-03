@@ -104,7 +104,6 @@ const sidebarLinks: { [key: string]: SidebarLink[] } = {
 export default function LeftSidebar() {
   const router = useRouter();
   const context = useContext(PlayerContext);
-  const [expanded, setExpanded] = useState(false);
 
   return (
     <nav className={s.sidebar}>
@@ -132,15 +131,15 @@ export default function LeftSidebar() {
         ))}
       </div>
 
-      <div className={s.nowPlaying} data-expanded={expanded}>
+      <div className={s.nowPlaying} data-expanded={context.isExpanded}>
         <div className={s.albumCover} style={{ backgroundImage: `url(${context.playback.track.album.coverArt[0].url})` }}>
           <button
             className={s.expand}
             onClick={() => {
-              setExpanded((val) => !val);
+              context.setExpanded((val) => !val);
             }}
           >
-            <Icon icon={expanded ? "chevron-down" : "chevron-up"} />
+            <Icon icon={context.isExpanded ? "chevron-down" : "chevron-up"} />
           </button>
         </div>
         <div className={s.flexGroup}>
