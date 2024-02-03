@@ -3,7 +3,7 @@ import Icon from "@/ui/Icon";
 import Avatar from "@/ui/Avatar";
 
 // Styles
-import s from "@/styles/Navbar.module.scss";
+import s from "./Navbar.module.scss";
 
 export default function Navbar() {
   return (

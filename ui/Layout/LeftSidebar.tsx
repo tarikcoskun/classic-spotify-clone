@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { useRouter } from "next/router";
 
 // Components
@@ -9,7 +9,7 @@ import Icon, { type Icons } from "@/ui/Icon";
 import { PlayerContext } from "@/store/player";
 
 // Styles
-import s from "@/styles/LeftSidebar.module.scss";
+import s from "./LeftSidebar.module.scss";
 
 interface SidebarLink {
   label: string;

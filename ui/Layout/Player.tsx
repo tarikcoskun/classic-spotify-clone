@@ -9,7 +9,7 @@ import Icon from "@/ui/Icon";
 import { PlayerContext } from "@/store/player";
 
 // Styles
-import s from "@/styles/Player.module.scss";
+import s from "./Player.module.scss";
 
 export default function Player() {
   const context = useContext(PlayerContext);

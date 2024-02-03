@@ -5,7 +5,7 @@ import Link from "next/link";
 import Button from "./Button";
 
 // Styles
-import s from "@/styles/Collection.module.scss";
+import s from "./CollectionHeader.module.scss";
 
 interface Props {
   type: string;

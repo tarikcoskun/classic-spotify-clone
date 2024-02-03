@@ -4,7 +4,7 @@ import Avatar from "../Avatar";
 import Icon, { Icons } from "../Icon";
 
 // Styles
-import s from "@/styles/FriendsPanel.module.scss";
+import s from "./FriendsPanel.module.scss";
 
 interface Activity {
   user: {

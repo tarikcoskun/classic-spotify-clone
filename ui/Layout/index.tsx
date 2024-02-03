@@ -5,7 +5,7 @@ import LeftSidebar from "./LeftSidebar";
 import FriendsPanel from "./FriendsPanel";
 
 // Styles
-import s from "@/styles/Layout.module.scss";
+import s from "./Layout.module.scss";
 
 export default function Layout({ children }: React.PropsWithChildren) {
   return (
