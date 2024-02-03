@@ -86,8 +86,12 @@
   }
 
   .nowPlaying {
+    height: 64px;
+    flex-shrink: 0;
     margin-top: auto;
     display: flex;
+    position: relative;
+    transition: height 300ms;
     background: linear-gradient(
       to bottom right,
       color.adjust(c.$layer2, $lightness: -3),
@@ -96,8 +100,10 @@
 
     &[data-expanded="true"] {
       flex-direction: column;
+      height: calc(64px + var(--left-sidebar-width));
 
       .albumCover {
+        transform: translateY(-64px);
         width: var(--left-sidebar-width);
         height: var(--left-sidebar-width);
       }
@@ -108,12 +114,15 @@
     }
 
     .albumCover {
-      aspect-ratio: 1/1;
       width: 64px;
       height: 64px;
-      background-size: cover;
       flex-shrink: 0;
+      background-size: cover;
       padding: var(--size-1);
+      position: absolute;
+      bottom: 0;
+      transition-duration: 300ms;
+      transition-property: width, height, transform;
 
       &:hover .expand {
         display: flex;
@@ -135,13 +144,16 @@
 
     .flexGroup {
       width: 236px;
+      height: 64px;
+      margin-top: auto;
+      margin-left: auto;
       padding: var(--size-4);
       gap: var(--size-4);
       display: flex;
       align-items: center;
       justify-content: space-between;
-      flex-grow: 1;
       min-width: 0;
+      transition: width 300ms;
 
       .trackDetails {
         min-width: 0;
