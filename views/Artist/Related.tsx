@@ -11,7 +11,7 @@ export default function ArtistRelated({ data }: { data: ArtistUnion }) {
     <div className="genericContainer">
       <div className="genericGrid">
         {relatedArtists.map((artist, idx) => (
-          <Link href="/artist" key={idx}>
+          <Link key={artist.profile.name} href="/artist">
             <Card cover={artist.visuals.avatarImage.sources[0].url} title={artist.profile.name} description="Artist" />
           </Link>
         ))}

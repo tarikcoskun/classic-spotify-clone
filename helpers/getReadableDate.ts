@@ -9,8 +9,6 @@ export const getReadableDate = (date: Date) => {
   const diff = Math.floor((today.getTime() - date.getTime()) / 86400000);
 
   if (diff === 0) return "Today";
-  else if (diff <= 7) {
-    const num = diff;
-    return `${num} day${num === 1 ? "" : "s"} ago`;
-  } else return intlFormatter.format(date);
+  if (diff <= 7) return `${diff} day${diff === 1 ? "" : "s"} ago`;
+  return intlFormatter.format(date);
 };

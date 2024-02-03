@@ -1,6 +1,5 @@
 export interface GenresResponse {
   data: GenresData;
-  extensions: Extensions;
 }
 
 export interface GenresData {
@@ -82,5 +81,3 @@ export interface Source {
 export interface BackgroundColor {
   hex: string;
 }
-
-export interface Extensions {}

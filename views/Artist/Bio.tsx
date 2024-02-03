@@ -35,7 +35,7 @@ export default function ArtistBio({ data }: { data: ArtistUnion }) {
           </div>
           <div className={s.topCities}>
             {data.stats.topCities.items.map((stat, idx) => (
-              <div className={s.stat} key={idx}>
+              <div key={stat.city} className={s.stat}>
                 <div className={s.title}>
                   {stat.city}, {stat.country}
                 </div>
@@ -47,7 +47,7 @@ export default function ArtistBio({ data }: { data: ArtistUnion }) {
           </div>
           <div className={s.links}>
             {data.profile.externalLinks.items.map((link, idx) => (
-              <a key={idx} href={link.url} target="_blank" rel="noopener noreferrer">
+              <a key={link.name} href={link.url} target="_blank" rel="noopener noreferrer">
                 <div className={s.socialLink}>
                   <Icon icon={link.name.toLowerCase() as Icons} size={24} />
                   <span>{link.name.toLowerCase()}</span>

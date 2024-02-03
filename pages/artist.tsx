@@ -26,10 +26,15 @@ export default function Artist() {
   return (
     <Layout>
       <main>
-        <header className={s.artistProfile} style={{ backgroundImage: `url(${artistInfo.visuals.headerImage.sources[0].url})` }}>
+        <header
+          className={s.artistProfile}
+          style={{ backgroundImage: `url(${artistInfo.visuals.headerImage.sources[0].url})` }}
+        >
           <div className={s.artistDetails}>
             <div className={s.name}>{artistInfo.profile.name}</div>
-            <div className={s.listeners}>{new Intl.NumberFormat("en-US").format(artistInfo.stats.monthlyListeners)} monthly listeners</div>
+            <div className={s.listeners}>
+              {new Intl.NumberFormat("en-US").format(artistInfo.stats.monthlyListeners)} monthly listeners
+            </div>
             <div className={s.actions}>
               <Button variant="solid" color="brand">
                 PLAY

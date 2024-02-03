@@ -1,6 +1,5 @@
 export interface PlaylistResponse {
   data: PlaylistData;
-  extensions: Extensions;
 }
 
 export interface PlaylistData {
@@ -173,5 +172,3 @@ export interface OwnerV2Data {
 export interface SharingInfo {
   shareUrl: string;
 }
-
-export interface Extensions {}

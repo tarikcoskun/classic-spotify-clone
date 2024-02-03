@@ -109,11 +109,11 @@ export default function LeftSidebar() {
     <nav className={s.sidebar}>
       <div className={s.sidebarLinks}>
         {Object.entries(sidebarLinks).map(([category, links], idx) => (
-          <div key={idx} className={s.sidebarCategory}>
+          <div key={category} className={s.sidebarCategory}>
             <header className={s.categoryHeader}>
               <span className={s.categoryTitle}>{category}</span>
               {category === "PLAYLISTS" && (
-                <button className={s.add} aria-label="Add to playlist">
+                <button type="button" className={s.add} aria-label="Add to playlist">
                   <Icon icon="add" />
                 </button>
               )}
@@ -121,7 +121,12 @@ export default function LeftSidebar() {
 
             <div className={s.categoryLinks}>
               {links.map((link, idx) => (
-                <Link key={idx} href={link.href} className={s.sidebarItem} data-state={link.href === router.asPath ? "active" : "inactive"}>
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className={s.sidebarItem}
+                  data-state={link.href === router.asPath ? "active" : "inactive"}
+                >
                   <Icon className={s.itemIcon} icon={link.icon} size={24} />
                   <span className={s.itemLabel}>{link.label}</span>
                 </Link>
@@ -132,8 +137,12 @@ export default function LeftSidebar() {
       </div>
 
       <div className={s.nowPlaying} data-expanded={context.isExpanded}>
-        <div className={s.albumCover} style={{ backgroundImage: `url(${context.playback.track.album.coverArt[0].url})` }}>
+        <div
+          className={s.albumCover}
+          style={{ backgroundImage: `url(${context.playback.track.album.coverArt[0].url})` }}
+        >
           <button
+            type="button"
             className={s.expand}
             onClick={() => {
               context.setExpanded((val) => !val);
@@ -147,11 +156,14 @@ export default function LeftSidebar() {
             <div className={s.title} title={context.playback.track.name}>
               {context.playback.track.name}
             </div>
-            <div className={s.artist} title={context.playback.track.artists.map((artist) => artist.profile.name).join(", ")}>
+            <div
+              className={s.artist}
+              title={context.playback.track.artists.map((artist) => artist.profile.name).join(", ")}
+            >
               {context.playback.track.artists.map((artist) => artist.profile.name).join(", ")}
             </div>
           </div>
-          <button className={s.add} aria-label="Add to playlist">
+          <button type="button" className={s.add} aria-label="Add to playlist">
             <Icon icon="add" />
           </button>
         </div>

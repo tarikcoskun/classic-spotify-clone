@@ -174,7 +174,7 @@ export default function FriendsPanel() {
     <div className={s.sidebar}>
       <div className={s.activities}>
         {activities.map((activity, idx) => (
-          <div key={idx} className={s.activity}>
+          <div key={activity.user.username} className={s.activity}>
             <Avatar size={48} padding={12} rounded />
             <div className={s.info}>
               <header className={s.userInfo}>

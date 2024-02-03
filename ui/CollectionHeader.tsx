@@ -36,8 +36,7 @@ export default function CollectionHeader({ type, title, cover, description, trac
           </span>
           {date && (
             <>
-              🞄
-              <span>{new Date(date).getFullYear()}</span>
+              🞄<span>{new Date(date).getFullYear()}</span>
             </>
           )}
           🞄<span>{trackCount} songs</span>

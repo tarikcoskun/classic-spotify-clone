@@ -1,6 +1,5 @@
 export interface GenreResponse {
   data: GenreData;
-  extensions: Extensions;
 }
 
 export interface GenreData {
@@ -133,5 +132,3 @@ export enum Name {
 export interface PagingInfo {
   nextOffset: null;
 }
-
-export interface Extensions {}

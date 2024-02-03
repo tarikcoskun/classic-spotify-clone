@@ -13,9 +13,9 @@ export default function HomeGenres() {
       <Section>
         <Section.Header title="Browse All" />
         <div className="genericGrid">
-          {genresData.data.browseStart.sections.items[0].sectionItems.items.map((genre, idx) => (
+          {genresData.data.browseStart.sections.items[0].sectionItems.items.map((genre) => (
             <div
-              key={idx}
+              key={genre.uri}
               style={{ backgroundColor: genre.content.data.data.cardRepresentation.backgroundColor.hex }}
               className={s.genreCard}
             >

@@ -1,6 +1,5 @@
 export interface ArtistResponse {
   data: ArtistData;
-  extensions: Extensions;
 }
 
 export interface ArtistData {
@@ -458,5 +457,3 @@ export interface ExtractedColors {
 export interface ColorRaw {
   hex: string;
 }
-
-export interface Extensions {}

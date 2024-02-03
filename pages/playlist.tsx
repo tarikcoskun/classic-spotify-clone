@@ -41,12 +41,17 @@ export default function Playlist() {
               "#": {
                 html: (
                   <span data-active={context.playback.track.name === item.itemV2.data.name} style={{ display: "flex" }}>
-                    {context.isPlaying && context.playback.track.name === item.itemV2.data.name ? <Icon icon="volume-high" /> : idx + 1}
+                    {context.isPlaying && context.playback.track.name === item.itemV2.data.name ? (
+                      <Icon icon="volume-high" />
+                    ) : (
+                      idx + 1
+                    )}
                   </span>
                 ),
                 whileHover:
                   context.isPlaying && context.playback.track.name === item.itemV2.data.name ? (
                     <button
+                      type="button"
                       aria-label="Pause"
                       className="whiteText"
                       onClick={() => {
@@ -57,6 +62,7 @@ export default function Playlist() {
                     </button>
                   ) : (
                     <button
+                      type="button"
                       aria-label="Play"
                       className="whiteText"
                       onClick={() => {
@@ -114,7 +120,11 @@ export default function Playlist() {
               },
               Album: {
                 html: (
-                  <Link href="/album" className="whiteText hoverLine truncate" title={item.itemV2.data.albumOfTrack.name}>
+                  <Link
+                    href="/album"
+                    className="whiteText hoverLine truncate"
+                    title={item.itemV2.data.albumOfTrack.name}
+                  >
                     {item.itemV2.data.albumOfTrack.name}
                   </Link>
                 ),

@@ -69,12 +69,17 @@ export default function ArtistOverview({ data }: { data: ArtistUnion }) {
                   "#": {
                     html: (
                       <span data-active={context.playback.track.name === item.track.name} style={{ display: "flex" }}>
-                        {context.isPlaying && context.playback.track.name === item.track.name ? <Icon icon="volume-high" /> : idx + 1}
+                        {context.isPlaying && context.playback.track.name === item.track.name ? (
+                          <Icon icon="volume-high" />
+                        ) : (
+                          idx + 1
+                        )}
                       </span>
                     ),
                     whileHover:
                       context.isPlaying && context.playback.track.name === item.track.name ? (
                         <button
+                          type="button"
                           aria-label="Pause"
                           className="whiteText"
                           onClick={() => {
@@ -85,6 +90,7 @@ export default function ArtistOverview({ data }: { data: ArtistUnion }) {
                         </button>
                       ) : (
                         <button
+                          type="button"
                           aria-label="Play"
                           className="whiteText"
                           onClick={() => {
@@ -150,7 +156,7 @@ export default function ArtistOverview({ data }: { data: ArtistUnion }) {
           <Section.Header title="Related Artists" />
           <div className={s.relatedArtists}>
             {relatedArtists.map((artist, idx) => (
-              <Link href="/artist" key={idx}>
+              <Link key={artist.profile.name} href="/artist">
                 <div className={s.card}>
                   <img
                     src={artist.visuals.avatarImage.sources[0].url}
@@ -171,7 +177,7 @@ export default function ArtistOverview({ data }: { data: ArtistUnion }) {
         <Section.Header title="Albums" />
         <div className="genericGrid">
           {data.discography.popularReleasesAlbums.items.map((album, idx) => (
-            <Link href="/album" key={idx}>
+            <Link key={album.name} href="/album">
               <Card
                 cover={album.coverArt.sources[0].url}
                 title={album.name}

@@ -65,6 +65,7 @@ export default function Player() {
     <div className={s.player}>
       <div className={s.controlsLeft}>
         <button
+          type="button"
           aria-label="Previous"
           onClick={() => {
             context.setPlayback((val) => ({ ...val, elapsed: 0 }));
@@ -73,6 +74,7 @@ export default function Player() {
           <Icon icon="previous" size={24} />
         </button>
         <button
+          type="button"
           aria-label={context.isPlaying ? "Pause" : "Play"}
           onClick={() => {
             context.setPlaying((val) => !val);
@@ -80,7 +82,7 @@ export default function Player() {
         >
           <Icon icon={context.isPlaying ? "pause" : "play"} size={24} />
         </button>
-        <button aria-label="Next">
+        <button type="button" aria-label="Next">
           <Icon icon="next" size={24} />
         </button>
       </div>
@@ -88,7 +90,7 @@ export default function Player() {
         <div ref={volProgressRef} onMouseDown={handleMouseDown} className={s.volumeProgress} data-listener="vol">
           <div
             className={s.progressBarWrapper}
-            style={{ ["--progress-bar-transform" as any]: `${context.isMuted ? 0 : context.volume}%` }}
+            style={{ ["--progress-bar-transform" as string]: `${context.isMuted ? 0 : context.volume}%` }}
             data-listener="vol"
           >
             <div className={s.progressBar} data-listener="vol">
@@ -98,6 +100,7 @@ export default function Player() {
           </div>
         </div>
         <button
+          type="button"
           className="toggle"
           aria-label="Toggle muted"
           onClick={() => {
@@ -109,10 +112,10 @@ export default function Player() {
               context.isMuted || context.volume === 0
                 ? "volume-muted"
                 : context.volume >= 70
-                ? "volume-high"
-                : context.volume >= 40
-                ? "volume-medium"
-                : "volume-low"
+                  ? "volume-high"
+                  : context.volume >= 40
+                    ? "volume-medium"
+                    : "volume-low"
             }
             size={20}
           />
@@ -123,7 +126,11 @@ export default function Player() {
         <div ref={pbProgressRef} onMouseDown={handleMouseDown} className={s.playbackProgress} data-listener="pb">
           <div
             className={s.progressBarWrapper}
-            style={{ ["--progress-bar-transform" as any]: `${(context.playback.elapsed / context.playback.duration) * 100}%` }}
+            style={{
+              ["--progress-bar-transform" as string]: `${
+                (context.playback.elapsed / context.playback.duration) * 100
+              }%`,
+            }}
             data-listener="pb"
           >
             <div className={s.progressBar} data-listener="pb">
@@ -136,6 +143,7 @@ export default function Player() {
       </div>
       <div className={s.controlsRight}>
         <button
+          type="button"
           className="toggle"
           aria-label="Toggle shuffle"
           data-state={shuffle ? "active" : "inactive"}
@@ -146,6 +154,7 @@ export default function Player() {
           <Icon icon="shuffle" size={20} />
         </button>
         <button
+          type="button"
           className="toggle"
           aria-label="Toggle repeat"
           data-state={repeat ? "active" : "inactive"}

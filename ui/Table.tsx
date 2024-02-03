@@ -19,7 +19,7 @@ interface DetailedTableItem {
 
 interface TableProps extends React.HTMLAttributes<HTMLElement> {
   data: TableItem[];
-  spacing: any;
+  spacing: string[];
   headless?: boolean;
   headClassName?: string;
   headerClassName?: string;
@@ -63,10 +63,10 @@ export default function Table({
       aria-rowcount={data.length}
       aria-colcount={Object.keys(data[0]).length}
       className={classNames(s.table, className)}
-      style={{ ["--grid-columns" as any]: spacing.join(" ") }}
+      style={{ ["--grid-columns" as string]: spacing.join(" ") }}
     >
       {!headless && (
-        <header ref={tableHeadRef} role="presentation" className={classNames(s.tableHead, headSticked && s.sticked, headClassName)}>
+        <header ref={tableHeadRef} className={classNames(s.tableHead, headSticked && s.sticked, headClassName)}>
           <div role="row" aria-rowindex={1} className={classNames(s.tableRow, !headless && s.spaced)}>
             {Object.keys(data[0]).map((field) => (
               <div key={field} role="columnheader" className={classNames(s.tableHeader, headerClassName)}>
@@ -87,10 +87,9 @@ export default function Table({
             onMouseLeave={() => setHovering(-1)}
           >
             <div
-              role="presentation"
               className={classNames(s.tableRow, !headless && s.spaced, rowClassName)}
               onDoubleClick={() => {
-                const data = row["Track"] as DetailedTableItem;
+                const data = row.Track as DetailedTableItem;
                 context.setPlaying(true);
                 context.setPlayback((val) => ({
                   ...val,

@@ -1,4 +1,4 @@
-import { type Dispatch, type SetStateAction, createContext, useState, useEffect, useRef } from "react";
+import { type Dispatch, type SetStateAction, createContext, useState, useEffect } from "react";
 
 import { clamp } from "@/helpers/clamp";
 
@@ -82,20 +82,25 @@ const PlayerProvider = ({ children }: React.PropsWithChildren) => {
     },
   });
 
-  const timeoutRef = useRef<any>(null);
-
   useEffect(() => {
+    let timer: NodeJS.Timeout | undefined;
+
     if (isPlaying && playback.elapsed < playback.duration) {
-      timeoutRef.current = setTimeout(() => {
-        setPlayback((val) => ({ ...val, elapsed: clamp(0, val.elapsed + 1000, val.duration) }));
+      timer = setTimeout(() => {
+        setPlayback((val) => ({
+          ...val,
+          elapsed: clamp(0, val.elapsed + 1000, val.duration),
+        }));
       }, 1000);
-    } else if (playback.elapsed >= playback.duration) {
+    }
+
+    if (playback.elapsed >= playback.duration) {
       setPlaying(false);
-      clearTimeout(timeoutRef.current);
+      clearTimeout(timer);
     }
 
     return () => {
-      clearTimeout(timeoutRef.current);
+      clearTimeout(timer);
     };
   }, [isPlaying, playback.elapsed, playback.duration]);
 

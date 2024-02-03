@@ -14,11 +14,11 @@ export default function HomeNewReleases() {
   return (
     <div className="genericContainer">
       {newReleases.browse.sections.items.map((section, idx) => (
-        <Section key={idx}>
+        <Section key={section.data.title.transformedLabel}>
           <Section.Header title={section.data.title.transformedLabel} />
           <div className="genericGrid">
             {section.sectionItems.items.map((item, idx) => (
-              <Link href={item.content.data.__typename === "Playlist" ? "/playlist" : "/album"} key={idx}>
+              <Link href={item.content.data.__typename === "Playlist" ? "/playlist" : "/album"} key={item.uri}>
                 <Card
                   cover={
                     (item.content.data.images?.items[0].sources[0].url ||

@@ -10,11 +10,11 @@ export default function HomeCharts() {
   return (
     <div className="genericContainer">
       {chartsData.data.browse.sections.items.map((section, idx) => (
-        <Section key={idx}>
+        <Section key={section.data.title.transformedLabel}>
           <Section.Header title={section.data.title.transformedLabel} />
           <div className="genericGrid">
             {section.sectionItems.items.map((item, idx) => (
-              <Link href="/playlist" key={idx}>
+              <Link key={item.content.data.name} href="/playlist">
                 <Card
                   cover={item.content.data.images.items[0].sources[0].url}
                   title={item.content.data.name}

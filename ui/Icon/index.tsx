@@ -11,7 +11,15 @@ export default function Icon({ icon, size = 16, ...props }: IconProps) {
   const body = icons[icon];
 
   return (
-    <svg {...props} xmlns="http://www.w3.org/2000/svg" width={size.toString()} height={size.toString()} viewBox="0 0 24 24">
+    <svg
+      {...props}
+      role="img"
+      xmlns="http://www.w3.org/2000/svg"
+      width={size.toString()}
+      height={size.toString()}
+      viewBox="0 0 24 24"
+      aria-label={icon}
+    >
       <g fill="currentColor" fillRule="evenodd" clipRule="evenodd">
         {body}
       </g>

@@ -1,6 +1,5 @@
 export interface AlbumResponse {
   data: Data;
-  extensions: Extensions;
 }
 
 export interface Data {
@@ -227,5 +226,3 @@ export interface Duration {
 export interface TrackPlayability {
   playable: boolean;
 }
-
-export interface Extensions {}

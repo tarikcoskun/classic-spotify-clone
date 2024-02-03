@@ -10,6 +10,7 @@ export default function Navbar() {
     <nav className={s.navbar}>
       <div className={s.controlsLeft}>
         <button
+          type="button"
           aria-label="Back"
           onClick={() => {
             history.back();
@@ -18,6 +19,7 @@ export default function Navbar() {
           <Icon icon="chevron-left" size={20} />
         </button>
         <button
+          type="button"
           aria-label="Forward"
           onClick={() => {
             history.forward();

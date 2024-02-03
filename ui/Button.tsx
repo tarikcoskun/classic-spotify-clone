@@ -19,13 +19,18 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ variant, color, small, leading, trailing, className, children, ...props }, forwardedRef) => {
     return (
-      <button {...props} ref={forwardedRef} className={classNames(s.button, small && s.small, s[variant], s[color], className)}>
-        {leading && <>{leading}</>}
+      <button
+        {...props}
+        type="button"
+        ref={forwardedRef}
+        className={classNames(s.button, small && s.small, s[variant], s[color], className)}
+      >
+        {leading && leading}
         {children}
-        {trailing && <>{trailing}</>}
+        {trailing && trailing}
       </button>
     );
-  }
+  },
 );
 
 Button.displayName = "Button";

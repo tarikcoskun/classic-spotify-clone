@@ -44,12 +44,17 @@ export default function Album() {
               "#": {
                 html: (
                   <span data-active={context.playback.track.name === item.track.name} style={{ display: "flex" }}>
-                    {context.isPlaying && context.playback.track.name === item.track.name ? <Icon icon="volume-high" /> : idx + 1}
+                    {context.isPlaying && context.playback.track.name === item.track.name ? (
+                      <Icon icon="volume-high" />
+                    ) : (
+                      idx + 1
+                    )}
                   </span>
                 ),
                 whileHover:
                   context.isPlaying && context.playback.track.name === item.track.name ? (
                     <button
+                      type="button"
                       aria-label="Pause"
                       className="whiteText"
                       onClick={() => {
@@ -60,6 +65,7 @@ export default function Album() {
                     </button>
                   ) : (
                     <button
+                      type="button"
                       aria-label="Play"
                       className="whiteText"
                       onClick={() => {

@@ -1,11 +1,11 @@
-export const useRefs = <T extends unknown>(...refs: React.Ref<T | null>[]) => {
+export const useRefs = <T>(...refs: React.Ref<T | null>[]) => {
   return (node: T | null) => {
-    refs.forEach((ref) => {
+    for (const ref of refs) {
       if (typeof ref === "function") {
         ref(node);
       } else if (ref) {
         (ref as React.MutableRefObject<T | null>).current = node;
       }
-    });
+    }
   };
 };

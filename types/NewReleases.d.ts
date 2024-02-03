@@ -1,6 +1,5 @@
 export interface NewReleasesResponse {
   data: NewReleasesData;
-  extensions: Extensions;
 }
 
 export interface NewReleasesData {
@@ -131,5 +130,3 @@ export interface OwnerV2Data {
 export interface PagingInfo {
   nextOffset: null;
 }
-
-export interface Extensions {}

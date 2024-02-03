@@ -100,17 +100,17 @@ export default function HomeOverview() {
         <header className={s.header}>
           <div className={s.title}>The best music for any moment.</div>
           <div className={s.controls}>
-            <button aria-label="Back" disabled>
+            <button type="button" aria-label="Back" disabled>
               <Icon icon="chevron-left" size={16} />
             </button>
-            <button aria-label="Forward">
+            <button type="button" aria-label="Forward">
               <Icon icon="chevron-right" size={16} />
             </button>
           </div>
         </header>
         <div className="genericGrid">
-          {greetingCards.map((card, idx) => (
-            <Link href="/playlist" key={idx}>
+          {greetingCards.map((card) => (
+            <Link href="/playlist" key={card.title}>
               <Card {...card} />
             </Link>
           ))}
@@ -123,7 +123,7 @@ export default function HomeOverview() {
             </header>
             <div className={s.covers}>
               {topLists.map((item, idx) => (
-                <img key={idx} src={item.cover} alt={item.artist} draggable="false" />
+                <img key={item.cover} src={item.cover} alt={item.artist} draggable="false" />
               ))}
             </div>
           </div>
@@ -134,7 +134,7 @@ export default function HomeOverview() {
             </header>
             <div className={s.covers}>
               {newReleases.map((item, idx) => (
-                <img key={idx} src={item.cover} alt={item.artist} draggable="false" />
+                <img key={item.cover} src={item.cover} alt={item.artist} draggable="false" />
               ))}
             </div>
           </div>
@@ -144,8 +144,8 @@ export default function HomeOverview() {
       <Section className={s.genres}>
         <Section.Header title="Genres & Moods" />
         <div className="genericGrid">
-          {genresCards.map((card, idx) => (
-            <Link href="/playlist" key={idx}>
+          {genresCards.map((card) => (
+            <Link href="/playlist" key={card.title}>
               <Card {...card} />
             </Link>
           ))}
