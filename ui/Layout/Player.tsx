@@ -1,4 +1,4 @@
-import { useCallback, useContext, useEffect, useRef, useState } from "react";
+import { useContext, useRef } from "react";
 import { getReadableTime } from "@/helpers/getReadableTime";
 import { clamp } from "@/helpers/clamp";
 
@@ -17,8 +17,6 @@ export default function Player() {
   const pbProgressRef = useRef<HTMLDivElement>(null);
   const volDotRef = useRef<HTMLDivElement>(null);
   const volProgressRef = useRef<HTMLDivElement>(null);
-  const [shuffle, setShuffle] = useState(true);
-  const [repeat, setRepeat] = useState(false);
 
   const handleMouseDown = (event: React.MouseEvent) => {
     const target = event.target as HTMLElement;
@@ -146,9 +144,9 @@ export default function Player() {
           type="button"
           className="toggle"
           aria-label="Toggle shuffle"
-          data-state={shuffle ? "active" : "inactive"}
+          data-state={context.shuffle ? "active" : "inactive"}
           onClick={() => {
-            setShuffle((val) => !val);
+            context.setShuffle((val) => !val);
           }}
         >
           <Icon icon="shuffle" size={20} />
@@ -157,9 +155,9 @@ export default function Player() {
           type="button"
           className="toggle"
           aria-label="Toggle repeat"
-          data-state={repeat ? "active" : "inactive"}
+          data-state={context.repeat ? "active" : "inactive"}
           onClick={() => {
-            setRepeat((val) => !val);
+            context.setRepeat((val) => !val);
           }}
         >
           <Icon icon="repeat" size={20} />

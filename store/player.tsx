@@ -4,14 +4,18 @@ import { clamp } from "@/helpers/clamp";
 
 interface PlayerValue {
   isExpanded: boolean;
-  setExpanded: Dispatch<SetStateAction<boolean>>;
   isMuted: boolean;
-  setMuted: Dispatch<SetStateAction<boolean>>;
   isPlaying: boolean;
-  setPlaying: Dispatch<SetStateAction<boolean>>;
   volume: number;
-  setVolume: Dispatch<SetStateAction<number>>;
+  shuffle: boolean;
+  repeat: boolean;
   playback: Playback;
+  setExpanded: Dispatch<SetStateAction<boolean>>;
+  setMuted: Dispatch<SetStateAction<boolean>>;
+  setPlaying: Dispatch<SetStateAction<boolean>>;
+  setVolume: Dispatch<SetStateAction<number>>;
+  setShuffle: Dispatch<SetStateAction<boolean>>;
+  setRepeat: Dispatch<SetStateAction<boolean>>;
   setPlayback: Dispatch<SetStateAction<Playback>>;
 }
 
@@ -52,6 +56,8 @@ const PlayerProvider = ({ children }: React.PropsWithChildren) => {
   const [isMuted, setMuted] = useState(false);
   const [isPlaying, setPlaying] = useState(false);
   const [volume, setVolume] = useState(50);
+  const [shuffle, setShuffle] = useState(true);
+  const [repeat, setRepeat] = useState(false);
   const [playback, setPlayback] = useState<Playback>({
     elapsed: 0,
     duration: 248440,
@@ -106,15 +112,19 @@ const PlayerProvider = ({ children }: React.PropsWithChildren) => {
 
   const initialState = {
     isExpanded,
-    setExpanded,
     isMuted,
-    setMuted,
     isPlaying,
-    setPlaying,
     volume,
-    setVolume,
+    shuffle,
+    repeat,
     playback,
-    setPlayback: setPlayback,
+    setExpanded,
+    setMuted,
+    setPlaying,
+    setVolume,
+    setShuffle,
+    setRepeat,
+    setPlayback,
   };
 
   return <PlayerContext.Provider value={initialState}>{children}</PlayerContext.Provider>;
