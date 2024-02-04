@@ -3,6 +3,7 @@ import { useState } from "react";
 // Components
 import Link from "next/link";
 import Button from "./Button";
+import Icon from "./Icon";
 
 // Styles
 import s from "./CollectionHeader.module.scss";
@@ -43,6 +44,7 @@ export default function CollectionHeader({ type, title, cover, description, trac
         </div>
         <div className={s.actions}>
           <Button variant="solid" color="brand">
+            <Icon icon="play" size={20} />
             PLAY
           </Button>
           <Button
@@ -52,7 +54,7 @@ export default function CollectionHeader({ type, title, cover, description, trac
               setFollowing((val) => !val);
             }}
           >
-            {type === "PLAYLIST" ? (isFollowing ? "SAVED" : "SAVE") : isFollowing ? "FOLLOWING" : "FOLLOW"}
+            {type === "PLAYLIST" ? (isFollowing ? "FOLLOWING" : "FOLLOW") : isFollowing ? "SAVED" : "SAVE"}
           </Button>
         </div>
       </div>

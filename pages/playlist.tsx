@@ -36,7 +36,7 @@ export default function Playlist() {
 
         <div className="contentSpacing">
           <Table
-            spacing={["40px", "5fr", "4fr", "5fr", "2fr", "40px"]}
+            spacing={["32px", "5fr", "4fr", "5fr", "2fr", "40px"]}
             data={playlistInfo.content.items.map((item, idx) => ({
               "#": {
                 html: (

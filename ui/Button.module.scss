@@ -23,7 +23,7 @@
 
   &.solid {
     &.brand {
-      background-color: c.$brand;
+      background-color: c.$brand2;
     }
     &.surface {
       background-color: c.$layer2;
@@ -33,7 +33,7 @@
   &.outline {
     border: 1px solid transparent;
     &.brand {
-      border-color: c.$brand;
+      border-color: c.$brand2;
     }
     &.surface {
       border-color: c.$layer3;

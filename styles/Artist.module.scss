@@ -2,7 +2,7 @@
 @use "sass:color";
 
 .artistProfile {
-  height: 320px;
+  height: 360px;
   padding: var(--size-8);
   display: flex;
   gap: var(--size-6);
@@ -10,6 +10,7 @@
   background-size: cover;
   background-position: center;
   background-color: color.adjust(c.$bg, $lightness: -1);
+  padding-bottom: calc(var(--size-8) + 53px);
 
   .artistPhoto {
     width: 192px;

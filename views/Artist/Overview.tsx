@@ -53,7 +53,7 @@ export default function ArtistOverview({ data }: { data: ArtistUnion }) {
             <div className={s.popularContainer}>
               <Table
                 headless
-                spacing={["40px", "40px", "5fr", "2fr", "40px"]}
+                spacing={["40px", "32px", "5fr", "1fr"]}
                 data={(popularExpanded ? topTracks : topTracks.slice(0, 5)).map((item, idx) => ({
                   Cover: {
                     html: (
@@ -136,7 +136,6 @@ export default function ArtistOverview({ data }: { data: ArtistUnion }) {
                     },
                   },
                   Playcount: new Intl.NumberFormat("en-US").format(parseInt(item.track.playcount)),
-                  Duration: getReadableTime(item.track.duration.totalMilliseconds),
                 }))}
               />
               <Button

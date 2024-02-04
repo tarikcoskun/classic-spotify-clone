@@ -6,6 +6,7 @@ import { useState } from "react";
 import Layout from "@/ui/Layout";
 import Tabs from "@/ui/Tabs";
 import Button from "@/ui/Button";
+import Icon from "@/ui/Icon";
 
 // Views
 import ArtistOverview from "@/views/Artist/Overview";
@@ -37,6 +38,7 @@ export default function Artist() {
             </div>
             <div className={s.actions}>
               <Button variant="solid" color="brand">
+                <Icon icon="play" size={20} />
                 PLAY
               </Button>
               <Button
@@ -52,8 +54,11 @@ export default function Artist() {
           </div>
         </header>
 
-        <Tabs defaultValue="overview">
-          <Tabs.List className="contentSpacing">
+        <Tabs defaultValue="overview" style={{ marginTop: "-53px" }}>
+          <Tabs.List
+            className="contentSpacing"
+            style={{ backgroundColor: "rgb(0,0,0,0.75)", backdropFilter: "blur(8px)" }}
+          >
             <Tabs.Trigger value="overview">Overview</Tabs.Trigger>
             <Tabs.Trigger value="related">Related Artists</Tabs.Trigger>
             <Tabs.Trigger value="bio">Biography</Tabs.Trigger>

@@ -104,7 +104,7 @@ const activities: Activity[] = [
     },
     source: {
       type: "playlist",
-      name: "voyager",
+      name: "Daily Mix 3",
     },
   },
   {

@@ -35,7 +35,7 @@ export default function Album() {
 
         <div className="contentSpacing">
           <Table
-            spacing={["40px", "4fr", "5fr", "40px"]}
+            spacing={["32px", "16px", "4fr", "5fr", "40px"]}
             data={albumInfo.tracks.items.map((item, idx) => ({
               "#": {
                 html: (
@@ -83,6 +83,9 @@ export default function Album() {
                       <Icon icon="play-alt" size={20} />
                     </button>
                   ),
+              },
+              "": {
+                html: <Icon icon="add" />,
               },
               Track: {
                 html: (
