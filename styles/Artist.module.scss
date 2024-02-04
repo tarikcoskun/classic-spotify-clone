@@ -19,10 +19,6 @@
     border-radius: var(--radius-full);
   }
 
-  .listeners {
-    color: color.adjust(c.$title, $alpha: -0.25);
-  }
-
   .artistDetails {
     display: flex;
     flex-direction: column;
