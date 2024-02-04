@@ -109,13 +109,19 @@ export default function Playlist() {
               },
               Artist: {
                 html: (
-                  <Link
-                    href="/artist"
-                    className="whiteText hoverLine truncate"
+                  <span
+                    className="truncate"
                     title={item.itemV2.data.artists.items.map((artist) => artist.profile.name).join(", ")}
                   >
-                    {item.itemV2.data.artists.items.map((artist) => artist.profile.name).join(", ")}
-                  </Link>
+                    {item.itemV2.data.artists.items.map((artist, idx) => (
+                      <>
+                        <Link key={artist.uri} href="/artist" className="whiteText hoverLine">
+                          {artist.profile.name}
+                        </Link>
+                        {idx !== item.itemV2.data.artists.items.length - 1 && ", "}
+                      </>
+                    ))}
+                  </span>
                 ),
               },
               Album: {

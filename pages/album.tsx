@@ -108,13 +108,19 @@ export default function Album() {
               },
               Artist: {
                 html: (
-                  <Link
-                    href="/artist"
-                    className="whiteText hoverLine truncate"
+                  <span
+                    className="truncate"
                     title={item.track.artists.items.map((artist) => artist.profile.name).join(", ")}
                   >
-                    {item.track.artists.items.map((artist) => artist.profile.name).join(", ")}
-                  </Link>
+                    {item.track.artists.items.map((artist, idx) => (
+                      <>
+                        <Link key={artist.uri} href="/artist" className="whiteText hoverLine">
+                          {artist.profile.name}
+                        </Link>
+                        {idx !== item.track.artists.items.length - 1 && ", "}
+                      </>
+                    ))}
+                  </span>
                 ),
               },
               Duration: getReadableTime(item.track.duration.totalMilliseconds),
