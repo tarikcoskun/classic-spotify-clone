@@ -5,10 +5,6 @@
 @use "colors" as c;
 @use "sass:color";
 
-.contentSpacing {
-  padding: 0 var(--content-spacing);
-}
-
 .truncate {
   @include util.truncate;
 }
@@ -21,20 +17,14 @@
   text-decoration: underline;
 }
 
-.toggle {
-  cursor: pointer;
+.contentSpacing {
+  padding: 0 var(--content-spacing);
+}
 
-  &:hover {
-    color: c.$title;
-  }
-
-  &[data-state="active"] {
-    color: c.$brand;
-
-    &:hover {
-      color: color.adjust(c.$brand, $lightness: 10);
-    }
-  }
+.genericContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-10);
 }
 
 .genericGrid {
@@ -55,10 +45,4 @@
       display: unset;
     }
   }
-}
-
-.genericContainer {
-  display: flex;
-  flex-direction: column;
-  gap: var(--size-10);
 }

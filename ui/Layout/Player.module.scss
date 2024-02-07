@@ -66,57 +66,73 @@
     }
   }
 
+  .progressBarWrapper {
+    width: 100%;
+    height: 12px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      background-color: white;
+      border-radius: var(--radius-full);
+      position: absolute;
+      top: 50%;
+      left: var(--progress-bar-transform);
+      transform: translateY(-50%);
+      margin-left: -6px;
+      z-index: 10;
+
+      &[aria-pressed="true"]::after {
+        content: "";
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        left: 2px;
+        top: 2px;
+        box-shadow: inset 1px 1px 3px 2px rgba(0, 0, 0, 0.25);
+        border-radius: var(--radius-full);
+      }
+    }
+
+    .progressBar {
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: c.$layer1;
+      overflow: hidden;
+
+      .current {
+        width: 100%;
+        height: inherit;
+        border-radius: inherit;
+        background-color: c.$subtext;
+        transform: translateX(calc(-100% + var(--progress-bar-transform)));
+      }
+    }
+  }
+
   .controlsRight {
     display: flex;
     align-items: center;
     gap: var(--size-4);
   }
-}
 
-.progressBarWrapper {
-  width: 100%;
-  height: 12px;
-  display: flex;
-  align-items: center;
-  position: relative;
+  .toggle {
+    cursor: pointer;
 
-  .dot {
-    width: 12px;
-    height: 12px;
-    background-color: white;
-    border-radius: var(--radius-full);
-    position: absolute;
-    top: 50%;
-    left: var(--progress-bar-transform);
-    transform: translateY(-50%);
-    margin-left: -6px;
-    z-index: 10;
-
-    &[aria-pressed="true"]::after {
-      content: "";
-      width: 8px;
-      height: 8px;
-      position: absolute;
-      left: 2px;
-      top: 2px;
-      box-shadow: inset 1px 1px 3px 2px rgba(0, 0, 0, 0.25);
-      border-radius: var(--radius-full);
+    &:hover {
+      color: c.$title;
     }
-  }
 
-  .progressBar {
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: c.$layer1;
-    overflow: hidden;
+    &[data-state="active"] {
+      color: c.$brand;
 
-    .current {
-      width: 100%;
-      height: inherit;
-      border-radius: inherit;
-      background-color: c.$subtext;
-      transform: translateX(calc(-100% + var(--progress-bar-transform)));
+      &:hover {
+        color: color.adjust(c.$brand, $lightness: 10);
+      }
     }
   }
 }

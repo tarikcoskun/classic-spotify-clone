@@ -25,7 +25,7 @@ export default function CollectionHeader({ type, title, cover, description, trac
     <header className={s.collectionHeader}>
       <img src={cover} alt={title} width={256} height={256} draggable="false" className={s.collectionCover} />
       <div className={s.collectionDetails}>
-        <div className={s.collectionType}>{type}</div>
+        <div className={s.type}>{type}</div>
         <div className={s.title}>{title}</div>
         {description && <div className={s.description}>{description}</div>}
         <div className={s.lower}>

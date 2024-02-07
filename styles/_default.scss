@@ -18,7 +18,12 @@ html {
 
   color-scheme: dark;
   color: c.$fg;
-  background: linear-gradient(to right, c.$bg, color.adjust(c.$bg, $lightness: 4), c.$bg);
+  background: linear-gradient(
+    to right,
+    c.$bg,
+    color.adjust(c.$bg, $lightness: 3),
+    c.$bg
+  );
 
   ::-webkit-scrollbar {
     width: 12px;

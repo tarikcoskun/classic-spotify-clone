@@ -1,6 +1,6 @@
 import { type Dispatch, type SetStateAction, createContext, useState, useEffect } from "react";
 
-import { clamp } from "@/helpers/clamp";
+import { clamp } from "@/util/clamp";
 
 interface PlayerValue {
   isExpanded: boolean;

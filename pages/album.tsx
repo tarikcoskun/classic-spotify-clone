@@ -1,7 +1,7 @@
 import type { AlbumUnion } from "@/types/Album";
 
 import { useContext } from "react";
-import { getReadableTime } from "@/helpers/getReadableTime";
+import { getReadableTime } from "@/util/getReadableTime";
 
 // Components
 import Layout from "@/ui/Layout";

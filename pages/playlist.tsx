@@ -1,8 +1,8 @@
 import type { PlaylistV2 } from "@/types/Playlist";
 
 import { useContext } from "react";
-import { getReadableTime } from "@/helpers/getReadableTime";
-import { getReadableDate } from "@/helpers/getReadableDate";
+import { getReadableTime } from "@/util/getReadableTime";
+import { getReadableDate } from "@/util/getReadableDate";
 
 // Components
 import Layout from "@/ui/Layout";

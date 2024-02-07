@@ -1,5 +1,3 @@
-@use "colors" as c;
-
 @mixin line-clamp($lines: 1) {
   overflow: hidden;
   display: -webkit-box;

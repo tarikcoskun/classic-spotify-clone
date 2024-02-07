@@ -1,4 +1,4 @@
-@use "@/styles/colors" as c;
+@use "../colors" as c;
 @use "sass:color";
 
 .artistProfile {
@@ -13,8 +13,8 @@
   padding-bottom: calc(var(--size-8) + 53px);
 
   .artistPhoto {
-    width: 192px;
-    height: 192px;
+    width: 160px;
+    height: 160px;
     object-fit: cover;
     border-radius: var(--radius-full);
   }
@@ -22,7 +22,11 @@
   .artistDetails {
     display: flex;
     flex-direction: column;
-    gap: var(--size-6);
+    gap: var(--size-4);
+
+    .type {
+      font-size: var(--scale-00);
+    }
 
     .name {
       color: c.$title;

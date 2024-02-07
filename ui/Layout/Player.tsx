@@ -1,6 +1,6 @@
 import { useContext, useRef } from "react";
-import { getReadableTime } from "@/helpers/getReadableTime";
-import { clamp } from "@/helpers/clamp";
+import { getReadableTime } from "@/util/getReadableTime";
+import { clamp } from "@/util/clamp";
 
 // Components
 import Icon from "@/ui/Icon";
@@ -99,7 +99,7 @@ export default function Player() {
         </div>
         <button
           type="button"
-          className="toggle"
+          className={s.toggle}
           aria-label="Toggle muted"
           onClick={() => {
             context.setMuted((val) => !val);
@@ -142,7 +142,7 @@ export default function Player() {
       <div className={s.controlsRight}>
         <button
           type="button"
-          className="toggle"
+          className={s.toggle}
           aria-label="Toggle shuffle"
           data-state={context.shuffle ? "active" : "inactive"}
           onClick={() => {
@@ -153,7 +153,7 @@ export default function Player() {
         </button>
         <button
           type="button"
-          className="toggle"
+          className={s.toggle}
           aria-label="Toggle repeat"
           data-state={context.repeat ? "active" : "inactive"}
           onClick={() => {

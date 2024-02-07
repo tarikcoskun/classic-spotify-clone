@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { useRefs } from "@/hooks/useRefs";
+import { combineRefs } from "@/util/combineRefs";
 import { createContext, forwardRef, useContext, useEffect, useRef, useState } from "react";
 
 // Styles
@@ -72,7 +72,7 @@ const TabsList = forwardRef<HTMLDivElement, TabsListProps>(
 
     return (
       <div
-        ref={useRefs(forwardedRef, tableHeadRef)}
+        ref={combineRefs(forwardedRef, tableHeadRef)}
         role="tablist"
         style={style}
         className={classNames(s.tabsList, headSticked && s.sticked, className)}

@@ -1,7 +1,7 @@
 import type { ArtistUnion } from "@/types/Artist";
 
 import { useContext, useState } from "react";
-import { getReadableTime } from "@/helpers/getReadableTime";
+import { getReadableTime } from "@/util/getReadableTime";
 
 // Components
 import Link from "next/link";

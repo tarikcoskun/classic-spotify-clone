@@ -1,4 +1,4 @@
-export const useRefs = <T>(...refs: React.Ref<T | null>[]) => {
+export const combineRefs = <T>(...refs: React.Ref<T | null>[]) => {
   return (node: T | null) => {
     for (const ref of refs) {
       if (typeof ref === "function") {

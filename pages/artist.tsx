@@ -17,7 +17,7 @@ import ArtistBio from "@/views/Artist/Bio";
 import artistData from "@/data/artist.json";
 
 // Styles
-import s from "@/styles/Artist.module.scss";
+import s from "@/styles/pages/Artist.module.scss";
 
 const artistInfo = artistData.data.artistUnion as ArtistUnion;
 
@@ -29,9 +29,20 @@ export default function Artist() {
       <main>
         <header
           className={s.artistProfile}
-          style={{ backgroundImage: `url(${artistInfo.visuals.headerImage.sources[0].url})` }}
+          style={{
+            backgroundImage: `linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(${artistInfo.visuals.headerImage.sources[0].url})`,
+          }}
         >
+          <img
+            src={artistInfo.visuals.avatarImage.sources[0].url}
+            alt={artistInfo.profile.name}
+            width={160}
+            height={160}
+            draggable="false"
+            className={s.artistPhoto}
+          />
           <div className={s.artistDetails}>
+            <div className={s.type}>ARTIST</div>
             <div className={s.name}>{artistInfo.profile.name}</div>
             <div className={s.actions}>
               <Button variant="solid" color="brand">
@@ -54,7 +65,7 @@ export default function Artist() {
         <Tabs defaultValue="overview" style={{ marginTop: "-53px" }}>
           <Tabs.List
             className="contentSpacing"
-            style={{ backgroundColor: "rgb(0,0,0,0.75)", backdropFilter: "blur(8px)" }}
+            style={{ backgroundColor: "rgb(0,0,0,0.75)", backdropFilter: "blur(4px)" }}
           >
             <Tabs.Trigger value="overview">Overview</Tabs.Trigger>
             <Tabs.Trigger value="related">Related Artists</Tabs.Trigger>
