@@ -1,0 +1,10 @@
+.scrollWrapper {
+  flex-grow: 1;
+  height: inherit;
+  overflow-y: auto;
+
+  .pageContent {
+    max-width: var(--content-max-width);
+    margin-inline: auto;
+  }
+}

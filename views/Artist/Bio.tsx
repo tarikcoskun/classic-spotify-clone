@@ -2,11 +2,11 @@ import classNames from "classnames";
 import type { ArtistUnion } from "@/types/Artist";
 
 // Components
+import Section from "@/ui/Section";
 import Icon, { type Icons } from "@/ui/Icon";
 
 // Styles
 import s from "./Bio.module.scss";
-import Section from "@/ui/Section";
 
 export default function ArtistBio({ data }: { data: ArtistUnion }) {
   return (

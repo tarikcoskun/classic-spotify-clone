@@ -7,7 +7,7 @@ import s from "./Navbar.module.scss";
 
 export default function Navbar() {
   return (
-    <nav className={s.navbar}>
+    <header className={s.navbar}>
       <div className={s.controlsLeft}>
         <button
           type="button"
@@ -39,6 +39,6 @@ export default function Navbar() {
           <span className={s.username}>Tarık Coşkun</span>
         </div>
       </div>
-    </nav>
+    </header>
   );
 }

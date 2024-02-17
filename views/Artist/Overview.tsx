@@ -1,7 +1,6 @@
 import type { ArtistUnion } from "@/types/Artist";
 
 import { useContext, useState } from "react";
-import { getReadableTime } from "@/util/getReadableTime";
 
 // Components
 import Link from "next/link";
@@ -27,7 +26,7 @@ export default function ArtistOverview({ data }: { data: ArtistUnion }) {
 
   return (
     <div className="genericContainer">
-      <div className={s.grid}>
+      <div className={s.layout}>
         <div className={s.leftSide}>
           <Section>
             <Section.Header title="Latest Release" />

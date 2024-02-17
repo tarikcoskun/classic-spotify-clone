@@ -1,5 +1,6 @@
 // Components
 import Layout from "@/ui/Layout";
+import PageContent from "@/ui/PageContent";
 import Header from "@/ui/Header";
 import Tabs from "@/ui/Tabs";
 
@@ -12,7 +13,7 @@ import HomeNewReleases from "@/views/Home/NewReleases";
 export default function Home() {
   return (
     <Layout>
-      <main>
+      <PageContent>
         <Header title="Browse" />
 
         <Tabs defaultValue="overview">
@@ -36,7 +37,7 @@ export default function Home() {
             <HomeNewReleases />
           </Tabs.Content>
         </Tabs>
-      </main>
+      </PageContent>
     </Layout>
   );
 }

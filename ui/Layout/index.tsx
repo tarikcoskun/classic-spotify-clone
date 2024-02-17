@@ -9,14 +9,14 @@ import s from "./Layout.module.scss";
 
 export default function Layout({ children }: React.PropsWithChildren) {
   return (
-    <div className={s.layout}>
+    <>
       <Navbar />
-      <div id="innerBody" className={s.pageLayout}>
+      <div id="innerBody" className={s.innerBody}>
         <LeftSidebar />
-        <div className={s.pageContent}>{children}</div>
+        {children}
         <FriendsPanel />
       </div>
       <Player />
-    </div>
+    </>
   );
 }

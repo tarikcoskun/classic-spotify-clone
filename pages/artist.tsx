@@ -4,6 +4,7 @@ import { useState } from "react";
 
 // Components
 import Layout from "@/ui/Layout";
+import PageContent from "@/ui/PageContent";
 import Tabs from "@/ui/Tabs";
 import Button from "@/ui/Button";
 import Icon from "@/ui/Icon";
@@ -26,7 +27,7 @@ export default function Artist() {
 
   return (
     <Layout>
-      <main>
+      <PageContent>
         <header
           className={s.artistProfile}
           style={{
@@ -65,7 +66,10 @@ export default function Artist() {
         <Tabs defaultValue="overview" style={{ marginTop: "-53px" }}>
           <Tabs.List
             className="contentSpacing"
-            style={{ backgroundColor: "rgb(0,0,0,0.75)", backdropFilter: "blur(4px)" }}
+            style={{
+              backgroundColor: "rgb(0,0,0,0.75)",
+              backdropFilter: "blur(4px)",
+            }}
           >
             <Tabs.Trigger value="overview">Overview</Tabs.Trigger>
             <Tabs.Trigger value="related">Related Artists</Tabs.Trigger>
@@ -81,7 +85,7 @@ export default function Artist() {
             <ArtistBio data={artistInfo} />
           </Tabs.Content>
         </Tabs>
-      </main>
+      </PageContent>
     </Layout>
   );
 }

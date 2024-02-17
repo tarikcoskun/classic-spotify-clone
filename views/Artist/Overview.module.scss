@@ -1,6 +1,6 @@
 @use "@/styles/colors" as c;
 
-.grid {
+.layout {
   display: grid;
   gap: var(--size-10);
   grid-template-columns: 2fr 1fr;

@@ -6,6 +6,7 @@ import { getReadableDate } from "@/util/getReadableDate";
 
 // Components
 import Layout from "@/ui/Layout";
+import PageContent from "@/ui/PageContent";
 import Link from "next/link";
 import Icon from "@/ui/Icon";
 import Table from "@/ui/Table";
@@ -24,7 +25,7 @@ export default function Playlist() {
 
   return (
     <Layout>
-      <main>
+      <PageContent>
         <CollectionHeader
           type="PLAYLIST"
           title={playlistInfo.name}
@@ -40,8 +41,14 @@ export default function Playlist() {
             data={playlistInfo.content.items.map((item, idx) => ({
               "#": {
                 html: (
-                  <span data-active={context.playback.track.name === item.itemV2.data.name} style={{ display: "flex" }}>
-                    {context.isPlaying && context.playback.track.name === item.itemV2.data.name ? (
+                  <span
+                    data-active={
+                      context.playback.track.name === item.itemV2.data.name
+                    }
+                    style={{ display: "flex" }}
+                  >
+                    {context.isPlaying &&
+                    context.playback.track.name === item.itemV2.data.name ? (
                       <Icon icon="volume-high" />
                     ) : (
                       idx + 1
@@ -49,7 +56,8 @@ export default function Playlist() {
                   </span>
                 ),
                 whileHover:
-                  context.isPlaying && context.playback.track.name === item.itemV2.data.name ? (
+                  context.isPlaying &&
+                  context.playback.track.name === item.itemV2.data.name ? (
                     <button
                       type="button"
                       aria-label="Pause"
@@ -69,13 +77,15 @@ export default function Playlist() {
                         context.setPlaying(true);
                         context.setPlayback({
                           elapsed: 0,
-                          duration: item.itemV2.data.trackDuration.totalMilliseconds,
+                          duration:
+                            item.itemV2.data.trackDuration.totalMilliseconds,
                           track: {
                             name: item.itemV2.data.name,
                             artists: item.itemV2.data.artists.items,
                             album: {
                               name: item.itemV2.data.albumOfTrack.name,
-                              coverArt: item.itemV2.data.albumOfTrack.coverArt.sources,
+                              coverArt:
+                                item.itemV2.data.albumOfTrack.coverArt.sources,
                             },
                           },
                         });
@@ -90,7 +100,9 @@ export default function Playlist() {
                   <span
                     className="whiteText truncate"
                     title={item.itemV2.data.name}
-                    data-active={context.playback.track.name === item.itemV2.data.name}
+                    data-active={
+                      context.playback.track.name === item.itemV2.data.name
+                    }
                   >
                     {item.itemV2.data.name}
                   </span>
@@ -111,14 +123,21 @@ export default function Playlist() {
                 html: (
                   <span
                     className="truncate"
-                    title={item.itemV2.data.artists.items.map((artist) => artist.profile.name).join(", ")}
+                    title={item.itemV2.data.artists.items
+                      .map((artist) => artist.profile.name)
+                      .join(", ")}
                   >
                     {item.itemV2.data.artists.items.map((artist, idx) => (
                       <>
-                        <Link key={artist.uri} href="/artist" className="whiteText hoverLine">
+                        <Link
+                          key={artist.uri}
+                          href="/artist"
+                          className="whiteText hoverLine"
+                        >
                           {artist.profile.name}
                         </Link>
-                        {idx !== item.itemV2.data.artists.items.length - 1 && ", "}
+                        {idx !== item.itemV2.data.artists.items.length - 1 &&
+                          ", "}
                       </>
                     ))}
                   </span>
@@ -136,11 +155,13 @@ export default function Playlist() {
                 ),
               },
               Added: getReadableDate(new Date(item.addedAt.isoString)),
-              Duration: getReadableTime(item.itemV2.data.trackDuration.totalMilliseconds),
+              Duration: getReadableTime(
+                item.itemV2.data.trackDuration.totalMilliseconds
+              ),
             }))}
           />
         </div>
-      </main>
+      </PageContent>
     </Layout>
   );
 }

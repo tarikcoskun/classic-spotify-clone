@@ -5,6 +5,7 @@ import { getReadableTime } from "@/util/getReadableTime";
 
 // Components
 import Layout from "@/ui/Layout";
+import PageContent from "@/ui/PageContent";
 import Link from "next/link";
 import Table from "@/ui/Table";
 import Icon from "@/ui/Icon";
@@ -23,7 +24,7 @@ export default function Album() {
 
   return (
     <Layout>
-      <main>
+      <PageContent>
         <CollectionHeader
           type={albumInfo.type}
           title={albumInfo.name}
@@ -39,8 +40,14 @@ export default function Album() {
             data={albumInfo.tracks.items.map((item, idx) => ({
               "#": {
                 html: (
-                  <span data-active={context.playback.track.name === item.track.name} style={{ display: "flex" }}>
-                    {context.isPlaying && context.playback.track.name === item.track.name ? (
+                  <span
+                    data-active={
+                      context.playback.track.name === item.track.name
+                    }
+                    style={{ display: "flex" }}
+                  >
+                    {context.isPlaying &&
+                    context.playback.track.name === item.track.name ? (
                       <Icon icon="volume-high" />
                     ) : (
                       idx + 1
@@ -48,7 +55,8 @@ export default function Album() {
                   </span>
                 ),
                 whileHover:
-                  context.isPlaying && context.playback.track.name === item.track.name ? (
+                  context.isPlaying &&
+                  context.playback.track.name === item.track.name ? (
                     <button
                       type="button"
                       aria-label="Pause"
@@ -92,7 +100,9 @@ export default function Album() {
                   <span
                     className="whiteText truncate"
                     title={item.track.name}
-                    data-active={context.playback.track.name === item.track.name}
+                    data-active={
+                      context.playback.track.name === item.track.name
+                    }
                   >
                     {item.track.name}
                   </span>
@@ -113,11 +123,17 @@ export default function Album() {
                 html: (
                   <span
                     className="truncate"
-                    title={item.track.artists.items.map((artist) => artist.profile.name).join(", ")}
+                    title={item.track.artists.items
+                      .map((artist) => artist.profile.name)
+                      .join(", ")}
                   >
                     {item.track.artists.items.map((artist, idx) => (
                       <>
-                        <Link key={artist.uri} href="/artist" className="whiteText hoverLine">
+                        <Link
+                          key={artist.uri}
+                          href="/artist"
+                          className="whiteText hoverLine"
+                        >
                           {artist.profile.name}
                         </Link>
                         {idx !== item.track.artists.items.length - 1 && ", "}
@@ -130,7 +146,7 @@ export default function Album() {
             }))}
           />
         </div>
-      </main>
+      </PageContent>
     </Layout>
   );
 }

@@ -135,7 +135,7 @@ const TabsContent = forwardRef<HTMLDivElement, TabsContentProps>(
     const isSelected = value === context.value;
 
     return isSelected ? (
-      <div {...props} ref={forwardedRef} role="tabpanel" className={classNames(s.tabsContent, className)}>
+      <div {...props} ref={forwardedRef} id={value} role="tabpanel" className={classNames(s.tabsContent, className)}>
         {children}
       </div>
     ) : null;
