@@ -1,0 +1,12 @@
+@use "../colors" as c;
+
+.pages {
+  a {
+    color: c.$title;
+
+    &:hover {
+      color: c.$title;
+      text-decoration: underline;
+    }
+  }
+}
