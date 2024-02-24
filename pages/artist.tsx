@@ -44,7 +44,7 @@ export default function Artist() {
           />
           <div className={s.artistDetails}>
             <div className={s.type}>ARTIST</div>
-            <div className={s.name}>{artistInfo.profile.name}</div>
+            <h1 className={s.name}>{artistInfo.profile.name}</h1>
             <div className={s.actions}>
               <Button variant="solid" color="brand">
                 <Icon icon="play" size={20} />

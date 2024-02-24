@@ -8,7 +8,7 @@ interface HeaderProps {
 export default function Header({ title }: HeaderProps) {
   return (
     <header className={s.header}>
-      <div className={s.title}>{title}</div>
+      <h1 className={s.title}>{title}</h1>
     </header>
   );
 }

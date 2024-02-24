@@ -8,6 +8,10 @@ export default function Home() {
     <Layout>
       <PageContent>
         <Header title="Page Not Found" />
+
+        <div className="contentSpacing">
+          <p>Available pages</p>
+        </div>
       </PageContent>
     </Layout>
   );

@@ -98,7 +98,7 @@ export default function HomeOverview() {
     <div className="genericContainer">
       <Section className={s.greeting}>
         <header className={s.header}>
-          <div className={s.title}>The best music for any moment.</div>
+          <h2 className={s.title}>The best music for any moment.</h2>
           <div className={s.controls}>
             <button type="button" aria-label="Back" disabled>
               <Icon icon="chevron-left" size={16} />

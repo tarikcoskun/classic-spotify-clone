@@ -53,3 +53,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+h1,
+h2 {
+  color: c.$title;
+  font-weight: 400;
+}

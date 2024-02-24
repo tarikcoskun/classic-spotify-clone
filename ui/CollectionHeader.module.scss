@@ -23,21 +23,17 @@
     }
 
     .title {
-      color: c.$title;
       font-size: var(--scale-6);
-      font-weight: 500;
     }
 
     .description {
       font-size: var(--scale-00);
-      color: color.adjust(c.$title, $alpha: -0.25);
     }
 
     .lower {
       display: flex;
       gap: 6px;
       align-items: center;
-      color: color.adjust(c.$title, $alpha: -0.25);
 
       span {
         font-size: var(--scale-00);

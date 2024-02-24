@@ -13,7 +13,6 @@
 
     .bio {
       line-height: var(--scale-3);
-      color: color.adjust(c.$title, $alpha: -0.25);
     }
   }
 
@@ -37,7 +36,6 @@
 
       .title {
         color: c.$title;
-        font-weight: 500;
 
         &.big {
           font-size: var(--scale-4);

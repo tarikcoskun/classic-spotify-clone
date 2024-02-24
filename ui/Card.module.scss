@@ -21,7 +21,6 @@
 
     .title {
       color: c.$title;
-      font-weight: 500;
       @include util.truncate;
     }
 

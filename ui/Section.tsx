@@ -3,7 +3,7 @@ import classNames from "classnames";
 // Styles
 import s from "./Section.module.scss";
 
-interface SectionProps extends React.HTMLAttributes<HTMLElement> {}
+interface SectionProps extends React.HTMLAttributes<HTMLElement> { }
 
 function SectionRoot({ className, children, ...props }: SectionProps) {
   return (
@@ -20,7 +20,7 @@ interface SectionHeaderProps extends React.HTMLAttributes<HTMLElement> {
 function SectionHeader({ className, title }: SectionHeaderProps) {
   return (
     <header className={classNames(s.header, className)}>
-      <div className={s.title}>{title}</div>
+      <h2 className={s.title}>{title}</h2>
     </header>
   );
 }
