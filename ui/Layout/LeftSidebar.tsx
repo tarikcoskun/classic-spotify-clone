@@ -106,8 +106,8 @@ export default function LeftSidebar() {
   const context = useContext(PlayerContext);
 
   return (
-    <nav className={s.sidebar}>
-      <div className={s.sidebarLinks}>
+    <div className={s.sidebar}>
+      <nav className={s.sidebarLinks}>
         {Object.entries(sidebarLinks).map(([category, links], idx) => (
           <div key={category} className={s.sidebarCategory}>
             <header className={s.categoryHeader}>
@@ -134,7 +134,7 @@ export default function LeftSidebar() {
             </div>
           </div>
         ))}
-      </div>
+      </nav>
 
       <div className={s.nowPlaying} data-expanded={context.isExpanded}>
         <div
@@ -168,6 +168,6 @@ export default function LeftSidebar() {
           </button>
         </div>
       </div>
-    </nav>
+    </div>
   );
 }

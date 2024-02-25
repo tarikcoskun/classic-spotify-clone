@@ -12,7 +12,7 @@ export interface CardProps {
 
 export default function Card({ cover, title, description, className, ...props }: CardProps) {
   return (
-    <div {...props} className={classNames(s.card, className)}>
+    <article {...props} className={classNames(s.card, className)}>
       <img src={cover} alt={title} draggable="false" className={s.cover} />
       <div className={s.cardBody}>
         <div className={s.title} title={title}>
@@ -20,6 +20,6 @@ export default function Card({ cover, title, description, className, ...props }:
         </div>
         <div className={s.description}>{description}</div>
       </div>
-    </div>
+    </article>
   );
 }
